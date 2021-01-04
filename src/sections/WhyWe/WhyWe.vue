@@ -1,5 +1,7 @@
 <template>
   <carousel
+  class="py-10"
+    style="background-color:#e8f4fe"
     :perPage="1"
     :autoplay="true"
     :autoplayHoverPause="true"
@@ -14,7 +16,7 @@
         <div>
           <img src="@/assets/slider.svg" alt="" width="300" />
         </div>
-        <div class="text-center col-span-2">
+        <div class="text-center col-span-2  text-gray-500">
           Convert traffic into sales- Where we use search engines to market your
           product; via paid methods (Pay per Click (PPC) Services).
         </div>
@@ -26,7 +28,7 @@
         <div>
           <img src="@/assets/slider3.svg" alt="" width="300" />
         </div>
-        <div class="text-center col-span-2">
+        <div class="text-center col-span-2 text-gray-500">
           We will come up with a flexible and result oriented business
           strategies to help you achieve your business goals.
         </div>
@@ -38,7 +40,7 @@
         <div>
           <img src="@/assets/slider2.svg" alt="" width="300" />
         </div>
-        <div class="text-center  col-span-2">
+        <div class="text-center text-gray-500 col-span-2">
           Adsmidea has a team of creative support digital marketing experts
           having their own unique specialties. Create appealing banners, landing
           pages and content that Affiliates can use to boost their campaigns.

@@ -57,7 +57,7 @@
               <div class="p-4 md:w-2/2 w-full">
                 <div class="flex">
                   <div
-                    style="background-color: #efe3e3"
+                    style="background-color: #e8f4fe"
                     class="ml-4 inline-flex text-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
                   >
                     <svg
@@ -85,10 +85,16 @@
         </div>
         <div class="grid md:grid-cols-2 space-x-2 gap-4">
           <div class="floating">
-            <div style="background: #ff8657" class="p-3 rounded-2xl shadow-xl">
-              <h1 class="text-xl font-bold text-white">Jump back in!</h1>
+            <div
+              style="
+                background: #c9e6fd;
+                box-shadow: 5px 15px 20px rgba(178, 232, 255, 0.3);
+              "
+              class="p-3 rounded-2xl w-full shadow-xl"
+            >
+              <h1 class="text-xl font-bold boxText">Jump back in!</h1>
               <div class="mt-4 mb-10">
-                <p class="text-white">Course 75% completed</p>
+                <p class="text-white boxText">Course 75% completed</p>
                 <div
                   class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
                 >
@@ -110,7 +116,10 @@
           </div>
           <div class="floating2">
             <div
-              style="background: #efdff7"
+              style="
+                background: #efdff7;
+                box-shadow: 5px 15px 20px rgba(128,0,128, 0.3);
+              "
               class="p-3 rounded-2xl w-full shadow-xl"
             >
               <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
@@ -379,5 +388,8 @@ export default {
   to {
     transform: translate(0, -0px);
   }
+}
+.boxText {
+  color: #5ebcfe;
 }
 </style>

@@ -12,6 +12,7 @@
   </div> -->
 
   <div
+  style="box-shadow: 0 15px 20px rgba(4, 112, 184, 0.1);"
     class="w-full mt-8 mx-auto rounded-lg hover:shadow-2xl cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-102 bg-white shadow-lg h-80 px-5 text-gray-800"
   >
     <div class="w-full pt-5">
@@ -29,7 +30,8 @@
     <div class="py-6 space-y-6">
       <div class="w-full">
         <p
-          class="text-md text-indigo-500 font-bold text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+          style="color:#5ebcfe; blur:12px"
+          class="text-md font-bold text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
         >
           {{ heading }}
         </p>

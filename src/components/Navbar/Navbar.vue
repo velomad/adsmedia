@@ -268,7 +268,7 @@ nav.shift ul li a:after {
   border-radius: 10px;
   content: ".";
   color: transparent;
-  background: #f57543;
+  background: #5ebcfe;
   visibility: none;
   opacity: 0;
   z-index: -1;

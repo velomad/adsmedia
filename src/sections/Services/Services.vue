@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-6 md:grid grid-cols-3 gap-10 px-4">
+  <div class="space-y-6 md:grid grid-cols-3 gap-10 py-10 px-4" style="background-color:#f5f5f5">
     <div v-for="(item, index) in test" :key="index" class="mt-6">
       <Card :heading="item.heading" :content="item.content" :icon="item.icon" />
     </div>
