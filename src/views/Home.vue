@@ -3,6 +3,7 @@
     <div class="space-y-8">
       <HomeScreen />
       <AboutScreen />
+      <WhyWe />
       <ServicesScreen />
       <Skills />
       <ContactUs />
@@ -16,6 +17,7 @@ import AboutScreen from "../sections/About/About";
 import ServicesScreen from "../sections/Services/Services";
 import ContactUs from "../sections/ContactUs/ContactUs";
 import Skills from "../sections/Excellence/Excellence";
+import WhyWe from "../sections/WhyWe/WhyWe";
 
 export default {
   name: "Home",
@@ -25,6 +27,7 @@ export default {
     ServicesScreen,
     ContactUs,
     Skills,
+    WhyWe
   },
 };
 </script>

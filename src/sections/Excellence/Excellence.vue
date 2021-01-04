@@ -4,7 +4,7 @@
     v-view.once="onceHandler"
   >
     <div v-for="(item, index) in bars" :key="index" class="mt-8">
-      <div class="py-2 text-sm capitalize">{{ item.name }}</div>
+      <div class="py-2 text-md text-gray-600 capitalize">{{ item.name }}</div>
       <div class="bg-gray-300 rounded-md">
         <div
           :class="[
@@ -48,7 +48,7 @@ export default {
           color: "yellow",
         },
         {
-          name: "whatsapp MARKETING",
+          name: "whatsapp marketing",
           percent: "60%",
           color: "purple",
         },

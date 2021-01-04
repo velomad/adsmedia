@@ -84,7 +84,7 @@
           </div>
         </div>
         <div class="grid md:grid-cols-2 space-x-2 gap-4">
-          <div>
+          <div class="floating">
             <div style="background: #ff8657" class="p-3 rounded-2xl shadow-xl">
               <h1 class="text-xl font-bold text-white">Jump back in!</h1>
               <div class="mt-4 mb-10">
@@ -108,7 +108,7 @@
               </button>
             </div>
           </div>
-          <div>
+          <div class="floating2">
             <div
               style="background: #efdff7"
               class="p-3 rounded-2xl w-full shadow-xl"
@@ -350,5 +350,34 @@ export default {
 <style scoped>
 .txt-purple {
   color: rgb(177, 124, 198);
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.floating2 {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 25px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
 }
 </style>
