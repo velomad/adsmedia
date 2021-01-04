@@ -1,5 +1,5 @@
 <template>
-  <div
+  <!-- <div
     class="shadow-md space-y-8 content-center hover:shadow-xl cursor-pointer transition duration-500 ease-in-out p-6 rounded-lg"
   >
     <img src="@/assets/hammer.svg" width="50" class="mx-auto" />
@@ -9,12 +9,39 @@
     <div class="text-center heading">
       {{ content }}
     </div>
+  </div> -->
+
+  <div
+    class="w-full mt-8 mx-auto rounded-lg hover:shadow-2xl cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-102 bg-white shadow-lg h-80 px-5 text-gray-800"
+  >
+    <div class="w-full pt-5">
+      <div
+        class="overflow-hidden ring-indigo-300 ring-2 rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg"
+      >
+        <img
+          src="@/assets/megaphone.svg"
+          width="50"
+          alt=""
+          class="object-contain mx-auto mt-4"
+        />
+      </div>
+    </div>
+    <div class="py-6 space-y-6">
+      <div class="w-full">
+        <p class="text-md text-indigo-500 font-bold text-center">
+          {{ heading }}
+        </p>
+      </div>
+      <p class="text-sm text-gray-500 text-justify px-5">
+        {{ content }}
+      </p>
+    </div>
   </div>
 </template>
 <script>
 export default {
   name: "Card",
-  props: ["heading", "content"],
+  props: ["heading", "content", "icon"],
 };
 </script>
 

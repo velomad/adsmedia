@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <nav class="bg-white shadow">
+    <nav class="bg-white shadow-lg">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-28">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -97,9 +97,26 @@
                 </button>
               </div> -->
 
-              <div class="hidden sm:block sm:ml-6">
+              <nav class="flex space-x-4 items-center shift">
+                <ul class="flex">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Advertiser</a></li>
+                  <li><a href="#">Affiliate</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <a href="https://adsmidea.offer18.com/m/login" target="_blank">
+                  <div
+                    class="bg-gray-900 cursor-pointer p-2 rounded-lg text-white"
+                  >
+                    Login
+                  </div>
+                </a>
+              </nav>
+
+              <!-- <div class="hidden sm:block sm:ml-6">
                 <div class="flex space-x-4">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
                     href="#"
                     class="text-black bg-gray-100 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
@@ -108,9 +125,9 @@
                   <a
                     href="#"
                     class="text-black hover:bg-gray-100 hover:text-black px-3 py-2 rounded-sm text-xl font-medium"
-                    >Advertiser</a
-                  >
-                  <a
+                    >About</a
+                  > -->
+              <!-- <a
                     @click="toggleDropDown = !toggleDropDown"
                     href="#"
                     class="text-black hover:bg-gray-100 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
@@ -133,18 +150,28 @@
                           /></svg
                       ></span>
                     </div>
-                  </a>
+                  </a> -->
+              <!-- <a
+                    href="#"
+                    class="text-black hover:bg-gray-100 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
+                    >Services</a
+                  >
+                  <a
+                    href="#"
+                    class="text-black hover:bg-gray-100 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
+                    >Advertiser</a
+                  >
+                  <a
+                    href="#"
+                    class="text-black hover:bg-gray-100 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
+                    >Affiliate</a
+                  >
                   <a
                     href="#"
                     class="text-black hover:bg-gray-100 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
                     >Contact</a
-                  >
-                  <a
-                    href="#"
-                    class="text-black hover:bg-gray-100 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
-                    >More</a
-                  >
-                  <div
+                  > -->
+              <!-- <div
                     v-show="toggleDropDown"
                     class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
                     role="menu"
@@ -168,10 +195,10 @@
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                       >Sign out</a
-                    >
-                  </div>
-                </div>
-              </div>
+                    > -->
+              <!-- </div> -->
+              <!-- </div> -->
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -220,3 +247,97 @@ export default {
   },
 };
 </script>
+<style scoped>
+nav.shift ul li a {
+  position: relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640f;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  border-radius: 10px;
+  content: ".";
+  color: transparent;
+  background: #f1c40f;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+nav ul li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+</style>

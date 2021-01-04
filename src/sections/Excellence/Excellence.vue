@@ -1,7 +1,10 @@
 <template>
-  <div class="space-y-8 md:grid grid-cols-2 gap-6 px-4">
+  <div
+    class="space-y-8 md:grid grid-cols-2 gap-6 px-4"
+    v-view.once="onceHandler"
+  >
     <div v-for="(item, index) in bars" :key="index" class="mt-8">
-      <div class="py-2">{{ item.name }}</div>
+      <div class="py-2 text-sm capitalize">{{ item.name }}</div>
       <div class="bg-gray-300 rounded-md">
         <div
           :class="[
@@ -25,44 +28,47 @@ export default {
     return {
       bars: [
         {
-          name: "AFFILIATE MARKETING",
+          name: "affiliate marketing",
           color: "pink",
-          percent: "60%",
+          percent: "80%",
         },
         {
-          name: "STRATEGY AND CONSULTING",
-          percent: "90%",
+          name: "web design and developement",
+          percent: "85%",
           color: "green",
         },
         {
-          name: "SEARCH ENGINE MARKETING",
-          percent: "85%",
+          name: "search engine marketing",
+          percent: "50%",
           color: "blue",
         },
         {
-          name: "MEDIA BUYING AND PLANNING",
-          percent: "70%",
+          name: "media buying & planning",
+          percent: "80%",
           color: "yellow",
         },
         {
-          name: "MOBILE MARKETING",
-          percent: "40%",
+          name: "whatsapp MARKETING",
+          percent: "60%",
           color: "purple",
         },
         {
-          name: "SOCIAL MEDIA AND ORM",
-          percent: "99%",
+          name: "social media and orm",
+          percent: "65%",
           color: "gray",
         },
       ],
     };
   },
-  mounted() {
-    setTimeout(() => {
-      this.bars.map((el) => {
-        grow(this.$refs[el.name], el.percent);
-      });
-    }, 1000);
+  methods: {
+    onceHandler(e) {
+      setTimeout(() => {
+        this.bars.map((el) => {
+          grow(this.$refs[el.name], el.percent);
+        });
+      }, 700);
+    },
   },
+  mounted() {},
 };
 </script>
