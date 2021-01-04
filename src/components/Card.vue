@@ -28,7 +28,9 @@
     </div>
     <div class="py-6 space-y-6">
       <div class="w-full">
-        <p class="text-md text-indigo-500 font-bold text-center">
+        <p
+          class="text-md text-indigo-500 font-bold text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+        >
           {{ heading }}
         </p>
       </div>
