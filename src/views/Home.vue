@@ -1,10 +1,12 @@
 <template>
-  <div class="space-y-8">
-    <HomeScreen />
-    <AboutScreen />
-    <ServicesScreen />
-    <Skills />
-    <ContactUs />
+  <div>
+    <div class="space-y-8">
+      <HomeScreen />
+      <AboutScreen />
+      <ServicesScreen />
+      <Skills />
+      <ContactUs />
+    </div>
   </div>
 </template>
 

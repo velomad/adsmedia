@@ -5,13 +5,4 @@ import router from "./router/";
 import VueScrollTo from "vue-scrollto";
 Vue.use(VueScrollTo);
 
-new Vue({
-	el: "#app",
-	router,
-	template: "<App/>",
-	components: { App },
-});
-
-// createApp(App)
-// 	.use(router)
-// 	.mount("#app");
+new Vue({ el: "#app", router, render: (h) => h(App) });
