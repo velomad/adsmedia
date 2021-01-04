@@ -59,11 +59,11 @@
             class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
           >
             <div class="flex-shrink-0 flex items-center">
-              <!-- <img
-                class="block lg:hidden h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+              <img
+                class="block lg:block h-8 w-20 h-20"
+                src="@/assets/logo1.png"
                 alt="Workflow"
-              /> -->
+              />
               <div>
                 <h4 class="text-4xl font-bold">Adsmedia</h4>
                 <p>Digital Marketing</p>
