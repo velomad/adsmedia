@@ -47,12 +47,12 @@
                 <p class="pt-4 md:w-2/2 w-full font-semibold">
                   We create your presence. Build credibility and trust.
                 </p>
-                <button
+                <!-- <button
                   style="background: #ff8657"
                   class="mt-10 hidden md:block hover:bg-gray-900 lg:block inline-flex text-white font-semibold border-0 py-3 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 >
                   Our Offering
-                </button>
+                </button> -->
               </div>
               <div class="p-4 md:w-2/2 w-full">
                 <div class="flex">
