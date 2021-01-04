@@ -253,7 +253,7 @@ nav.shift ul li a {
   z-index: 1;
 }
 nav.shift ul li a:hover {
-  color: #91640f;
+  color: #fff;
 }
 nav.shift ul li a:after {
   display: block;
@@ -268,7 +268,7 @@ nav.shift ul li a:after {
   border-radius: 10px;
   content: ".";
   color: transparent;
-  background: #f1c40f;
+  background: #f57543;
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -294,7 +294,7 @@ nav ul li a:before {
   transition: all 0.5s;
 }
 nav ul li a:hover {
-  color: #555;
+  color: #fff;
 }
 
 /* stroke */

@@ -49,7 +49,7 @@
                 </p>
                 <button
                   style="background: #ff8657"
-                  class="mt-10 hidden md:block lg:block inline-flex text-white font-semibold border-0 py-3 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                  class="mt-10 hidden md:block hover:bg-gray-900 lg:block inline-flex text-white font-semibold border-0 py-3 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 >
                   Our Offering
                 </button>

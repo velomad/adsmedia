@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="space-y-8">
+      <div class="h-screen">
       <HomeScreen />
+      </div>
       <AboutScreen />
       <WhyWe />
       <ServicesScreen />
