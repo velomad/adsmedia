@@ -107,12 +107,13 @@
                 <ul
                   class="flex uppercase text-sm tracking-widest text-center text-gray-600 space-x-2"
                 >
-                  <li><a class="p-3" href="#">Home</a></li>
-                  <li><a class="p-3" href="#">About</a></li>
-                  <li><a class="p-3" href="#">Services</a></li>
-                  <li><a class="p-3" href="#">Why We ?</a></li>
+                  <li><a class="p-3" v-scroll-to="'#home'" href="#">Home</a></li>
+                  <li><a class="p-3" v-scroll-to="'#about-section'"  href="#">About</a></li>
+                  <li><a class="p-3" v-scroll-to="'#services'" href="#">Services</a></li>
+                  <li><a class="p-3" v-scroll-to="'#why-we'" href="#">Why We ?</a></li>
                   <li><a class="p-3" href="#">Affiliate</a></li>
-                  <li><a class="p-3" href="#">Contact</a></li>
+                  <li><a class="p-3" href="#">Publisher</a></li>
+                  <li><a class="p-3" v-scroll-to="'#contact'" href="#">Contact</a></li>
                 </ul>
                 <a href="https://adsmidea.offer18.com/m/login" target="_blank">
                   <div

@@ -1,7 +1,31 @@
 <template>
-  <div class="space-y-6 md:grid grid-cols-3 gap-10 py-10 px-4" style="background-color:#f5f5f5">
-    <div v-for="(item, index) in test" :key="index" class="mt-6">
-      <Card :heading="item.heading" :content="item.content" :icon="item.icon" />
+  <div style="background-color: #f5f5f5">
+    <div class="flex flex-col text-center w-full pt-20">
+      <h2
+        class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"
+      >
+        Adsmidea
+      </h2>
+      <h1
+        class="text-5xl font-semibold title-font mb-2 text-gray-900"
+      >
+        OUR SERVICES
+      </h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        Adsmidea Media, a holistic programmatic ecosystem helps connect brands
+        with their respective publisher across all formats and devices.
+      </p>
+    </div>
+    <div
+      class="space-y-6 md:grid grid-cols-3 gap-10 py-10 px-4"
+    >
+      <div v-for="(item, index) in test" :key="index" class="mt-6">
+        <Card
+          :heading="item.heading"
+          :content="item.content"
+          :icon="item.icon"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -16,7 +40,7 @@ export default {
     return {
       test: [
         {
-          icon: "@/assets/megaphone.svg",
+          icon: "megaphone.svg",
           heading: "Affiliate Marketing",
           content:
             "Looking For approach To Increase Your Brand Following Or Attracting Advertisers To Publish Ads On Your Website? With a Network Of Quality Affiliates And Advertisers.We Understanding the Buying nature of the Consumers,and Targeting the right audience through our Publishers,with a database of more than 20 million users.",

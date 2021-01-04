@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <div class="px-4">
+  <div style="height:100vh" class="table-cell">
+    <div class="px-4 inner">
       <div class="grid place-items-center md:grid-cols-2 gap-10">
-        <div class="space-y-4">
-          <div class="text-2xl text-gray-700">who we are ?</div>
+        <div class="space-y-4 space-x-0 md:space-x-8 lg:space-x-8 ">
+          <div class="text-6xl text-left font-semibold text-gray-700 ml-0 md:ml-8 lg:ml-8">who we are ?</div>
           <div class="text-justify text-md text-gray-600">
             Adsmidea is an interactive Digital Consulting Agency based in mumbai
             providing an exclusive service in Digital Marketing also Rated as
@@ -83,7 +83,7 @@
             </div>
           </div>
         </div>
-        <div class="grid md:grid-cols-2 space-x-2 gap-4">
+        <div class="mb-40 grid md:grid-cols-2 space-x-2 gap-4">
           <div class="floating">
             <div
               style="
@@ -357,6 +357,17 @@ export default {
 };
 </script>
 <style scoped>
+.table-cell{
+  display: table-cell;
+  width: 100%;
+  height: 100vh;
+  vertical-align: middle;
+  text-align: center;
+}
+.inner {
+  display: inline-block;
+  width: 100%; height: 65%;
+}
 .txt-purple {
   color: rgb(177, 124, 198);
 }

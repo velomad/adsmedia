@@ -1,14 +1,27 @@
 <template>
   <div>
-    <div class="space-y-8">
-      <div class="h-screen">
-        <HomeScreen />
-      </div>
+    <div id="home">
+    <HomeScreen />
+    </div>
+    <div id="about-section">
       <AboutScreen />
-      <WhyWe />
+    </div>
+    <div id="services">
       <ServicesScreen />
+    </div>
+    <div id="why-we">
+      <WhyWe />
+    </div>
+    <div id="skills">
       <Skills />
+    </div>
+    <div id="working">
+      <WorkingProcess />
+    </div>
+    <div id="contact">
       <ContactUs />
+    </div>
+    <div>
       <Footer />
     </div>
   </div>
@@ -20,6 +33,7 @@ import AboutScreen from "../sections/About/About";
 import ServicesScreen from "../sections/Services/Services";
 import ContactUs from "../sections/ContactUs/ContactUs";
 import Skills from "../sections/Excellence/Excellence";
+import WorkingProcess from "../sections/Working Process/WorkingProcess";
 import WhyWe from "../sections/WhyWe/WhyWe";
 import Footer from "../components/Footer";
 
@@ -31,6 +45,7 @@ export default {
     ServicesScreen,
     ContactUs,
     Skills,
+    WorkingProcess,
     WhyWe,
     Footer,
   },

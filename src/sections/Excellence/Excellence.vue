@@ -1,29 +1,33 @@
 <template>
-  <div class="space-y-8">
-    <div class="text-center text-xl capitalize text-gray-700">
-      Excellence Skills
-    </div>
+  <div class="space-y-8 container-1" style="background:url(/img/leaves-pattern.png)">
+    <div class="element">
+      <div style="text-shadow:3px 4px #ccc" class="text-center text-gray-600  text-5xl capitalize">
+        Excellence Skills
+      </div>
 
-    <div
-      class="space-y-8 md:grid grid-cols-2 gap-6 px-4"
-      v-view.once="onceHandler"
-    >
-      <div v-for="(item, index) in bars" :key="index" class="mt-8">
-        <div class="py-2 text-md text-gray-600 capitalize">{{ item.name }}</div>
-        <div class="bg-gray-300 rounded-md">
-          <div
-            :style="
-              'box-shadow: 5px 15px 20px rgba(' +
-              item.rgba +
-              ', 0.5),; width: 20px'
-            "
-            :class="[
-              item.color === 'gray'
-                ? 'bg-' + item.color + '-600 h-6 rounded-md'
-                : 'bg-' + item.color + '-400 h-6 rounded-md',
-            ]"
-            :ref="item.name"
-          ></div>
+      <div
+        class="space-y-8 md:grid grid-cols-2 gap-6 px-4"
+        v-view.once="onceHandler"
+      >
+        <div v-for="(item, index) in bars" :key="index" class="mt-8">
+          <div class="py-2 text-lg text-gray-600 capitalize">
+            {{ item.name }}
+          </div>
+          <div class="bg-gray-300 rounded-md">
+            <div
+              :style="
+                'box-shadow: 5px 15px 20px rgba(' +
+                item.rgba +
+                ', 0.5); width: 20px'
+              "
+              :class="[
+                item.color === 'gray'
+                  ? 'bg-' + item.color + '-600 h-6 rounded-md'
+                  : 'bg-' + item.color + '-400 h-6 rounded-md',
+              ]"
+              :ref="item.name"
+            ></div>
+          </div>
         </div>
       </div>
     </div>
@@ -91,3 +95,22 @@ export default {
   mounted() {},
 };
 </script>
+<style scoped>
+.container-1{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* just aesthetics */
+.container-1{
+  width:100%;
+  height: 100vh;
+  margin: auto;
+}
+
+.element{
+  width: 90vw; height: 50vh;
+  margin: 0 auto;
+}
+</style>

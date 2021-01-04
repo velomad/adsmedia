@@ -17,10 +17,10 @@
   >
     <div class="w-full pt-5">
       <div
-        class="overflow-hidden ring-indigo-300 ring-2 rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg"
+        class="overflow-hidden ring-indigo-300 ring-2 rounded-full bg-white w-20 h-20 -mt-16 mx-auto shadow-lg"
       >
         <img
-          src="@/assets/megaphone.svg"
+          :src="'/img/'+icon"
           width="50"
           alt=""
           class="object-contain mx-auto mt-4"

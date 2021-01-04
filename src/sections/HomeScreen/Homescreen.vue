@@ -1,42 +1,90 @@
 <template>
   <div>
     <Navbar />
-    <div id="wrapper" style="background: #262b2e">
-      <div id="title">
-        <h2 class="text-7xl text-left ml-20" style="font-family: Merriweather">
-          We are
-          <span
-            style="font-family: Merriweather"
-            class="rainbow rainbow_text_animated text-3xl"
-            >Adsmidea</span
-          >
-        </h2>
-        <h3 class="text-2xl text-left ml-20" style="font-family: Merriweather">
-          DIGITAL CONSULTING AGENCY
-        </h3>
-        <!-- <p class="text-4xl text-white text-left ml-20">I'm a</p> -->
-        <b class="text-4xl text-white text-left ml-20">
-          <span class="text-eff">
-            web developer<br />
-            css cowboy<br />
-            self-facilitating media node<br />
-            box inside a box<br />
-            part of the problem
-          </span>
-        </b>
+    <!-- component -->
+    <div class="w-full h-screen relative mt-4">
+      <div class="absolute w-full h-full z-10">
+        <div class="px-16 h-full flex items-center justify-start">
+          <div class="hidden lg:flex flex-col w-full space-y-4 py-12">
+            <!-- <img
+              class="w-40 h-40"
+              src="/img/logo1.png"
+              alt=""
+            /> -->
+            <h3 class="text-6xl font-semibold text-white">
+              We are
+              <span
+                style="font-family: Merriweather"
+                class="rainbow rainbow_text_animated text-3xl"
+                >Adsmidea</span
+              >
+            </h3>
+            <p class="text-3xl text-white">DIGITAL CONSULTING AGENCY</p>
+            <b class="text-4xl text-white text-left">
+              <span class="text-eff">
+                web developer<br />
+                css cowboy<br />
+                self-facilitating media node<br />
+                box inside a box<br />
+                part of the problem
+              </span>
+            </b>
+            <div class="flex space-x-4 flex-row w-full">
+              <button
+                class="px-3 mt-5 items-center shadow-md rounded-lg bg-white space-x-2 py-2 justify-center flex w-32"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="text-gray-800 font-semibold">Login</span>
+              </button>
+              <button
+                class="px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50 space-x-2 py-2 justify-center flex w-auto"
+              >
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span class="text-white font-semibold">Contact Us</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <canvas
-        style="position: absolute; height: 100vh; width: 100%"
-        id="canvas"
-        width="1950px"
-        height="800px"
-      ></canvas>
-      <canvas
-        style="position: absolute; height: 100vh; width: 100%"
-        id="canvasbg"
-        width="1950px"
-        height="800px"
-      ></canvas>
+      <div
+        class="absolute w-full h-64 bottom-0 bg-gradient-to-t from-black"
+      ></div>
+      <video
+        class="w-full h-64 lg:h-screen object-cover -mt-8"
+        autoplay
+        muted
+        loop
+      >
+        <source
+          class="h-screen object-contain"
+          src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4"
+          type="video/mp4"
+        />
+      </video>
     </div>
   </div>
 </template>
@@ -45,276 +93,12 @@ import Navbar from "../../components/Navbar/Navbar.vue";
 export default {
   name: "Home",
   components: { Navbar },
-  mounted() {
-    // min and max radius, radius threshold and percentage of filled circles
-    var radMin = 5,
-      radMax = 125,
-      filledCircle = 60, //percentage of filled circles
-      concentricCircle = 30, //percentage of concentric circles
-      radThreshold = 25; //IFF special, over this radius concentric, otherwise filled
-
-    //min and max speed to move
-    var speedMin = 0.3,
-      speedMax = 2.5;
-
-    //max reachable opacity for every circle and blur effect
-    var maxOpacity = 0.6;
-
-    //default palette choice
-    var colors = [
-        "52,168,83",
-        "117,95,147",
-        "199,108,23",
-        "194,62,55",
-        "0,172,212",
-        "120,120,120",
-      ],
-      bgColors = [
-        "52,168,83",
-        "117,95,147",
-        "199,108,23",
-        "194,62,55",
-        "0,172,212",
-        "120,120,120",
-      ],
-      circleBorder = 10,
-      backgroundLine = bgColors[0];
-    var backgroundMlt = 0.85;
-
-    //min distance for links
-    var linkDist = Math.min(canvas.width, canvas.height) / 2.4,
-      lineBorder = 2.5;
-
-    //most importantly: number of overall circles and arrays containing them
-    var maxCircles = 20,
-      points = [],
-      pointsBack = [];
-
-    //populating the screen
-    for (var i = 0; i < maxCircles * 2; i++) points.push(new Circle());
-    for (var i = 0; i < maxCircles; i++) pointsBack.push(new Circle(true));
-
-    //experimental vars
-    var circleExp = 1,
-      circleExpMax = 1.003,
-      circleExpMin = 0.997,
-      circleExpSp = 0.00004,
-      circlePulse = false;
-
-    //circle class
-    function Circle(background) {
-      //if background, it has different rules
-      this.background = background || false;
-      this.x = randRange(-canvas.width / 2, canvas.width / 2);
-      this.y = randRange(-canvas.height / 2, canvas.height / 2);
-      this.radius = background
-        ? hyperRange(radMin, radMax) * backgroundMlt
-        : hyperRange(radMin, radMax);
-      this.filled =
-        this.radius < radThreshold
-          ? randint(0, 100) > filledCircle
-            ? false
-            : "full"
-          : randint(0, 100) > concentricCircle
-          ? false
-          : "concentric";
-      this.color = background
-        ? bgColors[randint(0, bgColors.length - 1)]
-        : colors[randint(0, colors.length - 1)];
-      this.borderColor = background
-        ? bgColors[randint(0, bgColors.length - 1)]
-        : colors[randint(0, colors.length - 1)];
-      this.opacity = 0.05;
-      this.speed = background
-        ? randRange(speedMin, speedMax) / backgroundMlt
-        : randRange(speedMin, speedMax); // * (radMin / this.radius);
-      this.speedAngle = Math.random() * 2 * Math.PI;
-      this.speedx = Math.cos(this.speedAngle) * this.speed;
-      this.speedy = Math.sin(this.speedAngle) * this.speed;
-      var spacex = Math.abs(
-          (this.x -
-            (this.speedx < 0 ? -1 : 1) * (canvas.width / 2 + this.radius)) /
-            this.speedx
-        ),
-        spacey = Math.abs(
-          (this.y -
-            (this.speedy < 0 ? -1 : 1) * (canvas.height / 2 + this.radius)) /
-            this.speedy
-        );
-      this.ttl = Math.min(spacex, spacey);
-    }
-
-    Circle.prototype.init = function () {
-      Circle.call(this, this.background);
-    };
-
-    //support functions
-    //generate random int a<=x<=b
-    function randint(a, b) {
-      return Math.floor(Math.random() * (b - a + 1) + a);
-    }
-    //generate random float
-    function randRange(a, b) {
-      return Math.random() * (b - a) + a;
-    }
-    //generate random float more likely to be close to a
-    function hyperRange(a, b) {
-      return Math.random() * Math.random() * Math.random() * (b - a) + a;
-    }
-
-    //rendering function
-    function drawCircle(ctx, circle) {
-      //circle.radius *= circleExp;
-      var radius = circle.background
-        ? (circle.radius *= circleExp)
-        : (circle.radius /= circleExp);
-      ctx.beginPath();
-      ctx.arc(circle.x, circle.y, radius * circleExp, 0, 2 * Math.PI, false);
-      ctx.lineWidth = Math.max(
-        1,
-        (circleBorder * (radMin - circle.radius)) / (radMin - radMax)
-      );
-      ctx.strokeStyle = [
-        "rgba(",
-        circle.borderColor,
-        ",",
-        circle.opacity,
-        ")",
-      ].join("");
-      if (circle.filled == "full") {
-        ctx.fillStyle = [
-          "rgba(",
-          circle.borderColor,
-          ",",
-          circle.background ? circle.opacity * 0.8 : circle.opacity,
-          ")",
-        ].join("");
-        ctx.fill();
-        ctx.lineWidth = 0;
-        ctx.strokeStyle = ["rgba(", circle.borderColor, ",", 0, ")"].join("");
-      }
-      ctx.stroke();
-      if (circle.filled == "concentric") {
-        ctx.beginPath();
-        ctx.arc(circle.x, circle.y, radius / 2, 0, 2 * Math.PI, false);
-        ctx.lineWidth = Math.max(
-          1,
-          (circleBorder * (radMin - circle.radius)) / (radMin - radMax)
-        );
-        ctx.strokeStyle = [
-          "rgba(",
-          circle.color,
-          ",",
-          circle.opacity,
-          ")",
-        ].join("");
-        ctx.stroke();
-      }
-      circle.x += circle.speedx;
-      circle.y += circle.speedy;
-      if (circle.opacity < (circle.background ? maxOpacity : 1))
-        circle.opacity += 0.01;
-      circle.ttl--;
-    }
-
-    //initializing function
-    function init() {
-      window.requestAnimationFrame(draw);
-    }
-
-    //rendering function
-    function draw() {
-      if (circlePulse) {
-        if (circleExp < circleExpMin || circleExp > circleExpMax)
-          circleExpSp *= -1;
-        circleExp += circleExpSp;
-      }
-      var ctxfr = document.getElementById("canvas").getContext("2d");
-      var ctxbg = document.getElementById("canvasbg").getContext("2d");
-
-      ctxfr.globalCompositeOperation = "destination-over";
-      ctxfr.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
-      ctxbg.globalCompositeOperation = "destination-over";
-      ctxbg.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
-
-      ctxfr.save();
-      ctxfr.translate(canvas.width / 2, canvas.height / 2);
-      ctxbg.save();
-      ctxbg.translate(canvas.width / 2, canvas.height / 2);
-
-      //function to render each single circle, its connections and to manage its out of boundaries replacement
-      function renderPoints(ctx, arr) {
-        for (var i = 0; i < arr.length; i++) {
-          var circle = arr[i];
-          //checking if out of boundaries
-          if (circle.ttl < 0) {
-          }
-          var xEscape = canvas.width / 2 + circle.radius,
-            yEscape = canvas.height / 2 + circle.radius;
-          if (circle.ttl < -20) arr[i].init(arr[i].background);
-          //if (Math.abs(circle.y) > yEscape || Math.abs(circle.x) > xEscape) arr[i].init(arr[i].background);
-          drawCircle(ctx, circle);
-        }
-        for (var i = 0; i < arr.length - 1; i++) {
-          for (var j = i + 1; j < arr.length; j++) {
-            var deltax = arr[i].x - arr[j].x;
-            var deltay = arr[i].y - arr[j].y;
-            var dist = Math.pow(Math.pow(deltax, 2) + Math.pow(deltay, 2), 0.5);
-            //if the circles are overlapping, no laser connecting them
-            if (dist <= arr[i].radius + arr[j].radius) continue;
-            //otherwise we connect them only if the dist is < linkDist
-            if (dist < linkDist) {
-              var xi =
-                (arr[i].x < arr[j].x ? 1 : -1) *
-                Math.abs((arr[i].radius * deltax) / dist);
-              var yi =
-                (arr[i].y < arr[j].y ? 1 : -1) *
-                Math.abs((arr[i].radius * deltay) / dist);
-              var xj =
-                (arr[i].x < arr[j].x ? -1 : 1) *
-                Math.abs((arr[j].radius * deltax) / dist);
-              var yj =
-                (arr[i].y < arr[j].y ? -1 : 1) *
-                Math.abs((arr[j].radius * deltay) / dist);
-              ctx.beginPath();
-              ctx.moveTo(arr[i].x + xi, arr[i].y + yi);
-              ctx.lineTo(arr[j].x + xj, arr[j].y + yj);
-              var samecolor = arr[i].color == arr[j].color;
-              ctx.strokeStyle = [
-                "rgba(",
-                arr[i].borderColor,
-                ",",
-                Math.min(arr[i].opacity, arr[j].opacity) *
-                  ((linkDist - dist) / linkDist),
-                ")",
-              ].join("");
-              ctx.lineWidth =
-                (arr[i].background ? lineBorder * backgroundMlt : lineBorder) *
-                ((linkDist - dist) / linkDist); //*((linkDist-dist)/linkDist);
-              ctx.stroke();
-            }
-          }
-        }
-      }
-
-      var startTime = Date.now();
-      renderPoints(ctxfr, points);
-      renderPoints(ctxbg, pointsBack);
-      let deltaT = Date.now() - startTime;
-
-      ctxfr.restore();
-      ctxbg.restore();
-
-      window.requestAnimationFrame(draw);
-    }
-
-    init();
-  },
+  mounted() {},
 };
 </script>
 <style scoped>
 .rainbow {
-  font-size: 8vw;
+  font-size: 5vw;
   text-align: center;
   text-decoration: underline;
   font-family: "MuseoModerno";
@@ -339,51 +123,6 @@ export default {
   animation: rainbow_animation 6s ease-in-out infinite;
   background-size: 400% 100%;
 }
-#wrapper {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  display: table;
-  position: absolute;
-}
-
-#title {
-  display: table-cell;
-  vertical-align: middle;
-  z-index: 999;
-}
-
-#title h2 {
-  color: #fff;
-  font-family: "museo-slab";
-}
-
-#title h3 {
-  color: #fff;
-  font-family: "museo-sans";
-  font-weight: 300;
-}
-
-#wrapper canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1950px;
-  height: auto;
-}
-
-#canvas {
-  z-index: 1;
-}
-#canvasbg {
-  z-index: -10;
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  filter: blur(3px);
-  opacity: 0.6;
-}
-
 p {
   height: 50px;
   float: left;
@@ -397,22 +136,32 @@ b {
 }
 .text-eff {
   display: inline-block;
-  color: #e74c3c;
+  color: #5ebcfe;
   position: relative;
   white-space: nowrap;
   top: 0;
   left: 0;
   animation: move 5s;
   animation-iteration-count: infinite;
-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 @keyframes move {
-0%  { top: 0px; }
-20% { top: -50px; }
-40% { top: -100px; }
-60% { top: -150px; }
-80% { top: -200px; }
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
 }
 @keyframes rainbow_animation {
   0%,
