@@ -1,6 +1,6 @@
 <template>
   <section class="text-gray-600 body-font relative px-4">
-    <div class=" mx-auto flex sm:flex-nowrap flex-wrap">
+    <div class="mx-auto flex sm:flex-nowrap flex-wrap">
       <div
         class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
       >
@@ -16,7 +16,9 @@
           src="https://maps.google.com/maps?q=sunshine%20commercial%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
           style="filter: 0 opacity(0.8)"
         ></iframe>
-        <div class="bg-white relative flex flex-wrap py-2 rounded shadow-md">
+        <div
+          class="invisible md:visible bg-white relative flex flex-wrap py-2 rounded shadow-md"
+        >
           <div class="lg:w-1/2 px-6">
             <h2
               class="title-font font-semibold text-gray-900 tracking-widest text-xs"

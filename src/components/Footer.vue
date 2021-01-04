@@ -1,6 +1,6 @@
 <template>
   <div class="p-4" style="background-color: #262b2e">
-    <div class="grid grid-cols-4 place-items-center gap-8 py-10">
+    <div class="md:grid grid-cols-4 place-items-center gap-8 py-10">
       <div class="text-white space-y-4">
         <img src="@/assets/logo1.png" alt="" />
         <div>AdsMidea © 2021</div>

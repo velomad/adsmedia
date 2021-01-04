@@ -65,8 +65,14 @@
                 alt="Workflow"
               />
               <div>
-                <h4 class="text-4xl font-bold">Adsmedia</h4>
-                <p>Digital Marketing</p>
+                <h4 class="text-4xl font-bold text-gray-600 font-mono">
+                  Adsmedia
+                </h4>
+                <p
+                  class="uppercase text-xs tracking-widest text-center text-gray-400"
+                >
+                  Digital Marketing
+                </p>
               </div>
 
               <!-- <img
@@ -97,18 +103,20 @@
                 </button>
               </div> -->
 
-              <nav class="flex space-x-4 items-center shift">
-                <ul class="flex">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Why We ?</a></li>
-                  <li><a href="#">Affiliate</a></li>
-                  <li><a href="#">Contact</a></li>
+              <nav class="invisible md:visible flex space-x-4 items-center shift">
+                <ul
+                  class="flex uppercase text-sm tracking-widest text-center text-gray-600 space-x-2"
+                >
+                  <li><a class="p-3" href="#">Home</a></li>
+                  <li><a class="p-3" href="#">About</a></li>
+                  <li><a class="p-3" href="#">Services</a></li>
+                  <li><a class="p-3" href="#">Why We ?</a></li>
+                  <li><a class="p-3" href="#">Affiliate</a></li>
+                  <li><a class="p-3" href="#">Contact</a></li>
                 </ul>
                 <a href="https://adsmidea.offer18.com/m/login" target="_blank">
                   <div
-                    class="bg-gray-900 cursor-pointer p-2 rounded-lg text-white"
+                    class="uppercase text-sm tracking-widest bg-gray-900 cursor-pointer p-2 rounded-lg text-white"
                   >
                     Login
                   </div>
@@ -279,7 +287,7 @@ nav.shift ul li a:hover:after {
   height: 100%;
 }
 
-nav ul li a {
+/* nav ul li a {
   display: block;
   padding: 8px;
   text-decoration: none;
@@ -287,7 +295,7 @@ nav ul li a {
   font-weight: 500;
   text-transform: capitalize;
   margin: 0 10px;
-}
+} */
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
