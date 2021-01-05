@@ -6,11 +6,10 @@
     <div class="element">
       <div
         style="text-shadow: 3px 4px #ccc"
-        class="text-center text-gray-600 text-5xl capitalize"
+        class="text-center text-gray-600 text-4xl capitalize"
       >
         Excellence Skills
       </div>
-
       <div
         class="space-y-8 md:grid grid-cols-2 gap-6 px-4"
         v-view.once="onceHandler"
@@ -117,7 +116,7 @@ export default {
 
 .element {
   width: 90vw;
-  height: 50vh;
+  height: 70vh;
   margin: 0 auto;
 }
 </style>

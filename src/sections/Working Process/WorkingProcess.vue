@@ -1,113 +1,95 @@
 <template>
-  <header
-    class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img"
-  >
-    <div class="p-5 text-2xl text-white bg-opacity-50 rounded-xl">
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="text-5xl font-medium title-font mb-4 text-white">
-              Working Process
-            </h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom prism
-              food truck ugh squid celiac humblebrag.
-            </p>
+  <div class="custom-img flex bg-gray-300 h-screen justify-center items-center">
+    <div class="space-y-36">
+      <div class="text-white text-center font-semibold text-4xl">
+        Working Process
+      </div>
+      <div></div>
+      <div class="flex space-x-36">
+        <div class="space-y-4">
+          <div
+            class="w-36 h-36 rounded-full wrapper ring-2 ring-gray-100 flex justify-center items-center"
+          >
+            <div class="tooltip">
+              we understand the complete requirement before execution
+            </div>
+            <div
+              class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+            >
+              <img src="/img/user.svg" alt="" width="50" />
+            </div>
           </div>
-          <div class="flex flex-wrap -m-4 text-center">
-            <div class="p-16 md:w-1/4 sm:w-1/2 w-full">
-              <div
-                class="ring-4 ring-pink-300 ring-inset border-white px-6 py-6 rounded-full"
-              >
-                <div class="p-1 rounded-full">
-                  <svg
-                    class="text-white w-12 h-12 mb-3 inline-block"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
-                    ></path>
-                  </svg>
-                  <h2 class="title-font font-medium text-3xl text-gray-900">
-                    2.7K
-                  </h2>
-                  <p class="leading-relaxed text-white">MEETINGS</p>
-                </div>
-              </div>
-            </div>
-            <div class="p-16 md:w-1/4 sm:w-1/2 w-full">
-              <div
-                class="ring-4 ring-pink-300 ring-inset px-4 py-6 rounded-full"
-              >
-                <svg
-                  class="text-white w-12 h-12 mb-3 inline-block"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">
-                  1.3K
-                </h2>
-                <p class="leading-relaxed text-white">PLANNINGS</p>
-              </div>
-            </div>
-            <div class="p-16 md:w-1/4 sm:w-1/2 w-full">
-              <div
-                class="ring-4 ring-pink-300 ring-inset px-4 py-6 rounded-full"
-              >
-                <svg
-                  class="text-white w-12 h-12 mb-3 inline-block"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
-                  ></path>
-                </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">
-                  74
-                </h2>
-                <p class="leading-relaxed text-white">EXECUTIONS</p>
-              </div>
-            </div>
-            <div class="p-16 md:w-1/4 sm:w-1/2 w-full">
-              <div
-                class="ring-4 ring-pink-300 ring-inset px-4 py-6 rounded-full"
-              >
-                <svg
-                  class="text-white w-12 h-12 mb-3 inline-block"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">
-                  46
-                </h2>
-                <p class="leading-relaxed text-white">RESULTS</p>
-              </div>
-            </div>
+          <div
+            class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+          >
+            Meetings
           </div>
         </div>
-      </section>
+        <div class="space-y-4">
+          <div
+            class="w-36 h-36 rounded-full ring-2 wrapper ring-gray-100 flex justify-center items-center"
+          >
+            <div class="tooltip">
+              planning is always done keeping the end goal in mind and plan B in
+              place
+            </div>
+            <div
+              class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+            >
+              <img src="/img/diagram.svg" alt="" width="50" />
+            </div>
+          </div>
+          <div
+            class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+          >
+            plannings
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div
+            class="w-36 h-36 wrapper rounded-full ring-2 ring-gray-100 flex justify-center items-center"
+          >
+            <div class="tooltip">
+              keeping a close eye on execution help us optimize the campaign at
+              every stage
+            </div>
+
+            <div
+              class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+            >
+              <img src="/img/aerodynamic.svg" alt="" width="50" />
+            </div>
+          </div>
+          <div
+            class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+          >
+            executions
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div
+            class="w-36 wrapper h-36 rounded-full ring-2 ring-gray-100 flex justify-center items-center"
+          >
+            <div class="tooltip">
+              we believe in customer delight and make sure the execution is
+              error free
+            </div>
+
+            <div
+              class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+            >
+              <img src="/img/magic-wand.svg" alt="" width="50" />
+            </div>
+          </div>
+          <div
+            class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+          >
+            results
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+  </div>
 </template>
 <script>
 export default {
@@ -118,5 +100,93 @@ export default {
 .custom-img {
   background-image: url("/img/workingprocess.jpg");
   object-fit: contain;
+}
+.wrapper {
+  /* text-transform: uppercase;
+  background: #ececec;
+  color: #555;
+  cursor: help;
+  font-family: "Gill Sans", Impact, sans-serif;
+  font-size: 20px;
+  margin: 100px 75px 10px 75px;
+  padding: 15px 20px;
+  position: relative;
+  text-align: center;
+  width: 200px; */
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+.wrapper .tooltip {
+  background: #5ebcfe;
+  bottom: 100%;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 20px;
+  pointer-events: none;
+  position: absolute;
+  width: 250px;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.wrapper .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* CSS Triangles - see Trevor's post */
+.wrapper .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid #5ebcfe 10px;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+
+.wrapper:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrapper .tooltip {
+  display: none;
+}
+
+.lte8 .wrapper:hover .tooltip {
+  display: block;
 }
 </style>

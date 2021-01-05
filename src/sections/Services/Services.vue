@@ -1,24 +1,18 @@
 <template>
   <div style="background-color: #f5f5f5">
-    <div class="flex flex-col text-center w-full pt-20">
-      <h2
-        class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"
-      >
-        Adsmidea
-      </h2>
+    <div class="flex-col space-y-4 text-center w-full py-10">
       <h1
-        class="text-5xl font-semibold title-font mb-2 text-gray-900"
+        style="text-shadow: 3px 4px #ccc"
+        class="text-center text-gray-600 text-4xl capitalize"
       >
         OUR SERVICES
       </h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+      <p class="lg:w-2/3 mx-auto text-gray-500 leading-relaxed text-base">
         Adsmidea Media, a holistic programmatic ecosystem helps connect brands
         with their respective publisher across all formats and devices.
       </p>
     </div>
-    <div
-      class="space-y-6 md:grid grid-cols-3 gap-10 py-10 px-4"
-    >
+    <div class="space-y-6 md:grid grid-cols-3 gap-10 py-10 px-4">
       <div v-for="(item, index) in test" :key="index" class="mt-6">
         <Card
           :heading="item.heading"
