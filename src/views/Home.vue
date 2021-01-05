@@ -9,6 +9,9 @@
     <div id="services">
       <ServicesScreen />
     </div>
+    <div id="happpy-clients">
+      <HappyClients />
+    </div>
     <div id="why-we">
       <WhyWe />
     </div>
@@ -36,6 +39,7 @@ import Skills from "../sections/Excellence/Excellence";
 import WorkingProcess from "../sections/Working Process/WorkingProcess";
 import WhyWe from "../sections/WhyWe/WhyWe";
 import Footer from "../components/Footer";
+import HappyClients from "../sections/HappyClients/HappyClients";
 
 export default {
   name: "Home",
@@ -44,6 +48,7 @@ export default {
     AboutScreen,
     ServicesScreen,
     ContactUs,
+    HappyClients,
     Skills,
     WorkingProcess,
     WhyWe,
