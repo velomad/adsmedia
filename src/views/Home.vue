@@ -1,25 +1,27 @@
 <template>
   <div>
     <div id="home">
-    <HomeScreen />
+      <HomeScreen />
     </div>
     <div id="about-section">
       <AboutScreen />
     </div>
+
+    <div id="why-we">
+      <WhyWe />
+    </div>
     <div id="services">
       <ServicesScreen />
     </div>
-    <div id="happpy-clients">
-      <HappyClients />
-    </div>
-    <div id="why-we">
-      <WhyWe />
+
+    <div id="working">
+      <WorkingProcess />
     </div>
     <div id="skills">
       <Skills />
     </div>
-    <div id="working">
-      <WorkingProcess />
+    <div id="happpy-clients">
+      <HappyClients />
     </div>
     <div id="contact">
       <ContactUs />

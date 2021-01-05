@@ -1,15 +1,16 @@
 <template>
-  <div class="flex bg-gray-900 h-screen justify-center items-center">
+  <div class="flex bg-gray-900 h-screen justify-center items-center"
+  style="background:url(/img/padded.png)"
+  >
     <div class="space-y-20">
       <div class="flex-col space-y-10 text-center w-full">
         <h1
-          style="text-shadow: 3px 4px #ccc"
-          class="text-center text-gray-600 text-4xl capitalize"
+          class="text-center text-white text-5xl capitalize"
         >
           Our Happy Customers
         </h1>
         <p
-          class="lg:w-2/3 mx-auto leading-relaxed tracking-widest font-bold text-sm"
+          class="lg:w-2/3 mx-auto leading-relaxed tracking-widest text-gray-400 font-bold text-sm"
         >
           THE UPSHOT OF ALL THE HARDWORK
         </p>
