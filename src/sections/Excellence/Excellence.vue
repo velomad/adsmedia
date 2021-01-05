@@ -1,10 +1,15 @@
 <template>
-  <div class="space-y-8 container-1" style="background:url(/img/leaves-pattern.png)">
+  <div
+    class="flex h-screen justify-center items-center"
+    style="background: url(/img/leaves-pattern.png)"
+  >
     <div class="element">
-      <div style="text-shadow:3px 4px #ccc" class="text-center text-gray-600  text-5xl capitalize">
+      <div
+        style="text-shadow: 3px 4px #ccc"
+        class="text-center text-gray-600 text-4xl capitalize"
+      >
         Excellence Skills
       </div>
-
       <div
         class="space-y-8 md:grid grid-cols-2 gap-6 px-4"
         v-view.once="onceHandler"
@@ -96,21 +101,22 @@ export default {
 };
 </script>
 <style scoped>
-.container-1{
+.container-1 {
   display: grid;
   align-items: center;
   justify-content: center;
 }
 
 /* just aesthetics */
-.container-1{
-  width:100%;
+.container-1 {
+  width: 100%;
   height: 100vh;
   margin: auto;
 }
 
-.element{
-  width: 90vw; height: 50vh;
+.element {
+  width: 90vw;
+  height: 70vh;
   margin: 0 auto;
 }
 </style>

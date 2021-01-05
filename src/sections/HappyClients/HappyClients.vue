@@ -1,32 +1,30 @@
 <template>
-  <div style="background:url(/img/geometric-leaves.png)">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h2
-        class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"
-      >
-        Adsmidea
-      </h2>
-      <h1
-        class="text-5xl font-medium title-font mb-4 text-gray-600"
-      >
-        Our Happy Customers
-      </h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-        Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-        gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-        heard of them man bun deep jianbing selfies heirloom prism food truck
-        ugh squid celiac humblebrag.
-      </p>
-    </div>
-    <infinite-slide-bar>
-      <div class="items">
-        <div v-for="items in Brands" :key="items.key">
-          <div class="f-left pd-t-8px mg-r-10px">
-            <img :src="'/img/' + items.icon" />
-          </div>
-        </div>
+  <div class="flex bg-gray-900 h-screen justify-center items-center"
+  style="background:url(/img/padded.png)"
+  >
+    <div class="space-y-20">
+      <div class="flex-col space-y-10 text-center w-full">
+        <h1
+          class="text-center text-white text-5xl capitalize"
+        >
+          Our Happy Customers
+        </h1>
+        <p
+          class="lg:w-2/3 mx-auto leading-relaxed tracking-widest text-gray-400 font-bold text-sm"
+        >
+          THE UPSHOT OF ALL THE HARDWORK
+        </p>
       </div>
-    </infinite-slide-bar>
+      <div style="width: 95vw">
+        <infinite-slide-bar duration="25s">
+          <div class="flex justify-between items-center">
+            <div v-for="items in Brands" :key="items.key">
+              <img :src="'/img/' + items.icon" width="200" class="ml-32" />
+            </div>
+          </div>
+        </infinite-slide-bar>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -43,17 +41,52 @@ export default {
           key: 2,
         },
         {
-            icon: "Flipkart.png",
-            key: 3
-        }
+          icon: "Flipkart.png",
+          key: 3,
+        },
+        {
+          icon: "HDFC.png",
+          key: 4,
+        },
+        {
+          icon: "Indusland.png",
+          key: 5,
+        },
+        {
+          icon: "kotak811.png",
+          key: 6,
+        },
+        {
+          icon: "PAYTM.png",
+          key: 7,
+        },
+        {
+          icon: "RBI.png",
+          key: 8,
+        },
+        {
+          icon: "rediff.png",
+          key: 9,
+        },
+        {
+          icon: "Snapdeal.png",
+          key: 10,
+        },
+        {
+          icon: "TimesInternet.png",
+          key: 11,
+        },
+        {
+          icon: "yatra.png",
+          key: 12,
+        },
       ],
     };
   },
 };
 </script>
 <style scoped>
-.items {
-  display: flex;
-  justify-content: space-around;
+.scroll {
+  overflow-x: hidden;
 }
 </style>
