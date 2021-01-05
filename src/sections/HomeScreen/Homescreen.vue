@@ -20,7 +20,7 @@
               >
             </h3>
             <p class="text-3xl text-white">DIGITAL CONSULTING AGENCY</p>
-            <b class="text-4xl text-white text-left">
+            <!-- <b class="text-4xl text-white text-left">
               <span class="text-eff">
                 web developer<br />
                 css cowboy<br />
@@ -28,7 +28,20 @@
                 box inside a box<br />
                 part of the problem
               </span>
-            </b>
+            </b> -->
+            <div class="w-96">
+              <div class="container-text border-stick">
+                <div class="v-slider-frame">
+                  <ul class="v-slides">
+                    <li class="v-slide text-left font-bold">TRUSTED</li>
+                    <li class="v-slide text-left font-bold">RELIABLE</li>
+                    <li class="v-slide text-left font-bold">RESPONSIBLE</li>
+                    <li class="v-slide text-left font-bold">EXPERIENCED</li>
+                    <li class="v-slide text-left font-bold">EFFICIENT</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="flex space-x-4 flex-row w-full">
               <button
                 class="px-3 mt-5 items-center shadow-md rounded-lg bg-white space-x-2 py-2 justify-center flex w-32"
@@ -89,11 +102,33 @@
   </div>
 </template>
 <script>
+// import $ from 'jquery';
 import Navbar from "../../components/Navbar/Navbar.vue";
 export default {
   name: "Home",
   components: { Navbar },
-  mounted() {},
+  mounted() {
+    //text effect
+    var vsOpts = {
+      $slides: $(".v-slide"),
+      $list: $(".v-slides"),
+      duration: 14,
+      lineHeight: 50,
+    };
+
+    var vSlide = new TimelineMax({
+      paused: true,
+      repeat: -1,
+    });
+
+    vsOpts.$slides.each(function (i) {
+      vSlide.to(vsOpts.$list, vsOpts.duration / vsOpts.$slides.length, {
+        y: i * -1 * vsOpts.lineHeight,
+        ease: Elastic.easeOut.config(1.5, 4),
+      });
+    });
+    vSlide.play();
+  },
 };
 </script>
 <style scoped>
@@ -144,6 +179,41 @@ b {
   animation: move 5s;
   animation-iteration-count: infinite;
   animation-delay: 1s;
+}
+.v-slider-frame {
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+ul.v-slides {
+  list-style-type: none;
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+  padding: 0;
+}
+
+.v-slide {
+  font-size: 4vw;
+  line-height: 50px;
+  color: rgb(16, 154, 209);
+}
+
+.border-stick {
+  margin: 0;
+  padding-bottom: 7px;
+  position: relative;
+  border-bottom: 4px solid #ccc;
+}
+
+.border-stick:before {
+  position: absolute;
+  background: greenyellow;
+  height: 4px;
+  content: "";
+  width: 150px;
+  bottom: -4px;
+  left: 0;
 }
 
 @keyframes move {
