@@ -6,7 +6,7 @@
           <div
             class="text-6xl text-left font-semibold text-gray-700 ml-0 md:ml-8 lg:ml-8"
           >
-            who we are ?
+            Who we are ?
           </div>
           <div class="text-justify text-md text-gray-600">
             Adsmidea is an interactive Digital Consulting Agency based in mumbai
