@@ -1,8 +1,8 @@
 <template>
-  <div class="flex h-screen justify-center items-center">
+  <div class="flex py-28 justify-center items-center">
     <div class="px-4 inner">
-      <div class="grid place-items-center md:grid-cols-2 gap-10">
-        <div class="space-y-4 space-x-0 md:space-x-8 lg:space-x-8">
+      <div class="grid place-items-center md:grid-cols-2 gap-8">
+        <div class="space-y-8 space-x-0 md:space-x-8 lg:space-x-8">
           <div
             class="text-6xl text-left font-semibold text-gray-700 ml-0 md:ml-8 lg:ml-8"
           >
@@ -11,32 +11,25 @@
           <div class="text-justify text-md text-gray-600">
             Adsmidea is an interactive Digital Consulting Agency based in mumbai
             providing an exclusive service in Digital Marketing also Rated as
-            one of the fastest growing affiliated network in India. we are a
-            team of experienced digital marketers. We are specialist in high
-            quality analysis to drive every aspect of your brandâ€™s
-            marketingâ€“planning, technology & creative content. Now a days
-            Internet marketing leading an important role in every business. We
-            are dedicated to improving the user-advertising experience by
-            implementing high standards for ad and content quality, and working
-            with industry bodies to develop standards and guidelines Adsmidea is
-            the most trusted performance marketing partner for advertisers
+            one of the fastest growing affiliated network in India. We are
+            specialist in high quality analysis to drive every aspect of your
+            brands, marketing, planning, technology & creative content. Adsmidea
+            is the most trusted performance marketing partner for advertisers
             Beacause our ideology is to work as business partners for better ROI
-            rather than just being the delivery partners. We believe in building
-            healthier, benificial customer relationship with our aim to deliver
-            peak performance. The Digital Edge! We believe in delivering
-            performance, transparently and innovatively.
+            rather than just being the delivery partners.The Digital Edge! We
+            believe in delivering performance, transparently and innovatively.
           </div>
           <div class="flex justify-center">
             <div class="flex -m-4">
               <div class="p-4 md:w-2/2 w-full">
                 <div class="flex">
                   <div
-                    style="background-color: #c6e6fd"
+                    style="background-color: #e8f4fe"
                     class="inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                   >
                     <svg
                       class="w-6 h-6"
-                      style="color: #63b0e3"
+                      style="color: #ed7265"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -46,9 +39,11 @@
                       ></path>
                     </svg>
                   </div>
-                  <h4 class="text-2xl font-semibold ml-4">Increase</h4>
+                  <h4 class="text-2xl text-gray-700 font-semibold ml-4">
+                    Increase
+                  </h4>
                 </div>
-                <p class="pt-4 md:w-2/2 w-full font-semibold">
+                <p class="pt-4 md:w-2/2 w-full text-gray-500 font-semibold">
                   We create your presence. Build credibility and trust.
                 </p>
                 <!-- <button
@@ -78,17 +73,19 @@
                       ></path>
                     </svg>
                   </div>
-                  <h4 class="text-2xl font-semibold ml-4">Brand</h4>
+                  <h4 class="text-2xl text-gray-700 font-semibold ml-4">
+                    Brand
+                  </h4>
                 </div>
-                <p class="p-4 md:w-2/2 w-full font-semibold">
+                <p class="p-4 md:w-2/2 text-gray-500 w-full font-semibold">
                   We create your presence. Build credibility.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="mb-40 grid md:grid-cols-2 space-x-2 gap-4">
-          <div class="floating">
+        <div class="grid md:grid-cols-2 space-x-2 gap-4">
+          <!-- <div class="floating">
             <div
               style="
                 background: #c9e6fd;
@@ -105,19 +102,18 @@
                   <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
                 </div>
               </div>
+              <div class="mt-4 mb-10">
+                <p class="text-white boxText">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
+                </div>
+              </div>
               <h3 class="text-xs uppercase text-white">Current lesson:</h3>
-              <h2 class="tracking-wide text-white">
-                Object in JavaScript
-                <br />
-                (Challenge)
-              </h2>
-              <button
-                class="bg-orange-400 py-3 px-8 mt-4 rounded text-sm text-white font-semibold hover:bg-opacity-75"
-              >
-                Go to lesson
-              </button>
             </div>
-          </div>
+          </div> -->
+
           <div class="floating2">
             <div
               style="
@@ -137,19 +133,141 @@
                   ></div>
                 </div>
               </div>
+              <div class="mt-4 mb-10">
+                <p class="text-white boxText">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
+                </div>
+              </div>
               <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
-              <h2 class="tracking-wide txt-purple">
-                Object in JavaScript
-                <br />
-                (Challenge)
-              </h2>
-              <button
-                class="text-white bg-orange-400 py-3 px-8 mt-4 rounded text-sm font-semibold hover:bg-opacity-75"
-              >
-                Go to lesson
-              </button>
             </div>
           </div>
+
+          <div class="floating2">
+            <div
+              style="
+                background: #efdff7;
+                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
+              "
+              class="p-3 rounded-2xl w-full shadow-xl"
+            >
+              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
+              <div class="mt-4 mb-10">
+                <p class="txt-purple">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div
+                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
+                  ></div>
+                </div>
+              </div>
+              <div class="mt-4 mb-10">
+                <p class="text-white boxText">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
+                </div>
+              </div>
+              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
+            </div>
+          </div>
+
+          <div class="floating2">
+            <div
+              style="
+                background: #efdff7;
+                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
+              "
+              class="p-3 rounded-2xl w-full shadow-xl"
+            >
+              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
+              <div class="mt-4 mb-10">
+                <p class="txt-purple">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div
+                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
+                  ></div>
+                </div>
+              </div>
+              <div class="mt-4 mb-10">
+                <p class="text-white boxText">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
+                </div>
+              </div>
+              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
+            </div>
+          </div>
+
+          <div class="floating2">
+            <div
+              style="
+                background: #efdff7;
+                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
+              "
+              class="p-3 rounded-2xl w-full shadow-xl"
+            >
+              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
+              <div class="mt-4 mb-10">
+                <p class="txt-purple">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div
+                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
+                  ></div>
+                </div>
+              </div>
+              <div class="mt-4 mb-10">
+                <p class="text-white boxText">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
+                </div>
+              </div>
+              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
+            </div>
+          </div>
+
+          <!-- <div class="floating2">
+            <div
+              style="
+                background: #efdff7;
+                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
+              "
+              class="p-3 rounded-2xl w-full shadow-xl"
+            >
+              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
+              <div class="mt-4 mb-10">
+                <p class="txt-purple">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div
+                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
+                  ></div>
+                </div>
+              </div>
+              <div class="mt-4 mb-10">
+                <p class="text-white boxText">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
+                </div>
+              </div>
+              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
+            </div>
+          </div> -->
         </div>
       </div>
     </div>
