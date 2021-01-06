@@ -44,7 +44,7 @@
             </div>
             <div class="flex space-x-4 flex-row w-full">
               <button
-                class="px-3 mt-5 items-center shadow-md rounded-lg bg-white space-x-2 py-2 justify-center flex w-32"
+                class="px-3 mt-5 items-center shadow-md bg-white space-x-2 py-2 justify-center flex w-32 rounded-lg hover:bg-gray-500 hover:text-white hover:bg-opacity-50 parent-login-btn"
               >
                 <svg
                   class="w-6 h-6"
@@ -58,13 +58,13 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="text-gray-800 font-semibold">Login</span>
+                <span class="text-gray-800 font-semibold home-login-btn">Login</span>
               </button>
               <button
-                class="px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50 space-x-2 py-2 justify-center flex w-auto"
+                class="px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50 space-x-2 py-2 justify-center flex w-auto hover:bg-white  parent-cont-btn"
               >
                 <svg
-                  class="w-6 h-6 text-white"
+                  class="w-6 h-6 text-white cont-icon"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -77,7 +77,7 @@
                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-                <span class="text-white font-semibold">Contact Us</span>
+                <span class="text-white font-semibold home-cont-btn">Contact Us</span>
               </button>
             </div>
           </div>
@@ -94,7 +94,7 @@
       >
         <source
           class="h-screen object-contain"
-          src="/img/homescreen.mp4"
+          src="/img/home-bk.mp4"
           type="video/mp4"
         />
       </video>
@@ -215,7 +215,15 @@ ul.v-slides {
   bottom: -4px;
   left: 0;
 }
-
+.parent-login-btn:hover > .home-login-btn{
+  color: #fff;
+}
+.parent-cont-btn:hover > .home-cont-btn{
+  color: #000 !important;
+}
+.parent-cont-btn:hover > .cont-icon{
+  color: #000 !important;
+}
 @keyframes move {
   0% {
     top: 0px;

@@ -59,6 +59,7 @@
               >Name</label
             >
             <input
+              v-model="name"
               type="text"
               id="name"
               name="name"
@@ -70,6 +71,7 @@
               >Email</label
             >
             <input
+              v-model="email"
               type="email"
               id="email"
               name="email"
@@ -81,15 +83,18 @@
               >Message</label
             >
             <textarea
+              v-model="message"
               id="message"
               name="message"
               class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             ></textarea>
           </div>
           <button
+            @click="handleContactSubmit()"
             class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
-            SEND
+            <span v-if="issubmited">SENDING...</span>
+            <span v-else>SEND</span>
           </button>
           <p class="text-xs text-gray-500 mt-3">
             Chicharrones blog helvetica normcore iceland tousled brook viral
@@ -101,7 +106,39 @@
   </div>
 </template>
 <script>
+import PostContactForm from "../../REST/Contact.js";
 export default {
   name: "ContactUs",
+  data() {
+    return {
+      name: "",
+      email: "",
+      message: "",
+      issubmited: false,
+    };
+  },
+  methods: {
+    handleContactSubmit() {
+      this.issubmited = true
+      let api_url = "api/user/contact";
+      let data = {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      };
+      PostContactForm.postContactFormData(api_url, data)
+        .then((response) => {
+          alert(response.msg);
+          this.name = "";
+          this.email = "";
+          this.message = "";
+          this.issubmited = false
+          console.log("Response Data...", response);
+        })
+        .catch((err) => {
+          this.issubmited = false
+        });
+    },
+  },
 };
 </script>
