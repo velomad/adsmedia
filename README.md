@@ -1,4 +1,4 @@
-# adsmedia
+# adsrevenue
 
 ## Project setup
 ```

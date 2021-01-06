@@ -66,7 +66,7 @@
               />
               <div>
                 <h4 class="text-4xl font-bold text-gray-600 font-mono">
-                  Adsmedia
+                  Adsrevenue
                 </h4>
                 <p
                   class="uppercase text-xs tracking-widest text-center text-gray-400"
@@ -103,17 +103,33 @@
                 </button>
               </div> -->
 
-              <nav class="invisible md:visible flex space-x-4 items-center shift">
+              <nav
+                class="invisible md:visible flex space-x-4 items-center shift"
+              >
                 <ul
                   class="flex uppercase text-sm tracking-widest text-center text-gray-600 space-x-2"
                 >
-                  <li><a class="p-3" v-scroll-to="'#home'" href="#">Home</a></li>
-                  <li><a class="p-3" v-scroll-to="'#about-section'"  href="#">About</a></li>
-                  <li><a class="p-3" v-scroll-to="'#services'" href="#">Services</a></li>
-                  <li><a class="p-3" v-scroll-to="'#why-we'" href="#">Why We ?</a></li>
+                  <li>
+                    <a class="p-3" v-scroll-to="'#home'" href="#">Home</a>
+                  </li>
+                  <li>
+                    <a class="p-3" v-scroll-to="'#about-section'" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a class="p-3" v-scroll-to="'#services'" href="#"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="p-3" v-scroll-to="'#why-we'" href="#">Why We ?</a>
+                  </li>
                   <li><a class="p-3" href="#">Affiliate</a></li>
                   <li><a class="p-3" href="#">Publisher</a></li>
-                  <li><a class="p-3" v-scroll-to="'#contact'" href="#">Contact</a></li>
+                  <li>
+                    <a class="p-3" v-scroll-to="'#contact'" href="#">Contact</a>
+                  </li>
                 </ul>
                 <a href="https://adsmidea.offer18.com/m/login" target="_blank">
                   <div

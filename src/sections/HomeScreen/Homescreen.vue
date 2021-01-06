@@ -16,7 +16,7 @@
               <span
                 style="font-family: Merriweather"
                 class="rainbow rainbow_text_animated text-3xl"
-                >Adsmidea</span
+                >Adsrevenue</span
               >
             </h3>
             <p class="text-3xl text-white">DIGITAL CONSULTING AGENCY</p>

@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-img flex bg-gray-300 h-screen justify-center items-center">
+  <div class="custom-img flex bg-gray-300 h-screen bg-fixed justify-center items-center">
     <div class="space-y-36">
       <div class="text-white text-center font-semibold text-4xl">
         Working Process
@@ -8,7 +8,7 @@
       <div class="flex space-x-36">
         <div class="space-y-4">
           <div
-            class="w-36 h-36 rounded-full wrapper ring-2 ring-gray-100 flex justify-center items-center"
+            class="w-36 h-36 rounded-full wrapper ring-1 ring-gray-100 flex justify-center items-center"
           >
             <div class="tooltip">
               we understand the complete requirement before execution
@@ -27,7 +27,7 @@
         </div>
         <div class="space-y-4">
           <div
-            class="w-36 h-36 rounded-full ring-2 wrapper ring-gray-100 flex justify-center items-center"
+            class="w-36 h-36 rounded-full ring-1 wrapper ring-gray-100 flex justify-center items-center"
           >
             <div class="tooltip">
               planning is always done keeping the end goal in mind and plan B in
@@ -47,7 +47,7 @@
         </div>
         <div class="space-y-4">
           <div
-            class="w-36 h-36 wrapper rounded-full ring-2 ring-gray-100 flex justify-center items-center"
+            class="w-36 h-36 wrapper rounded-full ring-1 ring-gray-100 flex justify-center items-center"
           >
             <div class="tooltip">
               keeping a close eye on execution help us optimize the campaign at
@@ -68,7 +68,7 @@
         </div>
         <div class="space-y-4">
           <div
-            class="w-36 wrapper h-36 rounded-full ring-2 ring-gray-100 flex justify-center items-center"
+            class="w-36 wrapper h-36 rounded-full ring-1 ring-gray-100 flex justify-center items-center"
           >
             <div class="tooltip">
               we believe in customer delight and make sure the execution is

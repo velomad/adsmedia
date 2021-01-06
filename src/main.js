@@ -7,7 +7,9 @@ import checkView from 'vue-check-view'
 import VueCarousel from 'vue-carousel';
 import InfiniteSlideBar from 'vue-infinite-slide-bar'
 import VTooltip from 'v-tooltip'
-
+import VueNumber from 'vue-number-animation'
+ 
+Vue.use(VueNumber)
 Vue.component('infinite-slide-bar', InfiniteSlideBar)
 Vue.use(VueCarousel);
 Vue.use(checkView)
