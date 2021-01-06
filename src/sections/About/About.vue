@@ -1,6 +1,6 @@
 <template>
   <div class="flex py-28 justify-center items-center">
-    <div class="px-4 inner">
+    <div class="px-20 inner">
       <div class="grid place-items-center md:grid-cols-2 gap-8">
         <div class="space-y-8 space-x-0 md:space-x-8 lg:space-x-8">
           <div
@@ -9,11 +9,11 @@
             Who we are ?
           </div>
           <div class="text-justify text-md text-gray-600">
-            Adsmidea is an interactive Digital Consulting Agency based in mumbai
+            Adsrevenue is an interactive Digital Consulting Agency based in mumbai
             providing an exclusive service in Digital Marketing also Rated as
             one of the fastest growing affiliated network in India. We are
             specialist in high quality analysis to drive every aspect of your
-            brands, marketing, planning, technology & creative content. Adsmidea
+            brands, marketing, planning, technology & creative content. Adsrevenue
             is the most trusted performance marketing partner for advertisers
             Beacause our ideology is to work as business partners for better ROI
             rather than just being the delivery partners.The Digital Edge! We
@@ -84,161 +84,191 @@
             </div>
           </div>
         </div>
-        <div class="grid md:grid-cols-2 space-x-2 gap-4">
-          <!-- <div class="floating">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="floating2">
             <div
               style="
-                background: #c9e6fd;
+                background: #ff8657;
                 box-shadow: 5px 15px 20px rgba(178, 232, 255, 0.3);
               "
               class="p-3 rounded-2xl w-full shadow-xl"
             >
-              <h1 class="text-xl font-bold boxText">Jump back in!</h1>
-              <div class="mt-4 mb-10">
-                <p class="text-white boxText">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
+              <div class="grid place-items-center py-10 space-y-4">
+                <div>
+                  <img src="/img/buy.svg" width="35" />
                 </div>
-              </div>
-              <div class="mt-4 mb-10">
-                <p class="text-white boxText">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
-                </div>
-              </div>
-              <h3 class="text-xs uppercase text-white">Current lesson:</h3>
-            </div>
-          </div> -->
 
-          <div class="floating2">
+                <number
+                  v-view.once="onceHandler"
+                  animationPaused
+                  class="text-3xl text-white"
+                  ref="number1"
+                  :from="100"
+                  :to="10000"
+                  :class="{ scaleBig: false }"
+                  :format="theFormat"
+                  :duration="5"
+                  :delay="2"
+                  easing="Power4.easeOut"
+                />
+                <div class="text-lg text-white">Impressions delivered</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating">
             <div
               style="
                 background: #efdff7;
-                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
+                box-shadow: 5px 15px 20px rgba(178, 232, 255, 0.3);
               "
               class="p-3 rounded-2xl w-full shadow-xl"
             >
-              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
-              <div class="mt-4 mb-10">
-                <p class="txt-purple">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div
-                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
-                  ></div>
+              <div class="grid place-items-center py-10 px-6 space-y-4">
+                <div>
+                  <img src="/img/buy.svg" width="35" />
                 </div>
+
+                <number
+                v-view.once="onceHandler"
+                  animationPaused
+                  class="text-3xl"
+                  style="color: #d18ef2"
+                  ref="number2"
+                  :from="100"
+                  :to="10000"
+                  :format="theFormat"
+                  :duration="5"
+                  :delay="2"
+                  easing="Power1.easeOut"
+                />
+                <div>Impressions delivered</div>
               </div>
-              <div class="mt-4 mb-10">
-                <p class="text-white boxText">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
-                </div>
-              </div>
-              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
             </div>
           </div>
 
           <div class="floating2">
             <div
               style="
-                background: #efdff7;
-                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
+                background: #c6e6fd;
+                box-shadow: 5px 15px 20px rgba(178, 232, 255, 0.3);
               "
               class="p-3 rounded-2xl w-full shadow-xl"
             >
-              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
-              <div class="mt-4 mb-10">
-                <p class="txt-purple">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div
-                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
-                  ></div>
+              <div class="grid place-items-center py-10 space-y-4">
+                <div>
+                  <img src="/img/buy.svg" width="35" />
                 </div>
+
+                <number
+                v-view.once="onceHandler"
+                  animationPaused
+                  class="text-3xl"
+                  style="color: #47b2ff"
+                  ref="number3"
+                  :from="100"
+                  :to="10000"
+                  :format="theFormat"
+                  :duration="5"
+                  :delay="2"
+                  easing="Power1.easeOut"
+                />
+                <div>Impressions delivered</div>
               </div>
-              <div class="mt-4 mb-10">
-                <p class="text-white boxText">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
-                </div>
-              </div>
-              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
             </div>
           </div>
 
-          <div class="floating2">
+          <div class="floating">
             <div
               style="
-                background: #efdff7;
-                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
+                background: #00438b;
+                box-shadow: 5px 15px 20px rgba(178, 232, 255, 0.3);
               "
               class="p-3 rounded-2xl w-full shadow-xl"
             >
-              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
-              <div class="mt-4 mb-10">
-                <p class="txt-purple">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div
-                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
-                  ></div>
+              <div class="grid place-items-center py-10 space-y-4">
+                <div>
+                  <img src="/img/buy.svg" width="35" />
                 </div>
+                <number
+                v-view.once="onceHandler"
+                  animationPaused
+                  class="text-3xl text-white"
+                  ref="number4"
+                  :from="100"
+                  :to="10000"
+                  :format="theFormat"
+                  :duration="5"
+                  :delay="2"
+                  easing="Power1.easeOut"
+                />
+                <!-- <div>100000</div> -->
+                <div class="text-lg text-white">Impressions delivered</div>
               </div>
-              <div class="mt-4 mb-10">
-                <p class="text-white boxText">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
-                </div>
-              </div>
-              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
-            </div>
-          </div>
-
-          <div class="floating2">
-            <div
-              style="
-                background: #efdff7;
-                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
-              "
-              class="p-3 rounded-2xl w-full shadow-xl"
-            >
-              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
-              <div class="mt-4 mb-10">
-                <p class="txt-purple">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div
-                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
-                  ></div>
-                </div>
-              </div>
-              <div class="mt-4 mb-10">
-                <p class="text-white boxText">Course 75% completed</p>
-                <div
-                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
-                >
-                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
-                </div>
-              </div>
-              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
             </div>
           </div>
 
           <!-- <div class="floating2">
+            <div
+              style="
+                background: #efdff7;
+                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
+              "
+              class="p-3 rounded-2xl w-full shadow-xl"
+            >
+              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
+              <div class="mt-4 mb-10">
+                <p class="txt-purple">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div
+                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
+                  ></div>
+                </div>
+              </div>
+              <div class="mt-4 mb-10">
+                <p class="text-white boxText">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
+                </div>
+              </div>
+              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
+            </div>
+          </div>
+          <div class="floating2">
+            <div
+              style="
+                background: #efdff7;
+                box-shadow: 5px 15px 20px rgba(128, 0, 128, 0.3);
+              "
+              class="p-3 rounded-2xl w-full shadow-xl"
+            >
+              <h1 class="text-xl font-bold txt-purple">Jump back in!</h1>
+              <div class="mt-4 mb-10">
+                <p class="txt-purple">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div
+                    class="bg-pink-400 w-3/4 h-full rounded-lg shadow-md"
+                  ></div>
+                </div>
+              </div>
+              <div class="mt-4 mb-10">
+                <p class="text-white boxText">Course 75% completed</p>
+                <div
+                  class="bg-gray-400 w-64 h-3 rounded-lg mt-2 overflow-hidden"
+                >
+                  <div class="bg-white w-3/4 h-full rounded-lg shadow-md"></div>
+                </div>
+              </div>
+              <h3 class="text-xs uppercase txt-purple">Current lesson:</h3>
+            </div>
+          </div>
+          <div class="floating2">
             <div
               style="
                 background: #efdff7;
@@ -283,7 +313,7 @@
             Who are we?
           </h1>
           <p class="text-lg text-gray-500 mb-4 mb-8 leading-relaxed">
-            Adsmidea is an interactive Digital Consulting Agency based in mumbai
+            Adsrevenue is an interactive Digital Consulting Agency based in mumbai
             providing an exclusive service in Digital Marketing also Rated as
             one of the fastest growing affiliated network in India. we are a
             team of experienced digital marketers. We are specialist in high
@@ -292,7 +322,7 @@
             Internet marketing leading an important role in every business. We
             are dedicated to improving the user-advertising experience by
             implementing high standards for ad and content quality, and working
-            with industry bodies to develop standards and guidelines Adsmidea is
+            with industry bodies to develop standards and guidelines Adsrevenue is
             the most trusted performance marketing partner for advertisers
             Beacause our ideology is to work as business partners for better ROI
             rather than just being the delivery partners. We believe in building
@@ -476,6 +506,15 @@
 <script>
 export default {
   name: "About",
+  methods: {
+    onceHandler(e) {
+      console.log("called");
+      this.$refs.number1.play();
+      this.$refs.number2.play();
+      this.$refs.number3.play();
+      this.$refs.number4.play();
+    },
+  },
 };
 </script>
 <style scoped>

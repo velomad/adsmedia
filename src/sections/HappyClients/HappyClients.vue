@@ -1,12 +1,11 @@
 <template>
-  <div class="flex bg-gray-900 h-screen justify-center items-center"
-  style="background:url(/img/padded.png)"
+  <div
+    class="flex bg-gray-900 h-96 justify-center items-center"
+    style="background: url(/img/padded.png)"
   >
-    <div class="space-y-20">
-      <div class="flex-col space-y-10 text-center w-full">
-        <h1
-          class="text-center text-white text-5xl capitalize"
-        >
+    <div class="space-y-10">
+      <div class="flex-col space-y-4 text-center w-full">
+        <h1 class="text-center text-white text-5xl capitalize">
           Our Happy Customers
         </h1>
         <p

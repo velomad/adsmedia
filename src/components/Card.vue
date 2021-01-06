@@ -12,15 +12,15 @@
   </div> -->
 
   <div
-  style="box-shadow: 0 15px 20px rgba(4, 112, 184, 0.1);"
-    class="w-full mt-8 mx-auto rounded-lg hover:shadow-2xl cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-102 bg-white shadow-lg h-80 px-5 text-gray-800"
+    style="box-shadow: 0 15px 20px rgba(4, 112, 184, 0.1)"
+    class="hover w-full mt-8 mx-auto rounded-lg hover:shadow-2xl cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 bg-white shadow-lg h-80 px-5 text-gray-800"
   >
     <div class="w-full pt-5">
       <div
         class="overflow-hidden ring-indigo-300 ring-2 rounded-full bg-white w-20 h-20 -mt-16 mx-auto shadow-lg"
       >
         <img
-          :src="'/img/'+icon"
+          :src="'/img/' + icon"
           width="50"
           alt=""
           class="object-contain mx-auto mt-4"
@@ -30,13 +30,13 @@
     <div class="py-6 space-y-6">
       <div class="w-full">
         <p
-          style="color:#5ebcfe; blur:12px"
-          class="text-md font-bold text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+          style=""
+          class="text-md font-bold text-center transition duration-100 ease-in-out transform hover:-translate-y-2 hover:scale-110 content"
         >
           {{ heading }}
         </p>
       </div>
-      <p class="text-sm text-gray-500 text-justify px-5">
+      <p class="text-sm text-justify px-5 content">
         {{ content }}
       </p>
     </div>
@@ -79,5 +79,14 @@ export default {
 
 .heading:hover::after {
   height: 100%;
+}
+
+.hover:hover {
+  background-color: #de482d;
+  color: white;
+}
+
+.hover:hover > .content {
+  color: white;
 }
 </style>
