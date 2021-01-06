@@ -3,7 +3,7 @@
     <!-- component -->
     <header>
       <div
-        class="w-full bg-cover bg-center"
+        class="w-full bg-cover bg-center bg-fixed"
         style="height: 32rem; background-image: url(/img/work.jpg)"
       >
         <div
@@ -33,9 +33,7 @@
               </div>
             </slide>
             <slide class="space-y-6">
-              <div class="text-center text-4xl text-white">
-                We Give Results
-              </div>
+              <div class="text-center text-4xl text-white">We Give Results</div>
               <div class="grid grid-cols-3 place-items-center space-x-4 p-2">
                 <div>
                   <img src="@/assets/slider3.svg" alt="" width="300" />
