@@ -1,8 +1,10 @@
 <template>
   <div>
+    <div class="z-20 fixed w-full top-0">
     <Navbar />
+    </div>
     <!-- component -->
-    <div class="w-full h-screen relative mt-4">
+    <div class="w-full  h-screen relative mt-36">
       <div class="absolute w-full h-full z-10">
         <div class="px-16 h-full flex items-center justify-start">
           <div class="hidden lg:flex flex-col w-full space-y-4 py-12">
@@ -43,25 +45,30 @@
               </div>
             </div>
             <div class="flex space-x-4 flex-row w-full">
-              <button
-                class="px-3 mt-5 items-center shadow-md bg-white space-x-2 py-2 justify-center flex w-32 rounded-lg hover:bg-gray-500 hover:text-white hover:bg-opacity-50 parent-login-btn"
-              >
-                <svg
-                  class="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+              <a href="https://adsmidea.offer18.com/m/login" target="_blank">
+                <button
+                  class="px-3 mt-5 items-center shadow-md bg-white space-x-2 py-2 justify-center flex w-32 rounded-lg hover:bg-gray-500 hover:text-white hover:bg-opacity-50 parent-login-btn"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="text-gray-800 font-semibold home-login-btn">Login</span>
-              </button>
+                  <svg
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="text-gray-800 font-semibold home-login-btn"
+                    >Login</span
+                  >
+                </button>
+              </a>
               <button
-                class="px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50 space-x-2 py-2 justify-center flex w-auto hover:bg-white  parent-cont-btn"
+              v-scroll-to="'#contact'"
+                class="px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50 space-x-2 py-2 justify-center flex w-auto hover:bg-white parent-cont-btn"
               >
                 <svg
                   class="w-6 h-6 text-white cont-icon"
@@ -77,7 +84,9 @@
                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-                <span class="text-white font-semibold home-cont-btn">Contact Us</span>
+                <span class="text-white font-semibold home-cont-btn"
+                  >Contact Us</span
+                >
               </button>
             </div>
           </div>
@@ -215,13 +224,13 @@ ul.v-slides {
   bottom: -4px;
   left: 0;
 }
-.parent-login-btn:hover > .home-login-btn{
+.parent-login-btn:hover > .home-login-btn {
   color: #fff;
 }
-.parent-cont-btn:hover > .home-cont-btn{
+.parent-cont-btn:hover > .home-cont-btn {
   color: #000 !important;
 }
-.parent-cont-btn:hover > .cont-icon{
+.parent-cont-btn:hover > .cont-icon {
   color: #000 !important;
 }
 @keyframes move {

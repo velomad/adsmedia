@@ -1,5 +1,7 @@
 <template>
-  <div class="custom-img flex bg-gray-300 h-screen bg-fixed justify-center items-center">
+  <div
+    class="custom-img flex bg-gray-300 h-screen bg-fixed justify-center items-center"
+  >
     <div class="space-y-36">
       <div class="text-white text-center font-semibold text-4xl">
         Working Process
@@ -118,7 +120,7 @@ export default {
 }
 
 .wrapper .tooltip {
-  background: #5ebcfe;
+  background: #ff8657;
   bottom: 100%;
   border-radius: 6px;
   color: #fff;
@@ -161,7 +163,7 @@ export default {
 .wrapper .tooltip:after {
   border-left: solid transparent 10px;
   border-right: solid transparent 10px;
-  border-top: solid #5ebcfe 10px;
+  border-top: solid #ff8657 10px;
   bottom: -10px;
   content: " ";
   height: 0;

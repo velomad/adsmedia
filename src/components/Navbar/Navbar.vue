@@ -126,18 +126,16 @@
                     <a class="p-3" v-scroll-to="'#why-we'" href="#">Why We ?</a>
                   </li>
                   <li><a class="p-3" href="#">Affiliate</a></li>
-                  <li><a class="p-3" href="#">Publisher</a></li>
+                  <li><a class="p-3" href="#">Advertiser</a></li>
                   <li>
                     <a class="p-3" v-scroll-to="'#contact'" href="#">Contact</a>
                   </li>
                 </ul>
-                <a href="https://adsmidea.offer18.com/m/login" target="_blank">
-                  <div
-                    class="uppercase text-sm tracking-widest bg-gray-900 cursor-pointer p-2 rounded-lg text-white"
-                  >
-                    Login
-                  </div>
-                </a>
+                <div
+                  class="uppercase text-sm tracking-widest bg-gray-900 cursor-pointer p-2 rounded-lg text-white"
+                >
+                  Blogs
+                </div>
               </nav>
 
               <!-- <div class="hidden sm:block sm:ml-6">
@@ -293,7 +291,7 @@ nav.shift ul li a:after {
   border-radius: 10px;
   content: ".";
   color: transparent;
-  background: #5ebcfe;
+  background: #ff8657;
   visibility: none;
   opacity: 0;
   z-index: -1;

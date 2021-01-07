@@ -5,11 +5,11 @@
   > -->
 
   <div
-    class="h-screen w-full bg-cover bg-center bg-fixed"
+    class=" w-full  bg-cover bg-center bg-fixed"
     style="background-image: url(/img/e.jpg)"
   >
     <div
-      class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-70"
+      class="flex py-6 items-center justify-center h-full w-full bg-gray-900 bg-opacity-70"
     >
       <div class="element">
         <div
@@ -28,15 +28,11 @@
             </div>
             <div class="bg-gray-300 rounded-md">
               <div
-                :style="
-                  'box-shadow: 5px 20px 15px rgba(' +
-                  item.rgba +
-                  ', 0.4); width: 20px'
-                "
+                
                 :class="[
                   item.color === 'gray'
-                    ? 'bg-' + item.color + '-600 h-6 rounded-md'
-                    : 'bg-' + item.color + '-500 h-6 rounded-md',
+                    ? 'bg-' + item.color + '-600 h-4 rounded-md'
+                    : 'bg-' + item.color + '-500 h-4 rounded-md',
                 ]"
                 :ref="item.name"
               ></div>
