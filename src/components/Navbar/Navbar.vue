@@ -2,7 +2,7 @@
   <div id="nav">
     <!-- This example requires Tailwind CSS v2.0+ -->
     <nav class="bg-white shadow-lg">
-      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-4">
         <div class="relative flex items-center justify-between h-28">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
@@ -104,13 +104,15 @@
               </div> -->
 
               <nav
-                class="invisible md:visible flex space-x-4 items-center shift"
+                class="invisible md:visible flex space-x-2 items-center shift"
               >
                 <ul
                   class="flex uppercase text-sm tracking-widest text-center text-gray-600 space-x-2"
                 >
                   <li>
-                    <a class="p-3" v-scroll-to="'#home'" href="#">Home</a>
+                    <a class="p-3" v-scroll-to="'#home'" href="#"
+                      ><router-link to="/" tag="button">Home</router-link></a
+                    >
                   </li>
                   <li>
                     <a class="p-3" v-scroll-to="'#about-section'" href="#"
@@ -132,9 +134,14 @@
                   </li>
                 </ul>
                 <div
+                  class="uppercase text-sm tracking-widest bg-yellow-600 cursor-pointer p-2 rounded-lg text-white"
+                >
+                  <router-link to="/Careers" tag="button">Careers</router-link>
+                </div>
+                <div
                   class="uppercase text-sm tracking-widest bg-gray-900 cursor-pointer p-2 rounded-lg text-white"
                 >
-                  Blogs
+                  <router-link to="/blogs" tag="button">Blogs</router-link>
                 </div>
               </nav>
 
