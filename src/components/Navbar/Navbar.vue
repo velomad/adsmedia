@@ -7,8 +7,8 @@
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button
-              @click="toggleNavbar = !toggleNavbar"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              @click="toggleSideNav()"
+              class="z-50 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
@@ -139,16 +139,19 @@
           >
           <a
             href="#"
+            v-scroll-to="'#about-section'"
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >About</a
           >
           <a
             href="#"
+            v-scroll-to="'#services'"
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >Services</a
           >
           <a
             href="#"
+            v-scroll-to="'#why-we'"
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >Why We ?</a
           >
@@ -164,6 +167,7 @@
           >
           <a
             href="#"
+            v-scroll-to="'#contact'"
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >Contact</a
           >
@@ -181,6 +185,11 @@ export default {
       toggleNavbar:false
     };
   },
+  methods:{
+    toggleSideNav(){
+      this.toggleNavbar = !this.toggleNavbar
+    }
+  }
 };
 </script>
 <style scoped>
