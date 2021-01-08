@@ -1,6 +1,6 @@
 <template>
   <div
-    class="md:block lg:block flex bg-gray-900 h-96 justify-center items-center mt-20"
+    class="md:block lg:block flex bg-gray-900 h-96 justify-center items-center"
     style="background: url(/img/padded.png)"
   >
     <div class="space-y-10 py-4 md:py-10 lg:py-10">
