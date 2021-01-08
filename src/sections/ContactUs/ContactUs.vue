@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen justify-center items-center">
+  <div class="hidden md:block lg:block flex h-screen justify-center items-center">
     <section class="text-gray-600 body-font relative px-4">
       <div class="mx-auto flex sm:flex-nowrap flex-wrap">
         <div

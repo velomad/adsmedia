@@ -1,92 +1,94 @@
 <template>
-  <div
-    class="custom-img flex bg-gray-300 h-screen bg-fixed justify-center items-center"
-  >
-    <div class="space-y-36">
-      <div class="text-white text-center font-semibold text-4xl">
-        Working Process
-      </div>
-      <div></div>
-      <div class="flex space-x-36">
-        <div class="space-y-4">
-          <div
-            class="w-36 h-36 rounded-full wrapper ring-1 ring-gray-100 flex justify-center items-center"
-          >
-            <div class="tooltip">
-              we understand the complete requirement before execution
+  <div class="hidden md:block lg:block">
+    <div
+      class="custom-img flex bg-gray-300 h-screen bg-fixed justify-center items-center"
+    >
+      <div class="space-y-36">
+        <div class="text-white text-center font-semibold text-4xl">
+          Working Process
+        </div>
+        <div></div>
+        <div class="flex space-x-36">
+          <div class="space-y-4">
+            <div
+              class="w-36 h-36 rounded-full wrapper ring-1 ring-gray-100 flex justify-center items-center"
+            >
+              <div class="tooltip">
+                we understand the complete requirement before execution
+              </div>
+              <div
+                class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+              >
+                <img src="/img/user.svg" alt="" width="50" />
+              </div>
             </div>
             <div
-              class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+              class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
             >
-              <img src="/img/user.svg" alt="" width="50" />
+              Meetings
             </div>
           </div>
-          <div
-            class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
-          >
-            Meetings
-          </div>
-        </div>
-        <div class="space-y-4">
-          <div
-            class="w-36 h-36 rounded-full ring-1 wrapper ring-gray-100 flex justify-center items-center"
-          >
-            <div class="tooltip">
-              planning is always done keeping the end goal in mind and plan B in
-              place
+          <div class="space-y-4">
+            <div
+              class="w-36 h-36 rounded-full ring-1 wrapper ring-gray-100 flex justify-center items-center"
+            >
+              <div class="tooltip">
+                planning is always done keeping the end goal in mind and plan B
+                in place
+              </div>
+              <div
+                class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+              >
+                <img src="/img/diagram.svg" alt="" width="50" />
+              </div>
             </div>
             <div
-              class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+              class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
             >
-              <img src="/img/diagram.svg" alt="" width="50" />
+              plannings
             </div>
           </div>
-          <div
-            class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
-          >
-            plannings
-          </div>
-        </div>
-        <div class="space-y-4">
-          <div
-            class="w-36 h-36 wrapper rounded-full ring-1 ring-gray-100 flex justify-center items-center"
-          >
-            <div class="tooltip">
-              keeping a close eye on execution help us optimize the campaign at
-              every stage
-            </div>
+          <div class="space-y-4">
+            <div
+              class="w-36 h-36 wrapper rounded-full ring-1 ring-gray-100 flex justify-center items-center"
+            >
+              <div class="tooltip">
+                keeping a close eye on execution help us optimize the campaign
+                at every stage
+              </div>
 
+              <div
+                class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+              >
+                <img src="/img/aerodynamic.svg" alt="" width="50" />
+              </div>
+            </div>
             <div
-              class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+              class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
             >
-              <img src="/img/aerodynamic.svg" alt="" width="50" />
+              executions
             </div>
           </div>
-          <div
-            class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
-          >
-            executions
-          </div>
-        </div>
-        <div class="space-y-4">
-          <div
-            class="w-36 wrapper h-36 rounded-full ring-1 ring-gray-100 flex justify-center items-center"
-          >
-            <div class="tooltip">
-              we believe in customer delight and make sure the execution is
-              error free
-            </div>
+          <div class="space-y-4">
+            <div
+              class="w-36 wrapper h-36 rounded-full ring-1 ring-gray-100 flex justify-center items-center"
+            >
+              <div class="tooltip">
+                we believe in customer delight and make sure the execution is
+                error free
+              </div>
 
-            <div
-              class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
-            >
-              <img src="/img/magic-wand.svg" alt="" width="50" />
+              <div
+                class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+              >
+                <img src="/img/magic-wand.svg" alt="" width="50" />
+              </div>
             </div>
-          </div>
-          <div
-            class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
-          >
-            results
+            <div
+              class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+            >
+              results
+            </div>
           </div>
         </div>
       </div>

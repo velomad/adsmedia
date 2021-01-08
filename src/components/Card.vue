@@ -13,7 +13,7 @@
 
   <div
     style="box-shadow: 0 15px 20px rgba(4, 112, 184, 0.1)"
-    class="hover w-full mt-8 mx-auto rounded-lg hover:shadow-2xl cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 bg-white shadow-lg h-80 px-5 text-gray-800"
+    class="hover w-full mt-24 md:mt-8 lg:mt-8 mx-auto rounded-lg hover:shadow-2xl cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 bg-white shadow-lg h-80 px-5 text-gray-800"
   >
     <div class="w-full pt-5">
       <div
@@ -36,7 +36,7 @@
           {{ heading }}
         </p>
       </div>
-      <p class="text-sm text-justify px-5 content">
+      <p class="text-sm text-justify px-0 content md:px-5 lg:px-5">
         {{ content }}
       </p>
     </div>
