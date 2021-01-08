@@ -5,11 +5,11 @@
   > -->
 
   <div
-    class=" w-full  bg-cover bg-center bg-fixed"
+    class=" w-full bg-cover h-screen  bg-center bg-fixed"
     style="background-image: url(/img/e.jpg)"
   >
     <div
-      class="flex py-6 items-center justify-center h-full w-full bg-gray-900 bg-opacity-70"
+      class="flex py-6 md:items-center lg:items-center md:justify-center lg:justify-center h-full w-full bg-gray-900 bg-opacity-70"
     >
       <div class="element">
         <div

@@ -1,15 +1,15 @@
 <template>
   <div
-    class="hidden md:block lg:block flex bg-gray-900 h-96 justify-center items-center"
+    class="md:block lg:block flex bg-gray-900 h-96 justify-center items-center mt-20"
     style="background: url(/img/padded.png)"
   >
-    <div class="space-y-10">
+    <div class="space-y-10 py-4 md:py-10 lg:py-10">
       <div class="flex-col space-y-4 text-center w-full">
-        <h1 class="text-center text-white text-5xl capitalize">
+        <h1 class="text-center text-white text-3xl md:text-5xl lg:text-5xl capitalize">
           Our Happy Customers
         </h1>
         <p
-          class="lg:w-2/3 mx-auto leading-relaxed tracking-widest text-gray-400 font-bold text-sm"
+          class="lg:w-2/3 mx-auto leading-relaxed tracking-widest text-gray-400 font-bold text-xs md:text-sm lg:text-sm"
         >
           THE UPSHOT OF ALL THE HARDWORK
         </p>
@@ -18,7 +18,7 @@
         <infinite-slide-bar duration="25s">
           <div class="flex justify-between items-center">
             <div v-for="items in Brands" :key="items.key">
-              <img :src="'/img/' + items.icon" width="200" class="ml-32" />
+              <img :src="'/img/' + items.icon" class="ml-32 w-28 md:w-36 lg:w-36" />
             </div>
           </div>
         </infinite-slide-bar>
