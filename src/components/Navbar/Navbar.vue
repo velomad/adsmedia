@@ -133,7 +133,7 @@
                     <a class="p-3" v-scroll-to="'#contact'" href="#">Contact</a>
                   </li>
                 </ul>
-                <div
+                <!-- <div
                   class="uppercase text-sm tracking-widest bg-yellow-600 cursor-pointer p-2 rounded-lg text-white"
                 >
                   <router-link to="/Careers" tag="button">Careers</router-link>
@@ -142,7 +142,7 @@
                   class="uppercase text-sm tracking-widest bg-gray-900 cursor-pointer p-2 rounded-lg text-white"
                 >
                   <router-link to="/blogs" tag="button">Blogs</router-link>
-                </div>
+                </div> -->
               </nav>
 
               <!-- <div class="hidden sm:block sm:ml-6">
