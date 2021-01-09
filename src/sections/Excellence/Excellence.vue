@@ -5,6 +5,7 @@
   > -->
 
   <div
+    id="ExcellenceSkills"
     class=" w-full bg-cover h-screen  bg-center bg-fixed"
     style="background-image: url(/img/e.jpg)"
   >
@@ -13,8 +14,7 @@
     >
       <div class="element">
         <div
-          style="text-shadow: 3px 1px #ccc"
-          class="text-center text-gray-100 text-4xl capitalize"
+          class="text-center text-gray-100 font-semibold text-4xl capitalize"
         >
           Excellence Skills
         </div>

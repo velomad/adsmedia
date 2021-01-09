@@ -23,6 +23,9 @@
     <div id="happpy-clients">
       <HappyClients />
     </div>
+    <div id="Agency">
+      <Agency />
+    </div>
     <div id="contact">
       <ContactUs />
     </div>
@@ -42,6 +45,8 @@ import WorkingProcess from "../sections/Working Process/WorkingProcess";
 import WhyWe from "../sections/WhyWe/WhyWe";
 import Footer from "../components/Footer";
 import HappyClients from "../sections/HappyClients/HappyClients";
+import Agency from "../sections/Agency/Agency";
+
 
 export default {
   name: "Home",
@@ -52,6 +57,7 @@ export default {
     ContactUs,
     HappyClients,
     Skills,
+    Agency,
     WorkingProcess,
     WhyWe,
     Footer,

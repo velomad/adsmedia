@@ -136,16 +136,39 @@
                 <div class="container-text">
                   <div class="v-slider-frame">
                     <ul class="v-slides">
-                      <li class="v-slide-mobile text-center text-4xl font-bold">TRUSTED</li>
-                      <li class="v-slide-mobile text-center text-4xl font-bold">RELIABLE</li>
-                      <li class="v-slide-mobile text-center text-4xl font-bold">RESPONSIBLE</li>
-                      <li class="v-slide-mobile text-center text-4xl font-bold">EXPERIENCED</li>
-                      <li class="v-slide-mobile text-center text-4xl font-bold">EFFICIENT</li>
+                      <li class="v-slide-mobile text-center text-4xl font-bold">
+                        TRUSTED
+                      </li>
+                      <li class="v-slide-mobile text-center text-4xl font-bold">
+                        RELIABLE
+                      </li>
+                      <li class="v-slide-mobile text-center text-4xl font-bold">
+                        RESPONSIBLE
+                      </li>
+                      <li class="v-slide-mobile text-center text-4xl font-bold">
+                        EXPERIENCED
+                      </li>
+                      <li class="v-slide-mobile text-center text-4xl font-bold">
+                        EFFICIENT
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
+              <div class="flex justify-center mt-10">
+                <button
+                  class="inline-flex text-white bg-yellow-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                >
+                  Login
+                </button>
+                <button
+                  class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+                >
+                  Contact Us
+                </button>
+              </div>
             </div>
+
             <div class="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
               <svg
                 class="w-full h-64 sm:h-auto"
@@ -3457,7 +3480,9 @@ ul.v-slides {
 .v-slide {
   font-size: 4vw;
   line-height: 50px;
-  color: rgb(16, 154, 209);
+  background: -webkit-linear-gradient(90deg,#FE7119 0%,#FF9818 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .border-stick {

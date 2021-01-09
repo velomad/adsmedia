@@ -2,12 +2,11 @@
   <div style="background-color: #f5f5f5">
     <div class="flex-col space-y-4 text-center w-full py-10">
       <h1
-        style="text-shadow: 3px 4px #ccc"
-        class="text-center text-gray-600 text-4xl capitalize"
+        class="text-center font-semibold text-gray-600 text-4xl capitalize"
       >
         OUR SERVICES
       </h1>
-      <p class="lg:w-2/3 mx-auto text-gray-500 leading-relaxed text-base">
+      <p class="lg:w-2/3 mx-auto text-gray-500 font-semibold leading-relaxed text-base">
         Adsmidea Media, a holistic programmatic ecosystem helps connect brands
         with their respective publisher across all formats and devices.
       </p>

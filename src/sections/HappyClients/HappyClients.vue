@@ -1,11 +1,11 @@
 <template>
   <div
     class="md:block lg:block flex bg-gray-900 h-96 justify-center items-center"
-    style="background: url(/img/padded.png)"
+    style="background: #FFF"
   >
     <div class="space-y-10 py-4 md:py-10 lg:py-10">
       <div class="flex-col space-y-4 text-center w-full">
-        <h1 class="text-center text-white text-3xl md:text-5xl lg:text-5xl capitalize">
+        <h1 class="text-center text-black font-semibold text-3xl md:text-5xl lg:text-5xl capitalize">
           Our Happy Customers
         </h1>
         <p
@@ -32,10 +32,6 @@ export default {
     return {
       Brands: [
         {
-          icon: "Amazon.png",
-          key: 1,
-        },
-        {
           icon: "ICICI.png",
           key: 2,
         },
@@ -60,24 +56,12 @@ export default {
           key: 7,
         },
         {
-          icon: "RBI.png",
-          key: 8,
-        },
-        {
-          icon: "rediff.png",
-          key: 9,
-        },
-        {
           icon: "Snapdeal.png",
           key: 10,
         },
         {
           icon: "TimesInternet.png",
           key: 11,
-        },
-        {
-          icon: "yatra.png",
-          key: 12,
         },
       ],
     };

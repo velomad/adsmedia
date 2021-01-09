@@ -69,7 +69,7 @@
       </header>
     </div>
     <!-- Mobile -->
-    <div class="md:block lg:block">
+    <div class="md:hidden lg:hidden">
       <!-- component -->
       <header>
         <div

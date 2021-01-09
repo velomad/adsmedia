@@ -1,98 +1,217 @@
 <template>
-  <div class="hidden md:block lg:block">
-    <div
-      class="custom-img flex bg-gray-300 h-screen bg-fixed justify-center items-center"
-    >
-      <div class="space-y-36">
-        <div class="text-white text-center font-semibold text-4xl">
-          Working Process
-        </div>
-        <div></div>
-        <div class="flex space-x-36">
-          <div class="space-y-4">
-            <div
-              class="w-36 h-36 rounded-full wrapper ring-1 ring-gray-100 flex justify-center items-center"
-            >
-              <div class="tooltip">
-                we understand the complete requirement before execution
+  <div id="WorkingProcess">
+    <div class="hidden md:block lg:block">
+      <div
+        class="custom-img flex bg-gray-300 h-screen bg-fixed justify-center items-center"
+      >
+        <div class="space-y-24">
+          <div class="text-white text-center font-semibold mt-4 text-4xl">
+            Working Process <br />
+            <p class="text-sm font-medium text-white mt-2">Interactive Digital Consulting Agency.</p>
+          </div>
+          <div></div>
+          <div class="flex space-x-32">
+            <div class="space-y-4">
+              <div
+                class="w-36 h-36 rounded-full wrapper ring-1 ring-gray-100 flex justify-center items-center"
+              >
+                <div class="tooltip">
+                  we understand the complete requirement before execution
+                </div>
+                <div
+                  class="p-0 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                >
+                  <img src="/img/work-user.png" alt="" class="w-32" />
+                </div>
               </div>
               <div
-                class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
               >
-                <img src="/img/user.svg" alt="" width="50" />
+                Meetings
               </div>
             </div>
-            <div
-              class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
-            >
-              Meetings
-            </div>
-          </div>
-          <div class="space-y-4">
-            <div
-              class="w-36 h-36 rounded-full ring-1 wrapper ring-gray-100 flex justify-center items-center"
-            >
-              <div class="tooltip">
-                planning is always done keeping the end goal in mind and plan B
-                in place
+            <div class="space-y-4">
+              <div
+                class="w-36 h-36 rounded-full ring-1 wrapper ring-gray-100 flex justify-center items-center"
+              >
+                <div class="tooltip">
+                  planning is always done keeping the end goal in mind and plan
+                  B in place
+                </div>
+                <div
+                  class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                >
+                  <img src="/img/diagram.svg" alt="" width="50" />
+                </div>
               </div>
               <div
-                class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
               >
-                <img src="/img/diagram.svg" alt="" width="50" />
+                plannings
               </div>
             </div>
-            <div
-              class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
-            >
-              plannings
-            </div>
-          </div>
-          <div class="space-y-4">
-            <div
-              class="w-36 h-36 wrapper rounded-full ring-1 ring-gray-100 flex justify-center items-center"
-            >
-              <div class="tooltip">
-                keeping a close eye on execution help us optimize the campaign
-                at every stage
-              </div>
+            <div class="space-y-4">
+              <div
+                class="w-36 h-36 wrapper rounded-full ring-1 ring-gray-100 flex justify-center items-center"
+              >
+                <div class="tooltip">
+                  keeping a close eye on execution help us optimize the campaign
+                  at every stage
+                </div>
 
+                <div
+                  class="p-6 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                >
+                  <img src="/img/paper-plane.png" alt="" class="w-20" />
+                </div>
+              </div>
               <div
-                class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
               >
-                <img src="/img/aerodynamic.svg" alt="" width="50" />
+                executions
               </div>
             </div>
-            <div
-              class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
-            >
-              executions
-            </div>
-          </div>
-          <div class="space-y-4">
-            <div
-              class="w-36 wrapper h-36 rounded-full ring-1 ring-gray-100 flex justify-center items-center"
-            >
-              <div class="tooltip">
-                we believe in customer delight and make sure the execution is
-                error free
-              </div>
+            <div class="space-y-4">
+              <div
+                class="w-36 wrapper h-36 rounded-full ring-1 ring-gray-100 flex justify-center items-center"
+              >
+                <div class="tooltip">
+                  we believe in customer delight and make sure the execution is
+                  error free
+                </div>
 
-              <div
-                class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
-              >
-                <img src="/img/magic-wand.svg" alt="" width="50" />
+                <div
+                  class="p-6 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                >
+                  <img src="/img/magic-wand.png" alt="" class="w-20" />
+                </div>
               </div>
-            </div>
-            <div
-              class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
-            >
-              results
+              <div
+                class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+              >
+                results
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Mobile -->
+    <section
+      class="md:hidden lg:hidden custom-img bg-fixed text-gray-600 body-font"
+    >
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="text-4xl font-medium title-font mb-4 text-white tracking-widest"
+          >
+            Working Process
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
+            Interactive Digital Consulting Agency.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 lg:w-1/2 w-full">
+            <div
+              class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+            >
+              <div
+                class="w-36 h-36 rounded-full wrapper ring-1 ring-gray-100 flex justify-center items-center"
+              >
+                <div class="tooltip">
+                  we understand the complete requirement before execution
+                </div>
+                <div
+                  class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                >
+                  <img src="/img/user.svg" alt="" width="50" />
+                </div>
+              </div>
+              <div
+                class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+              >
+                Meetings
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/2 w-full">
+            <div
+              class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+            >
+              <div
+                class="w-36 h-36 rounded-full ring-1 wrapper ring-gray-100 flex justify-center items-center"
+              >
+                <div class="tooltip">
+                  planning is always done keeping the end goal in mind and plan
+                  B in place
+                </div>
+                <div
+                  class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                >
+                  <img src="/img/diagram.svg" alt="" width="50" />
+                </div>
+              </div>
+              <div
+                class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+              >
+                plannings
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/2 w-full">
+            <div
+              class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+            >
+              <div
+                class="w-36 h-36 wrapper rounded-full ring-1 ring-gray-100 flex justify-center items-center"
+              >
+                <div class="tooltip">
+                  keeping a close eye on execution help us optimize the campaign
+                  at every stage
+                </div>
+
+                <div
+                  class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                >
+                  <img src="/img/aerodynamic.svg" alt="" width="50" />
+                </div>
+              </div>
+              <div
+                class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+              >
+                Executions
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/2 w-full">
+            <div
+              class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+            >
+              <div
+                class="w-36 wrapper h-36 rounded-full ring-1 ring-gray-100 flex justify-center items-center"
+              >
+                <div class="tooltip">
+                  we believe in customer delight and make sure the execution is
+                  error free
+                </div>
+
+                <div
+                  class="p-10 rounded-full bg-gray-200 hover:bg-transparent transition ease-in-out duration-500"
+                >
+                  <img src="/img/magic-wand.svg" alt="" width="50" />
+                </div>
+              </div>
+              <div
+                class="text-center text-white tracking-wider text-2xl font-semibold uppercase"
+              >
+                Results
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 <script>

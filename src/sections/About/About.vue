@@ -99,7 +99,28 @@
               >
                 <div class="grid place-items-center py-10 space-y-4">
                   <div>
-                    <img src="/img/buy.svg" width="35" />
+                    <svg
+                      class="w-10 h-10 text-purple-900"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00-9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.83z"
+                        clip-rule="evenodd"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 10a1 1 0 011 1c0 2.236-.46 4.368-1.29 6.304a1 1 0 01-1.838-.789A13.952 13.952 0 009 11a1 1 0 011-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </div>
 
                   <number
@@ -130,7 +151,18 @@
               >
                 <div class="grid place-items-center py-10 px-6 space-y-4">
                   <div>
-                    <img src="/img/buy.svg" width="35" />
+                    <svg
+                      class="w-10 h-10 text-indigo-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </div>
 
                   <number
@@ -140,13 +172,13 @@
                     style="color: #d18ef2"
                     ref="number2"
                     :from="100"
-                    :to="10000"
+                    :to="768400"
                     :format="theFormat"
                     :duration="5"
                     :delay="2"
                     easing="Power1.easeOut"
                   />
-                  <div>Impressions delivered</div>
+                  <div class="font-semibold">Install Given</div>
                 </div>
               </div>
             </div>
@@ -161,7 +193,18 @@
               >
                 <div class="grid place-items-center py-10 space-y-4">
                   <div>
-                    <img src="/img/buy.svg" width="35" />
+                    <svg
+                      class="w-10 h-10 text-green-700"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </div>
 
                   <number
@@ -171,13 +214,13 @@
                     style="color: #47b2ff"
                     ref="number3"
                     :from="100"
-                    :to="10000"
+                    :to="80706"
                     :format="theFormat"
                     :duration="5"
                     :delay="2"
                     easing="Power1.easeOut"
                   />
-                  <div>Impressions delivered</div>
+                  <div class="text-black font-semibold">Leads Delivered</div>
                 </div>
               </div>
             </div>
@@ -192,7 +235,18 @@
               >
                 <div class="grid place-items-center py-10 space-y-4">
                   <div>
-                    <img src="/img/buy.svg" width="35" />
+                    <svg
+                      class="w-10 h-10 text-yellow-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </div>
                   <number
                     v-view.once="onceHandler"
@@ -200,14 +254,14 @@
                     class="text-3xl text-white"
                     ref="number4"
                     :from="100"
-                    :to="10000"
+                    :to="180"
                     :format="theFormat"
                     :duration="5"
                     :delay="2"
                     easing="Power1.easeOut"
                   />
                   <!-- <div>100000</div> -->
-                  <div class="text-lg text-white">Impressions delivered</div>
+                  <div class="text-lg text-white">Clients Satisfied</div>
                 </div>
               </div>
             </div>
@@ -590,7 +644,10 @@
           <div>
             <div class="flex flex-wrap -m-4 text-center mt-8">
               <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                <div class="px-4 py-6 rounded-lg floating2-mobile shadow-lg" style="background:#ff8657;">
+                <div
+                  class="px-4 py-6 rounded-lg floating2-mobile shadow-lg"
+                  style="background: #ff8657"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -612,7 +669,10 @@
                 </div>
               </div>
               <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                <div class="px-4 py-6 rounded-lg floating2-mobile" style="background:#efdff7;">
+                <div
+                  class="px-4 py-6 rounded-lg floating2-mobile"
+                  style="background: #efdff7"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -635,7 +695,10 @@
                 </div>
               </div>
               <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                <div class="px-4 py-6 rounded-lg floating2-mobile" style="background:#c6e6fd;">
+                <div
+                  class="px-4 py-6 rounded-lg floating2-mobile"
+                  style="background: #c6e6fd"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -650,14 +713,15 @@
                       d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
                     ></path>
                   </svg>
-                  <h2 class="title-font font-medium text-3xl text-white">
-                    74
-                  </h2>
+                  <h2 class="title-font font-medium text-3xl text-white">74</h2>
                   <p class="leading-relaxed text-white">Files</p>
                 </div>
               </div>
               <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                <div class="px-4 py-6 rounded-lg floating2-mobile" style="background: #00438b;">
+                <div
+                  class="px-4 py-6 rounded-lg floating2-mobile"
+                  style="background: #00438b"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -671,9 +735,7 @@
                       d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
                     ></path>
                   </svg>
-                  <h2 class="title-font font-medium text-3xl text-white">
-                    46
-                  </h2>
+                  <h2 class="title-font font-medium text-3xl text-white">46</h2>
                   <p class="leading-relaxed text-white">Places</p>
                 </div>
               </div>

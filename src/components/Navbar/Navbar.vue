@@ -61,11 +61,11 @@
           >
             <div class="flex-shrink-0 flex items-center">
               <img
-                class="block lg:block h-8 w-20 h-20"
-                src="@/assets/logo1.png"
+                class="block lg:block w-60 h-60"
+                src="/img/logo-shu.png"
                 alt="Workflow"
               />
-              <div>
+              <!-- <div>
                 <h4 class="text-4xl font-bold text-gray-600 font-mono">
                   Adsrevenue
                 </h4>
@@ -74,7 +74,7 @@
                 >
                   Digital Marketing
                 </p>
-              </div>
+              </div> -->
 
               <!-- <img
                 class="hidden lg:block h-8 w-auto"
@@ -92,13 +92,13 @@
                 class="invisible md:visible flex space-x-2 items-center shift"
               >
                 <ul
-                  class="flex uppercase text-sm tracking-widest text-center text-gray-600 space-x-2"
+                  class="flex uppercase font-semibold text-sm tracking-widest text-center text-gray-600 space-x-2"
                 >
-                  <li>
-                    <a class="p-3" v-scroll-to="'#home'" href="#"
-                      ><router-link to="/" tag="button">Home</router-link></a
-                    >
-                  </li>
+                  <router-link to="/" tag="button">
+                    <li class="uppercase font-semibold">
+                      <a class="p-3" v-scroll-to="'#home'" href="#">Home</a>
+                    </li>
+                  </router-link>
                   <li>
                     <a class="p-3" v-scroll-to="'#about-section'" href="#"
                       >About</a
@@ -129,7 +129,11 @@
 
     Menu open: "block", Menu closed: "hidden"
   -->
-      <div v-show="toggleNavbar" style="z-index:99999" class="transition duration-1000 ease-in-out">
+      <div
+        v-show="toggleNavbar"
+        style="z-index: 99999"
+        class="transition duration-1000 ease-in-out"
+      >
         <div class="px-2 pt-2 pb-3 space-y-1">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
           <a
@@ -138,18 +142,21 @@
             >Home</a
           >
           <a
+            @click="toggleNavbar = !toggleNavbar"
             href="#"
             v-scroll-to="'#about-section'"
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >About</a
           >
           <a
+            @click="toggleNavbar = !toggleNavbar"
             href="#"
             v-scroll-to="'#services'"
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >Services</a
           >
           <a
+            @click="toggleNavbar = !toggleNavbar"
             href="#"
             v-scroll-to="'#why-we'"
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -182,14 +189,14 @@ export default {
   data() {
     return {
       toggleDropDown: false,
-      toggleNavbar:false
+      toggleNavbar: false,
     };
   },
-  methods:{
-    toggleSideNav(){
-      this.toggleNavbar = !this.toggleNavbar
-    }
-  }
+  methods: {
+    toggleSideNav() {
+      this.toggleNavbar = !this.toggleNavbar;
+    },
+  },
 };
 </script>
 <style scoped>
