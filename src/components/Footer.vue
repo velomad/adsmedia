@@ -256,7 +256,7 @@
                   </a>
                 </li>
                 <li class="mb-3">
-                  <a class="text-gray-600 hover:text-gray-800">
+                  <a class="text-gray-600  hover:text-gray-800">
                     <ul>
                       <li class="flex">
                         <p>
@@ -273,7 +273,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white hover:text-yellow-400" v-scroll-to="'#BusinessDeserves'">
+                        <p class="ml-2  font-semibold text-white hover:text-yellow-400" v-scroll-to="'#BusinessDeserves'">
                           Business Deserves
                         </p>
                       </li>
