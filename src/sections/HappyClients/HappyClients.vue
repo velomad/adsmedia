@@ -48,10 +48,6 @@ export default {
           key: 5,
         },
         {
-          icon: "kotak811.png",
-          key: 6,
-        },
-        {
           icon: "PAYTM.png",
           key: 7,
         },
@@ -63,6 +59,30 @@ export default {
           icon: "TimesInternet.png",
           key: 11,
         },
+        {
+          icon: "kotak bank logo.png",
+          key: 6,
+        },
+        {
+          icon: "sharekhan logo.png",
+          key: 6,
+        },
+        {
+          icon: "axis bank logo.png",
+          key: 6,
+        },
+        {
+          icon: "angel broking logo.png",
+          key: 6,
+        },
+        {
+          icon: "motilal oswal logo.png",
+          key: 6,
+        },
+        {
+          icon: "rbl bank logo.png",
+          key: 6,
+        }
       ],
     };
   },

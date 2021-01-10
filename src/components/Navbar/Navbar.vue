@@ -61,8 +61,8 @@
           >
             <div class="flex-shrink-0 flex items-center">
               <img
-                class="block lg:block w-60 h-60"
-                src="/img/logo-shu.png"
+                class="block lg:block w-60 h-10"
+                src="/img/final-logo.png"
                 alt="Workflow"
               />
               <!-- <div>
