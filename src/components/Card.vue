@@ -82,7 +82,7 @@ export default {
 }
 
 .hover:hover {
-  background: linear-gradient(90deg,#FE7119 0%,#FF9818 100%);
+  background: linear-gradient(90deg,#ff8657 0%,#ff3225 140%);
   color: white;
 }
 

@@ -220,7 +220,7 @@ nav.shift ul li a:after {
   border-radius: 10px;
   content: ".";
   color: transparent;
-  background: #ff8657;
+  background:  linear-gradient(90deg,#ff8657 0%,#ff3225 140%);
   visibility: none;
   opacity: 0;
   z-index: -1;

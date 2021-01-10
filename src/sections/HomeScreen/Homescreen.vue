@@ -3480,7 +3480,7 @@ ul.v-slides {
 .v-slide {
   font-size: 4vw;
   line-height: 50px;
-  background: -webkit-linear-gradient(90deg,#FE7119 0%,#FF9818 100%);
+  background: -webkit-linear-gradient(0deg,#ff8657 0%,#ff3225 120%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
