@@ -1056,7 +1056,8 @@
                 class="p-4 md:w-1/3 flex flex-col text-center items-center hover:bg-purple-900 rounded-lg shadow-xl transition duration-1000"
               >
                 <div
-                  style="background: linear-gradient(90deg,#fe7119 0%,#ff9818 100%);"
+                  style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
+                  
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
                 >
                   <svg
@@ -1087,7 +1088,7 @@
                 class="p-4 md:w-1/3 w-full flex flex-col text-center items-center hover:bg-purple-900 rounded-lg shadow-xl transition duration-1000"
               >
                 <div
-                  style="background: linear-gradient(90deg,#fe7119 0%,#ff9818 100%);"
+                  style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
                 >
                   <svg
@@ -1116,7 +1117,7 @@
                 class="p-4 md:w-1/3 w-full flex flex-col text-center items-center hover:bg-purple-900 rounded-lg shadow-xl transition duration-1000"
               >
                 <div
-                  style="background: linear-gradient(90deg,#fe7119 0%,#ff9818 100%);"
+                  style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
                 >
                   <svg
