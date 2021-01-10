@@ -3,14 +3,14 @@
     <div
       class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
     >
-      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <div class="w-64 flex-shrink-0 space-y-4 md:mx-0 mx-auto text-center md:text-left">
         <a
           class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
         >
           <img src="/img/footer logo.png" alt="" class="w-60 h-10">
           <span class="ml-3 text-xl text-white"></span>
         </a>
-        <p class="mt-2 text-sm font-semibold text-yellow-300">
+        <p class="mt-2 text-white text-sm font-semibold ">
           DIGITAL CONSULTING AGENCY
         </p>
       </div>
@@ -20,9 +20,9 @@
         <div class="lg:w-1/2 md:w-1/2 w-full px-4">
           <h2
             style="
-              background: -webkit-linear-gradient(90deg,#fe7119 0%,#ff9818 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(0deg,#ff8657 0%,#ff3225 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
             "
             class="title-font font-bold tracking-widest text-xl mb-3"
           >
@@ -48,7 +48,7 @@
                       </svg>
                     </p>
                     <p class="ml-2 font-semibold text-white">
-                      Address: <span class="hover:text-yellow-400">119,Sishan House, 5th floor, Shahpur Jat, New
+                      Address: <span class="">119,Sishan House, 5th floor, Shahpur Jat, New
                       Delhi 110049</span>
                     </p>
                   </li>
@@ -74,7 +74,7 @@
                       </svg>
                     </p>
                     <p class="ml-2 font-semibold text-white">
-                      Phone: <span class="hover:text-yellow-400">+91 832-919-8830</span>
+                      Phone: <span class="">+91 832-919-8830</span>
                     </p>
                   </li>
                 </ul>
@@ -99,7 +99,7 @@
                       </svg>
                     </p>
                     <p class="ml-2 font-semibold text-white">
-                      Email: <span class="hover:text-yellow-400"> jaitiwari1020@gmail.com</span>
+                      Email: <span class=""> jaitiwari1020@gmail.com</span>
                     </p>
                   </li>
                 </ul>
@@ -109,10 +109,11 @@
         </div>
         <div class="lg:w-1/2 md:w-1/2 w-full px-4 cursor-pointer">
           <h2
-          style="
-              background: -webkit-linear-gradient(90deg,#fe7119 0%,#ff9818 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
+              style="
+  background: -webkit-linear-gradient(0deg,#ff8657 0%,#ff3225 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+            
             "
             class="title-font font-bold tracking-widest text-lg mb-3"
           >
@@ -139,7 +140,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white hover:text-yellow-400" v-scroll-to="'#about-section'">About Us</p>
+                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#about-section'">About Us</p>
                       </li>
                     </ul>
                   </a>
@@ -162,7 +163,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white hover:text-yellow-400" v-scroll-to="'#why-we'">Why We</p>
+                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#why-we'">Why We</p>
                       </li>
                     </ul>
                   </a>
@@ -185,7 +186,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white hover:text-yellow-400" v-scroll-to="'#services'">Service</p>
+                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#services'">Service</p>
                       </li>
                     </ul>
                   </a>
@@ -208,7 +209,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white hover:text-yellow-400" v-scroll-to="'#WorkingProcess'">
+                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#WorkingProcess'">
                           Working Process
                         </p>
                       </li>
@@ -235,7 +236,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white hover:text-yellow-400" v-scroll-to="'#ExcellenceSkills'">
+                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#ExcellenceSkills'">
                           Excellence Skills
                         </p>
                       </li>
@@ -260,7 +261,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2  font-semibold text-white hover:text-yellow-400" v-scroll-to="'#BusinessDeserves'">
+                        <p class="ml-2  font-semibold text-white " v-scroll-to="'#BusinessDeserves'">
                           Business Deserves
                         </p>
                       </li>
@@ -285,7 +286,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white hover:text-yellow-400" v-scroll-to="'#contact'">Contact Us</p>
+                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#contact'">Contact Us</p>
                       </li>
                     </ul>
                   </a>
