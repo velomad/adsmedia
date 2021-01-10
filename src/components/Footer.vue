@@ -7,10 +7,10 @@
         <a
           class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
         >
-          <img src="/img/final-logo.png" alt="" class="w-60 h-10">
+          <img src="/img/footer logo.png" alt="" class="w-60 h-10">
           <span class="ml-3 text-xl text-white"></span>
         </a>
-        <p class="mt-2 text-sm font-semibold text-gray-200">
+        <p class="mt-2 text-sm font-semibold text-yellow-300">
           DIGITAL CONSULTING AGENCY
         </p>
       </div>
