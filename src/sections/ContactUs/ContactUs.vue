@@ -1027,7 +1027,9 @@
         <div class="mt-8">
           <button
             @click="handleContactSubmit()"
-            class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
+
+            class="uppercase text-sm font-bold tracking-wide  text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
           >
             <span v-if="issubmited">SENDING...</span>
             <span v-else>SEND</span>
@@ -1056,7 +1058,8 @@
                 class="p-4 md:w-1/3 flex flex-col text-center items-center hover:bg-purple-900 rounded-lg shadow-xl transition duration-1000"
               >
                 <div
-                  style="background: linear-gradient(90deg,#fe7119 0%,#ff9818 100%);"
+                  style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
+                  
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
                 >
                   <svg
@@ -1087,7 +1090,7 @@
                 class="p-4 md:w-1/3 w-full flex flex-col text-center items-center hover:bg-purple-900 rounded-lg shadow-xl transition duration-1000"
               >
                 <div
-                  style="background: linear-gradient(90deg,#fe7119 0%,#ff9818 100%);"
+                  style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
                 >
                   <svg
@@ -1116,7 +1119,7 @@
                 class="p-4 md:w-1/3 w-full flex flex-col text-center items-center hover:bg-purple-900 rounded-lg shadow-xl transition duration-1000"
               >
                 <div
-                  style="background: linear-gradient(90deg,#fe7119 0%,#ff9818 100%);"
+                  style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
                 >
                   <svg
@@ -1137,7 +1140,7 @@
                     Support
                   </h2>
                   <p class="leading-relaxed text-base text-white font-bold">
-                    Send your request to <br />support@adsrevenue.com
+                    Send your request to <br />support@adsrevenue.co
                   </p>
                 </div>
               </div>

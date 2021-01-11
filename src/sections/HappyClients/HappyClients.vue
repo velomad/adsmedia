@@ -5,11 +5,11 @@
   >
     <div class="space-y-10 py-4 md:py-10 lg:py-10">
       <div class="flex-col space-y-4 text-center w-full">
-        <h1 class="text-center text-black font-semibold text-3xl md:text-5xl lg:text-5xl capitalize">
-          Our Happy Customers
+        <h1 class="text-center text-gray-700 font-semibold text-3xl md:text-4xl capitalize">
+          Our Happy Clients
         </h1>
         <p
-          class="lg:w-2/3 mx-auto leading-relaxed tracking-widest text-gray-400 font-bold text-xs md:text-sm lg:text-sm"
+          class="lg:w-2/3 mx-auto leading-relaxed tracking-widest text-gray-400 font-bold text-xs md:text-xs lg:text-xs"
         >
           THE UPSHOT OF ALL THE HARDWORK
         </p>

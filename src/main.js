@@ -13,7 +13,11 @@ Vue.use(VueNumber)
 Vue.component('infinite-slide-bar', InfiniteSlideBar)
 Vue.use(VueCarousel);
 Vue.use(checkView)
-Vue.use(VueScrollTo);
+Vue.use(VueScrollTo, {
+    offset: -110,
+    easing:"ease-in-out",
+    duration:800
+});
 Vue.use(VTooltip)
 
 

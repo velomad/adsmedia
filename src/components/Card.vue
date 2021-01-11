@@ -12,7 +12,7 @@
   </div> -->
 
   <div
-    style="box-shadow: 0 15px 20px rgba(4, 112, 184, 0.1)"
+    style="box-shadow: 0 15px 20px rgba(4, 112, 184, 0.2)"
     class="hover w-full mt-24 md:mt-8 lg:mt-8 mx-auto rounded-lg hover:shadow-2xl cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 bg-white shadow-lg h-80 px-5 text-gray-800"
   >
     <div class="w-full pt-5">
@@ -82,7 +82,7 @@ export default {
 }
 
 .hover:hover {
-  background: linear-gradient(90deg,#FE7119 0%,#FF9818 100%);
+  background: linear-gradient(90deg,#ff8657 0%,#ff3225 140%);
   color: white;
 }
 

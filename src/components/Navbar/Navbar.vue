@@ -87,7 +87,7 @@
             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
           >
             <!-- Profile dropdown -->
-            <div class="ml-3 relative">
+            <div class="ml-3 relative mt-4">
               <nav
                 class="invisible md:visible flex space-x-2 items-center shift"
               >
@@ -186,6 +186,9 @@
         </div>
       </div>
     </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="headerBar"></div>
+    </div>
   </div>
 </template>
 <script>
@@ -201,6 +204,22 @@ export default {
     toggleSideNav() {
       this.toggleNavbar = !this.toggleNavbar;
     },
+    ScrollIndicator() {
+      var winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("headerBar").style.width = scrolled + "%";
+      console.log(Math.round(scrolled * 100) / 100);
+    },
+  },
+  created() {
+    window.addEventListener("scroll", this.ScrollIndicator);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.ScrollIndicator);
   },
 };
 </script>
@@ -225,7 +244,7 @@ nav.shift ul li a:after {
   border-radius: 10px;
   content: ".";
   color: transparent;
-  background: #ff8657;
+  background: linear-gradient(90deg, #ff8657 0%, #ff3225 140%);
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -234,6 +253,18 @@ nav.shift ul li a:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: #fff;
+}
+
+.progress-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #ff8657 0%, #ff3225 100%);
+  width: 0%;
 }
 
 /* nav ul li a {

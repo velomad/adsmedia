@@ -241,7 +241,7 @@ export default {
 }
 
 .wrapper .tooltip {
-  background: #ff8657;
+  background:  linear-gradient(90deg,#ff8657 0%,#ff3225 140%);
   bottom: 100%;
   border-radius: 6px;
   color: #fff;

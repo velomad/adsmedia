@@ -3,6 +3,7 @@
     <div class="z-20 fixed w-full top-0">
       <Navbar />
     </div>
+
     <!-- component -->
     <div
       class="hidden md:block lg:block w-full md:h-screen lg:h-screen relative mt-36"
@@ -3383,7 +3384,7 @@ export default {
       repeat: -1,
     });
 
-    vsOpts.$slides.each(function (i) {
+    vsOpts.$slides.each(function(i) {
       vSlide.to(vsOpts.$list, vsOpts.duration / vsOpts.$slides.length, {
         y: i * -1 * vsOpts.lineHeight,
         ease: Elastic.easeOut.config(1.5, 4),
@@ -3474,13 +3475,17 @@ ul.v-slides {
   padding: 0;
 }
 .v-slide-mobile {
-  color: #ff8657;
+  background: -webkit-linear-gradient(0deg, #ff8657 0%, #ff3225 120%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 50px;
 }
 .v-slide {
   font-size: 4vw;
   line-height: 50px;
-  background: -webkit-linear-gradient(90deg,#FE7119 0%,#FF9818 100%);
+  background: -webkit-linear-gradient(0deg, #ff8657 0%, #ff3225 120%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
