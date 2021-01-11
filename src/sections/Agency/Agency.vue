@@ -3,11 +3,15 @@
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
       <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
         <section class="text-gray-600 body-font overflow-hidden">
-          <div class="container px-5 py-10 space-y-6 md:py-24 lg:py-24 mx-auto">
-            <h2 class="text-2xl title-font text-gray-500 tracking-widest">
-              Creative Digital Marketing to Fuel Your Company’s Revenue
+          <div class="container space-y-4 px-5 py-10 md:py-24 lg:py-24 mx-auto">
+            <div>
+            <h1 class="text-3xl  title-font text-white tracking-widest">
+              Creative Digital Marketing 
+            </h1>
+            <h2 class="text-xl title-font text-gray-500 tracking-widest">
+              to Fuel Your Company’s Revenue
             </h2>
-
+</div>
             <p class="leading-relaxed mb-4 text-white">
               Every account is assigned to a committed account Manager. Each of
               our affiliate managers is highly skilled in the af filiate
