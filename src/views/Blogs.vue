@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="z-20 w-full bg-white top-0">
+    <div class="z-20 w-full fixed bg-white top-0">
       <Navbar />
     </div>
     <div
-      class="flex flex-wrap w-full mb-16 mt-10 flex-col items-center text-center"
+      class="flex mt-36 flex-wrap w-full mb-16 mt-10 flex-col items-center text-center"
     >
       <h1
         class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
