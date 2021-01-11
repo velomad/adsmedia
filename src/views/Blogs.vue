@@ -136,6 +136,14 @@
       </div>
     </div>
     <div class="container mx-auto bg-white">
+      <div class="flex mt-16 mb-4 px-4 lg:px-0 items-center justify-between">
+        <h2 class="font-bold text-3xl">Latest Blogs</h2>
+        <a
+          class="bg-gray-200 font-semibold hover:bg-green-200 text-gray-800 px-3 py-1 rounded cursor-pointer"
+        >
+          {{new Date().toDateString()}}
+        </a>
+      </div>
       <div class="flex flex-wrap -mx-4">
         <div
           class="w-full sm:w-1/2 md:w-1/2 xl:w-1/3 p-4 mx-4 md:mx-0 lg:mx-0"
@@ -260,6 +268,7 @@
               </div>
               <span
                 class="ml-2 uppercase font-bold border-b-2 border-yellow-700"
+                @click="gotoSingleBlog(item)"
               >
                 Read More</span
               >
@@ -279,9 +288,14 @@ export default {
   },
   data() {
     return {
-      dummyArr: ["1", "2", "3", "4", "5", "6"],
+      dummyArr: ["dgskdsdh37", "2shdskdhsu8", "3sbsgfslahfa4", "4sslflsauhf75", "5sgsldsdhsh", "6shssvsffa"],
     };
   },
+  methods:{
+    gotoSingleBlog(blogLink){
+      this.$router.push('blogs/:'+blogLink)
+    }
+  }
 };
 </script>
 <style scoped>
