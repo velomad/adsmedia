@@ -208,9 +208,6 @@ export default {
       var scrolled = (winScroll / height) * 100;
       document.getElementById("headerBar").style.width = scrolled + "%";
       console.log(Math.round(scrolled * 100) / 100);
-      document.getElementById("footerBar").style.width = scrolled + "%";
-      document.getElementById("footerBar").innerHTML =
-        Math.round(scrolled) + "%";
     },
   },
   created() {
@@ -255,12 +252,12 @@ nav.shift ul li a:hover:after {
 
 .progress-container {
   width: 100%;
-  height: 5px;
+  height: 4px;
   background: #fff;
 }
 
 .progress-bar {
-  height: 5px;
+  height: 4px;
   background: linear-gradient(90deg, #ff8657 0%, #ff3225 100%);
   width: 0%;
 }

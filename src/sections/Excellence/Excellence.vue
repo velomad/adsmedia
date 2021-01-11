@@ -101,7 +101,7 @@ export default {
         this.bars.map((el) => {
           grow(this.$refs[el.name], el.percent);
         });
-      }, 400);
+      }, 800);
     },
   },
   mounted() {},
