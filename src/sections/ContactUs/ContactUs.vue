@@ -1027,7 +1027,9 @@
         <div class="mt-8">
           <button
             @click="handleContactSubmit()"
-            class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
+
+            class="uppercase text-sm font-bold tracking-wide  text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
           >
             <span v-if="issubmited">SENDING...</span>
             <span v-else>SEND</span>
