@@ -117,6 +117,11 @@
                   <li>
                     <a class="p-3" v-scroll-to="'#contact'" href="#">Contact</a>
                   </li>
+                  <li>
+                    <router-link to="/blogs">
+                      <a class="p-3">Blog</a>
+                    </router-link>
+                  </li>
                 </ul>
               </nav>
             </div>

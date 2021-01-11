@@ -80,7 +80,7 @@
             class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-80"
           >
             <carousel
-              class="py-10 inner"
+              class="py-10 inner w-full"
               :perPage="1"
               :autoplay="true"
               :autoplayHoverPause="true"
