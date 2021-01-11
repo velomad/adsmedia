@@ -97,30 +97,30 @@
                 >
                   <router-link to="/" tag="button">
                     <li class="uppercase font-semibold">
-                      <a class="p-3" v-scroll-to="'#home'" href="#">Home</a>
+                      <a class="p-2" v-scroll-to="'#home'" href="#">Home</a>
                     </li>
                   </router-link>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-3" v-scroll-to="'#about-section'" href="#"
+                    <a class="p-2" v-scroll-to="'#about-section'" href="#"
                       >About</a
                     >
                   </li>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-3" v-scroll-to="'#services'" href="#"
+                    <a class="p-2" v-scroll-to="'#services'" href="#"
                       >Services</a
                     >
                   </li>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-3" v-scroll-to="'#why-we'" href="#">Why We ?</a>
+                    <a class="p-2" v-scroll-to="'#why-we'" href="#">Why We ?</a>
                   </li>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-3" href="#">Affiliate</a>
+                    <a class="p-2" href="#">Affiliate</a>
                   </li>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-3" href="#">Advertiser</a>
+                    <a class="p-2" href="#">Advertiser</a>
                   </li>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-3" v-scroll-to="'#contact'" href="#">Contact</a>
+                    <a class="p-2" v-scroll-to="'#contact'" href="#">Contact</a>
                   </li>
                   <router-link to="/careers" tag="button">
                     <li
@@ -131,7 +131,7 @@
                           : '',
                       ]"
                     >
-                      <a class="p-3">Careers</a>
+                      <a class="p-2">Careers</a>
                     </li>
                   </router-link>
                   <li
@@ -142,7 +142,7 @@
                     ]"
                   >
                     <router-link to="/blogs">
-                      <a class="p-3">Blog</a>
+                      <a class="p-2">Blog</a>
                     </router-link>
                   </li>
                 </ul>
@@ -152,12 +152,12 @@
                 >
                   <router-link to="/" tag="button">
                     <li class="uppercase font-semibold">
-                      <a class="p-3" v-scroll-to="'#home'" href="#">Home</a>
+                      <a class="p-2" v-scroll-to="'#home'" href="#">Home</a>
                     </li>
                   </router-link>
                   <router-link to="/blogs" tag="button">
                     <li class="uppercase font-semibold">
-                      <a class="p-3">Blogs</a>
+                      <a class="p-2">Blogs</a>
                     </li>
                   </router-link>
                   <li
@@ -168,7 +168,7 @@
                     ]"
                   >
                     <router-link to="/careers">
-                      <a class="p-3"><span>Careers</span></a>
+                      <a class="p-2"><span>Careers</span></a>
                     </router-link>
                   </li>
                 </ul>

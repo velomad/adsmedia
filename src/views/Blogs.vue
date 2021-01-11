@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="z-20 w-full fixed bg-white top-0">
+    <div class="hidden z-20 w-full fixed bg-white top-0">
       <Navbar />
     </div>
-    <div
+    <!-- <div
       class="flex mt-36 flex-wrap w-full mb-16 mt-10 flex-col items-center text-center"
     >
       <h1
@@ -15,8 +15,135 @@
         Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
         gentrify, subway tile poke farm-to-table.
       </p>
+    </div> -->
+    <div>
+      <div
+        class="bannerFondo bg-left-top bg-auto bg-repeat-x"
+        style="
+          background-image: url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+        "
+      ></div>
+      <div style="margin-top: -28rem" class="w-full px-16">
+        <nav class="bg-transparent shadow-lg">
+          <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+            <div class="flex justify-between items-center">
+              <div class="text-2xl font-bold text-white md:text-3xl">
+                <a href="#">AdsRevenue</a>
+              </div>
+              <div class="md:hidden">
+                <button
+                  type="button"
+                  class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none"
+                >
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path
+                      class="hidden"
+                      d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
+                    />
+                    <path
+                      d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row hidden md:block -mx-2">
+              <a
+                href="#"
+                class="text-white rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-white rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+                >Careers</a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="w-full text-center">
+          <p class="text-sm tracking-widest text-white font-bold">AdsRevenue</p>
+          <h1 class="font-bold text-5xl text-white">Blogs</h1>
+        </div>
+
+        <div
+          class="w-full bg-white mt-6 rounded overflow-hidden shadow-xl hover:bg-white transition duration-500"
+        >
+          <!-- <div class="p-2 sm:p-10 w-full text-center cursor-pointer">
+            <div
+              class=""
+            >
+              <div class="space-y-10">
+                <i class="fa fa-spa" style="font-size: 48px"></i>
+
+                <div class="px-6 py-4">
+                  <div class="space-y-5">
+                    <div class="font-bold text-xl mb-2">Spa</div>
+                    <p class="text-gray-700 text-base">
+                      Todo tipo de masajes y técnicas
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- component -->
+          <div class="w-full">
+            <div class="flex bg-white" style="height: 350px">
+              <div
+                class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2"
+              >
+                <div>
+                  <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl">
+                    Build Your New <span class="text-indigo-600">Idea</span>
+                  </h2>
+                  <p class="mt-2 text-sm text-gray-500 md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Blanditiis commodi cum cupiditate ducimus, fugit harum id
+                    necessitatibus odio quam quasi, quibusdam rem tempora
+                    voluptates. Cumque debitis dignissimos id quam vel!
+                  </p>
+                  <div class="flex justify-center lg:justify-start mt-6">
+                    <a
+                      class="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
+                      href="#"
+                      >Get Started</a
+                    >
+                    <a
+                      class="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
+                      href="#"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden lg:block lg:w-1/2"
+                style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%)"
+              >
+                <div
+                  class="h-full object-cover"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+                  "
+                >
+                  <div class="h-full bg-black opacity-25"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container mx-auto bg-white">
+      <div class="flex mt-16 mb-4 px-4 lg:px-0 items-center justify-between">
+        <h2 class="font-bold text-3xl">Latest Blogs</h2>
+        <a
+          class="bg-gray-200 font-semibold hover:bg-green-200 text-gray-800 px-3 py-1 rounded cursor-pointer"
+        >
+          {{new Date().toDateString()}}
+        </a>
+      </div>
       <div class="flex flex-wrap -mx-4">
         <div
           class="w-full sm:w-1/2 md:w-1/2 xl:w-1/3 p-4 mx-4 md:mx-0 lg:mx-0"
@@ -141,6 +268,7 @@
               </div>
               <span
                 class="ml-2 uppercase font-bold border-b-2 border-yellow-700"
+                @click="gotoSingleBlog(item)"
               >
                 Read More</span
               >
@@ -160,10 +288,18 @@ export default {
   },
   data() {
     return {
-      dummyArr: ["1", "2", "3", "4", "5", "6"],
+      dummyArr: ["dgskdsdh37", "2shdskdhsu8", "3sbsgfslahfa4", "4sslflsauhf75", "5sgsldsdhsh", "6shssvsffa"],
     };
   },
+  methods:{
+    gotoSingleBlog(blogLink){
+      this.$router.push('blogs/:'+blogLink)
+    }
+  }
 };
 </script>
 <style scoped>
+.bannerFondo {
+  height: 450px;
+}
 </style>
