@@ -92,6 +92,7 @@
                 class="invisible md:visible flex space-x-2 items-center shift"
               >
                 <ul
+                  v-if="$route.path !== '/careers'"
                   class="flex uppercase font-semibold text-sm tracking-widest text-center text-gray-600 space-x-2"
                 >
                   <router-link to="/" tag="button">
@@ -99,27 +100,75 @@
                       <a class="p-3" v-scroll-to="'#home'" href="#">Home</a>
                     </li>
                   </router-link>
-                  <li>
+                  <li v-if="$route.path !== '/blogs'">
                     <a class="p-3" v-scroll-to="'#about-section'" href="#"
                       >About</a
                     >
                   </li>
-                  <li>
+                  <li v-if="$route.path !== '/blogs'">
                     <a class="p-3" v-scroll-to="'#services'" href="#"
                       >Services</a
                     >
                   </li>
-                  <li>
+                  <li v-if="$route.path !== '/blogs'">
                     <a class="p-3" v-scroll-to="'#why-we'" href="#">Why We ?</a>
                   </li>
-                  <li><a class="p-3" href="#">Affiliate</a></li>
-                  <li><a class="p-3" href="#">Advertiser</a></li>
-                  <li>
+                  <li v-if="$route.path !== '/blogs'">
+                    <a class="p-3" href="#">Affiliate</a>
+                  </li>
+                  <li v-if="$route.path !== '/blogs'">
+                    <a class="p-3" href="#">Advertiser</a>
+                  </li>
+                  <li v-if="$route.path !== '/blogs'">
                     <a class="p-3" v-scroll-to="'#contact'" href="#">Contact</a>
                   </li>
-                  <li>
+                  <router-link to="/careers" tag="button">
+                    <li
+                      class="uppercase font-semibold"
+                      :class="[
+                        $route.path === '/careers'
+                          ? 'blog-link-bg p-2 rounded-lg text-white'
+                          : '',
+                      ]"
+                    >
+                      <a class="p-3">Careers</a>
+                    </li>
+                  </router-link>
+                  <li
+                    :class="[
+                      $route.path === '/blogs'
+                        ? 'blog-link-bg p-2 rounded-lg text-white'
+                        : '',
+                    ]"
+                  >
                     <router-link to="/blogs">
                       <a class="p-3">Blog</a>
+                    </router-link>
+                  </li>
+                </ul>
+                <ul
+                  v-else
+                  class="flex uppercase font-semibold text-sm tracking-widest text-center text-gray-600 space-x-2"
+                >
+                  <router-link to="/" tag="button">
+                    <li class="uppercase font-semibold">
+                      <a class="p-3" v-scroll-to="'#home'" href="#">Home</a>
+                    </li>
+                  </router-link>
+                  <router-link to="/blogs" tag="button">
+                    <li class="uppercase font-semibold">
+                      <a class="p-3">Blogs</a>
+                    </li>
+                  </router-link>
+                  <li
+                    :class="[
+                      $route.path === '/careers'
+                        ? 'blog-link-bg p-2 rounded-lg text-white'
+                        : '',
+                    ]"
+                  >
+                    <router-link to="/careers">
+                      <a class="p-3"><span>Careers</span></a>
                     </router-link>
                   </li>
                 </ul>
@@ -216,6 +265,7 @@ export default {
     },
   },
   created() {
+    console.log("$route", this.$route);
     window.addEventListener("scroll", this.ScrollIndicator);
   },
   destroyed() {
@@ -266,7 +316,9 @@ nav.shift ul li a:hover:after {
   background: linear-gradient(90deg, #ff8657 0%, #ff3225 100%);
   width: 0%;
 }
-
+.blog-link-bg {
+  background: linear-gradient(90deg, #ff8657 0%, #ff3225 100%);
+}
 /* nav ul li a {
   display: block;
   padding: 8px;
