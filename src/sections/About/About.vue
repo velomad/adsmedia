@@ -206,7 +206,7 @@
                       ></path>
                     </svg>
                   </div>
-
+                  
                   <number
                     v-view.once="onceHandler"
                     animationPaused
@@ -248,18 +248,20 @@
                       ></path>
                     </svg>
                   </div>
+                  <h2 class="title-font font-medium text-3xl text-white">
                   <number
                     v-view.once="onceHandler"
                     animationPaused
                     class="text-3xl text-white"
                     ref="number4"
                     :from="100"
+                    :class="{ scaleBig: false }"
                     :to="180"
                     :format="theFormat"
                     :duration="5"
                     :delay="2"
                     easing="Power1.easeOut"
-                  />
+                  />+</h2>
                   <!-- <div>100000</div> -->
                   <div class="text-lg text-white">Clients Satisfied</div>
                 </div>
@@ -675,7 +677,7 @@
                     v-view.once="onceHandler"
                     animationPaused
                     class="text-3xl text-white"
-                    ref="number1"
+                    ref="number5"
                     :from="100"
                     :to="10000"
                     :class="{ scaleBig: false }"
@@ -710,7 +712,7 @@
                     v-view.once="onceHandler"
                     animationPaused
                     class="text-3xl text-white"
-                    ref="number1"
+                    ref="number6"
                     :from="100"
                     :to="768400"
                     :class="{ scaleBig: false }"
@@ -745,9 +747,9 @@
                     v-view.once="onceHandler"
                     animationPaused
                     class="text-3xl text-white"
-                    ref="number1"
+                    ref="number7"
                     :from="100"
-                    :to="768400"
+                    :to="80706"
                     :class="{ scaleBig: false }"
                     :format="theFormat"
                     :duration="5"
@@ -781,15 +783,15 @@
                     v-view.once="onceHandler"
                     animationPaused
                     class="text-3xl text-white"
-                    ref="number1"
-                    :from="100"
-                    :to="768400"
+                    ref="number8"
+                    :from="10"
+                    :to="180"
                     :class="{ scaleBig: false }"
                     :format="theFormat"
                     :duration="5"
                     :delay="0.5"
                     easing="Power4.easeOut"
-                  />
+                  />+
                   </h2>
                   <p class="leading-relaxed text-white">Clients Satisfied
 </p>
@@ -819,6 +821,10 @@ export default {
       this.$refs.number2.play();
       this.$refs.number3.play();
       this.$refs.number4.play();
+      this.$refs.number5.play();
+      this.$refs.number6.play();
+      this.$refs.number7.play();
+      this.$refs.number8.play();
     },
   },
 };

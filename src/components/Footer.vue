@@ -28,28 +28,21 @@
           >
             Our location
           </h2>
-          <nav class="list-none mb-10">
-            <li class="mb-3 cursor-pointer">
+          <nav class="list-none mb-10 space-y-8">
+            <li class="mb-3 cursor-pointer ">
               <a class="text-gray-600 hover:text-gray-800">
                 <ul>
-                  <li class="flex">
+                  <li class="flex space-x-6 items-center">
                     <p>
-                      <svg
-                        class="w-6 h-6 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
+                      <svg 
+                      class="h-6 w-6 text-white"
+                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+</svg>
                     </p>
-                    <p class="ml-2 font-semibold text-white">
-                      Address: <span class="">119,Sishan House, 5th floor, Shahpur Jat, New
-                      Delhi 110049</span>
+                    <p class="ml-2 text-left font-semibold text-white">
+                       119,Sishan House, 5th floor, Shahpur Jat, New
+                      Delhi 110049
                     </p>
                   </li>
                 </ul>
@@ -58,23 +51,16 @@
             <li class="mb-3 cursor-pointer">
               <a class="text-gray-600 hover:text-gray-800">
                 <ul>
-                  <li class="flex">
+                  <li class="flex space-x-6 items-center">
                     <p>
-                      <svg
-                        class="w-6 h-6 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
+                      <svg 
+                      class="h-6 w-6 text-white"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+</svg>
                     </p>
                     <p class="ml-2 font-semibold text-white">
-                      Phone: <span class="">+91 832-919-8830</span>
+ <span class="">+91 832-919-8830</span>
                     </p>
                   </li>
                 </ul>
@@ -83,23 +69,14 @@
             <li class="mb-3 cursor-pointer">
               <a class="text-gray-600 hover:text-gray-800">
                 <ul>
-                  <li class="flex">
+                  <li class="flex space-x-6 items-center">
                     <p>
-                      <svg
-                        class="w-6 h-6 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
+                      <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
+</svg>
                     </p>
                     <p class="ml-2 font-semibold text-white">
-                      Email: <span class=""> jaitiwari1020@gmail.com</span>
+ <span class=""> jaitiwari1020@gmail.com</span>
                     </p>
                   </li>
                 </ul>
@@ -125,7 +102,7 @@
                 <li class="mb-3">
                   <a class="text-gray-600 hover:text-gray-800">
                     <ul>
-                      <li class="flex">
+                      <li class="flex space-x-2">
                         <p>
                           <svg
                             class="w-6 h-6 text-white"
@@ -140,7 +117,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#about-section'">About Us</p>
+                        <p class="text-left text-sm font-semibold text-white hover:text-yellow-400" v-scroll-to="'#about-section'">About Us</p>
                       </li>
                     </ul>
                   </a>
@@ -148,7 +125,7 @@
                 <li class="mb-3">
                   <a class="text-gray-600 hover:text-gray-800">
                     <ul>
-                      <li class="flex">
+                      <li class="flex space-x-2">
                         <p>
                           <svg
                             class="w-6 h-6 text-white"
@@ -163,7 +140,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#why-we'">Why We</p>
+                        <p class="text-left text-sm font-semibold text-white hover:text-yellow-400" v-scroll-to="'#why-we'">Why We</p>
                       </li>
                     </ul>
                   </a>
@@ -171,7 +148,7 @@
                 <li class="mb-3">
                   <a class="text-gray-600 hover:text-gray-800">
                     <ul>
-                      <li class="flex">
+                      <li class="flex space-x-2">
                         <p>
                           <svg
                             class="w-6 h-6 text-white"
@@ -186,7 +163,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#services'">Service</p>
+                        <p class="text-left text-sm font-semibold text-white hover:text-yellow-400" v-scroll-to="'#services'">Service</p>
                       </li>
                     </ul>
                   </a>
@@ -194,7 +171,7 @@
                 <li class="mb-3">
                   <a class="text-gray-600 hover:text-gray-800">
                     <ul>
-                      <li class="flex">
+                      <li class="flex space-x-2">
                         <p>
                           <svg
                             class="w-6 h-6 text-white"
@@ -209,7 +186,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#WorkingProcess'">
+                        <p class="text-left text-sm font-semibold text-white hover:text-yellow-400 " v-scroll-to="'#WorkingProcess'">
                           Working Process
                         </p>
                       </li>
@@ -221,7 +198,7 @@
                 <li class="mb-3">
                   <a class="text-gray-600 hover:text-gray-800">
                     <ul>
-                      <li class="flex">
+                      <li class="flex space-x-2">
                         <p>
                           <svg
                             class="w-6 h-6 text-white"
@@ -236,7 +213,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#ExcellenceSkills'">
+                        <p class="text-left text-sm hover:text-yellow-400 font-semibold text-white " v-scroll-to="'#ExcellenceSkills'">
                           Excellence Skills
                         </p>
                       </li>
@@ -246,7 +223,7 @@
                 <li class="mb-3">
                   <a class="text-gray-600  hover:text-gray-800">
                     <ul>
-                      <li class="flex">
+                      <li class="flex space-x-2">
                         <p>
                           <svg
                             class="w-6 h-6 text-white"
@@ -261,7 +238,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2  font-semibold text-white " v-scroll-to="'#BusinessDeserves'">
+                        <p class="text-left hover:text-yellow-400 text-sm font-semibold text-white " v-scroll-to="'#BusinessDeserves'">
                           Business Deserves
                         </p>
                       </li>
@@ -271,7 +248,7 @@
                 <li class="mb-3">
                   <a class="text-gray-600 hover:text-gray-800">
                     <ul>
-                      <li class="flex">
+                      <li class="flex space-x-2">
                         <p>
                           <svg
                             class="w-6 h-6 text-white"
@@ -286,7 +263,7 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="ml-2 font-semibold text-white " v-scroll-to="'#contact'">Contact Us</p>
+                        <p class="text-left text-sm  hover:text-yellow-400 font-semibold text-white " v-scroll-to="'#contact'">Contact Us</p>
                       </li>
                     </ul>
                   </a>
@@ -301,7 +278,7 @@
       <div
         class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
       >
-        <p class="text-gray-500 text-sm text-center sm:text-left">
+        <p class="text-gray-500 text-sm  text-center sm:text-left">
           © 2021 AdsRevenue —
           <a
             href="https://twitter.com/knyttneve"
