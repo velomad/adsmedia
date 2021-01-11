@@ -3,11 +3,13 @@
     <div
       class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
     >
-      <div class="w-64 flex-shrink-0 space-y-4 md:mx-0 mx-auto text-center md:text-left">
+      <div
+        class="w-64 flex-shrink-0 space-y-4 md:mx-0 mx-auto text-center md:text-left"
+      >
         <a
           class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
         >
-          <img src="/img/footer logo.png" alt="" class="w-60 h-10">
+          <img src="/img/footer logo.png" alt="" class="w-60 h-10" />
           <span class="ml-3 text-xl text-white"></span>
         </a>
         <p class="mt-2 text-white text-sm font-semibold ">
@@ -34,15 +36,22 @@
                 <ul>
                   <li class="flex space-x-6 items-center">
                     <p>
-                      <svg 
-                      class="h-6 w-6 text-white"
-                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-</svg>
+                      <svg
+                        class="h-6 w-6 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
                     </p>
                     <p class="ml-2 text-left font-semibold text-white">
-                       119,Sishan House, 5th floor, Shahpur Jat, New
-                      Delhi 110049
+                      Sunshine City, Moregaon Talao, Oswal Nagari, Nalasopara
+                      East, Nala Sopara, Maharashtra 401209
                     </p>
                   </li>
                 </ul>
@@ -53,14 +62,23 @@
                 <ul>
                   <li class="flex space-x-6 items-center">
                     <p>
-                      <svg 
-                      class="h-6 w-6 text-white"
-                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-</svg>
+                      <svg
+                        class="h-6 w-6 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                        />
+                      </svg>
                     </p>
                     <p class="ml-2 font-semibold text-white">
- <span class="">+91 832-919-8830</span>
+                      <span class="">+91 832-919-8830</span>
                     </p>
                   </li>
                 </ul>
@@ -71,12 +89,23 @@
                 <ul>
                   <li class="flex space-x-6 items-center">
                     <p>
-                      <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
-</svg>
+                      <svg
+                        class="h-6 w-6 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"
+                        />
+                      </svg>
                     </p>
                     <p class="ml-2 font-semibold text-white">
- <span class=""> jaitiwari1020@gmail.com</span>
+                      <span class=""> jaitiwari1020@gmail.com</span>
                     </p>
                   </li>
                 </ul>
@@ -86,7 +115,7 @@
         </div>
         <div class="lg:w-1/2 md:w-1/2 w-full px-4 cursor-pointer">
           <h2
-              style="
+            style="
   background: -webkit-linear-gradient(0deg,#ff8657 0%,#ff3225 120%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -117,7 +146,12 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="text-left text-sm font-semibold text-white hover:text-yellow-400" v-scroll-to="'#about-section'">About Us</p>
+                        <p
+                          class="text-left text-sm font-semibold text-white hover:text-yellow-400"
+                          v-scroll-to="'#about-section'"
+                        >
+                          About Us
+                        </p>
                       </li>
                     </ul>
                   </a>
@@ -140,7 +174,12 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="text-left text-sm font-semibold text-white hover:text-yellow-400" v-scroll-to="'#why-we'">Why We</p>
+                        <p
+                          class="text-left text-sm font-semibold text-white hover:text-yellow-400"
+                          v-scroll-to="'#why-we'"
+                        >
+                          Why We
+                        </p>
                       </li>
                     </ul>
                   </a>
@@ -163,7 +202,12 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="text-left text-sm font-semibold text-white hover:text-yellow-400" v-scroll-to="'#services'">Service</p>
+                        <p
+                          class="text-left text-sm font-semibold text-white hover:text-yellow-400"
+                          v-scroll-to="'#services'"
+                        >
+                          Service
+                        </p>
                       </li>
                     </ul>
                   </a>
@@ -186,7 +230,10 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="text-left text-sm font-semibold text-white hover:text-yellow-400 " v-scroll-to="'#WorkingProcess'">
+                        <p
+                          class="text-left text-sm font-semibold text-white hover:text-yellow-400 "
+                          v-scroll-to="'#WorkingProcess'"
+                        >
                           Working Process
                         </p>
                       </li>
@@ -213,7 +260,10 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="text-left text-sm hover:text-yellow-400 font-semibold text-white " v-scroll-to="'#ExcellenceSkills'">
+                        <p
+                          class="text-left text-sm hover:text-yellow-400 font-semibold text-white "
+                          v-scroll-to="'#ExcellenceSkills'"
+                        >
                           Excellence Skills
                         </p>
                       </li>
@@ -238,7 +288,10 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="text-left hover:text-yellow-400 text-sm font-semibold text-white " v-scroll-to="'#BusinessDeserves'">
+                        <p
+                          class="text-left hover:text-yellow-400 text-sm font-semibold text-white "
+                          v-scroll-to="'#BusinessDeserves'"
+                        >
                           Business Deserves
                         </p>
                       </li>
@@ -263,7 +316,12 @@
                             ></path>
                           </svg>
                         </p>
-                        <p class="text-left text-sm  hover:text-yellow-400 font-semibold text-white " v-scroll-to="'#contact'">Contact Us</p>
+                        <p
+                          class="text-left text-sm  hover:text-yellow-400 font-semibold text-white "
+                          v-scroll-to="'#contact'"
+                        >
+                          Contact Us
+                        </p>
                       </li>
                     </ul>
                   </a>
@@ -362,5 +420,4 @@ export default {
   name: "footer",
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

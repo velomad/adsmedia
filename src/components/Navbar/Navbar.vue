@@ -181,6 +181,9 @@
         </div>
       </div>
     </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="headerBar"></div>
+    </div>
   </div>
 </template>
 <script>
@@ -196,6 +199,25 @@ export default {
     toggleSideNav() {
       this.toggleNavbar = !this.toggleNavbar;
     },
+    ScrollIndicator() {
+      var winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("headerBar").style.width = scrolled + "%";
+      console.log(Math.round(scrolled * 100) / 100);
+      document.getElementById("footerBar").style.width = scrolled + "%";
+      document.getElementById("footerBar").innerHTML =
+        Math.round(scrolled) + "%";
+    },
+  },
+  created() {
+    window.addEventListener("scroll", this.ScrollIndicator);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.ScrollIndicator);
   },
 };
 </script>
@@ -220,7 +242,7 @@ nav.shift ul li a:after {
   border-radius: 10px;
   content: ".";
   color: transparent;
-  background:  linear-gradient(90deg,#ff8657 0%,#ff3225 140%);
+  background: linear-gradient(90deg, #ff8657 0%, #ff3225 140%);
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -229,6 +251,18 @@ nav.shift ul li a:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+}
+
+.progress-bar {
+  height: 5px;
+  background: linear-gradient(90deg, #ff8657 0%, #ff3225 100%);
+  width: 0%;
 }
 
 /* nav ul li a {

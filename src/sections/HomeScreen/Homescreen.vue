@@ -3,6 +3,7 @@
     <div class="z-20 fixed w-full top-0">
       <Navbar />
     </div>
+      
     <!-- component -->
     <div
       class="hidden md:block lg:block w-full md:h-screen lg:h-screen relative mt-36"
