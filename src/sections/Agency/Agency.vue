@@ -3,29 +3,24 @@
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
       <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
         <section class="text-gray-600 body-font overflow-hidden">
-          <div class="container px-5 py-10 md:py-24 lg:py-24 mx-auto">
+          <div class="container px-5 py-10 space-y-6 md:py-24 lg:py-24 mx-auto">
             <h2 class="text-2xl title-font text-gray-500 tracking-widest">
-              An Agency Experience Your
+              Creative Digital Marketing to Fuel Your Company’s Revenue
             </h2>
-            <h1 class="text-gray-500 text-4xl title-font font-bold mb-4">
-              Business Deserves
-            </h1>
+
             <p class="leading-relaxed mb-4 text-white">
-              The BrandDad Digital team functions as an extension of your
-              organization. You aren’t just another client. You’re a partner,
-              and you deserve an experience that’s comfortable and tailored to
-              your needs.
+              Every account is assigned to a committed account Manager. Each of
+              our affiliate managers is highly skilled in the af filiate
+              marketing and campaign promotion. And we will work with you to
+              achieve your goals!
             </p>
+
             <p class="leading-relaxed mb-4 text-white">
-              Our team implements multifaceted strategies designed specifically
-              for your business to generate results month after month. We care
-              about your success which is why we put an emphasis on the results
-              and service that we provide to you. After all, your success is
+              Our team implements multifaceted strategies designed for your
+              business to generate results month after month. We c are about
+              your achievement. Which is why we put a sign on the results and
+              service that we provide to you. After all, your achievement is
               what fuels our own.
-            </p>
-            <p class="leading-relaxed mb-4 text-white">
-              If you’re ready to work with a partner that cares as much about
-              growing your business as you do, get in touch with us today.
             </p>
           </div>
         </section>
@@ -40,7 +35,7 @@
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
           <div
-          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
+            style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
             class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
           >
             <svg
@@ -60,7 +55,7 @@
             <h2
               class="font-medium mt-2 title-font text-sm text-gray-200 mb-0 tracking-wider"
             >
-              Solutions Crafted To Your Business Needs.
+              Connect with qualified Industry Experts.
             </h2>
           </div>
         </div>
@@ -71,8 +66,7 @@
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
           <div
-          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-
+            style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
             class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
           >
             <svg
@@ -92,7 +86,7 @@
             <h2
               class="font-medium mt-2 title-font text-sm text-gray-200 mb-1 tracking-wider"
             >
-              Experienced, Knowledgeable Team.
+             Save Time & Earn 30% more.
             </h2>
           </div>
         </div>
@@ -103,8 +97,7 @@
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
           <div
-          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-
+            style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
             class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
           >
             <svg
@@ -124,14 +117,13 @@
             <h2
               class="font-medium mt-2 title-font text-sm text-gray-200 mb-1 tracking-wider"
             >
-              Results Focused, Value Driven.
+              100% Timely Reports and Payments.
             </h2>
           </div>
         </div>
         <div class="flex relative">
           <div
-          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-
+            style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
             class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
           >
             <svg
@@ -170,8 +162,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-
+                style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
                 class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
@@ -202,8 +193,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-
+                style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
                 class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
@@ -234,8 +224,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-
+                style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
                 class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
@@ -266,8 +255,7 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div> -->
               <div
-          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-
+                style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
                 class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
@@ -313,5 +301,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

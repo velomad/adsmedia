@@ -1140,7 +1140,7 @@
                     Support
                   </h2>
                   <p class="leading-relaxed text-base text-white font-bold">
-                    Send your request to <br />support@adsrevenue.com
+                    Send your request to <br />support@adsrevenue.co
                   </p>
                 </div>
               </div>

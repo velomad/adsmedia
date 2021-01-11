@@ -87,7 +87,7 @@
             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
           >
             <!-- Profile dropdown -->
-            <div class="ml-3 relative">
+            <div class="ml-3 relative mt-4">
               <nav
                 class="invisible md:visible flex space-x-2 items-center shift"
               >

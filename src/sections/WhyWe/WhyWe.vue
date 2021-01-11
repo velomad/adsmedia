@@ -56,7 +56,7 @@
                     <img src="@/assets/slider2.svg" alt="" width="300" />
                   </div>
                   <div class="text-center text-2xl text-white col-span-2">
-                    Adsmidea has a team of creative support digital marketing
+                    Adsrevenue has a team of creative support digital marketing
                     experts having their own unique specialties. Create
                     appealing banners, landing pages and content that Affiliates
                     can use to boost their campaigns.
@@ -162,7 +162,7 @@
                       <p
                         class="lg:w-2/3 mx-auto leading-relaxed text-base text-white"
                       >
-                        Adsmidea has a team of creative support digital
+                        Adsrevenue has a team of creative support digital
                         marketing experts having their own unique specialties.
                         Create appealing banners, landing pages and content that
                         Affiliates can use to boost their campaigns.
@@ -192,5 +192,8 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
+.VueCarousel-dot{
+  background-color: blue;
+}
 </style>

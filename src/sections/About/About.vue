@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="hidden md:block lg:block flex py-28 justify-center items-center"
+      class="hidden md:block lg:block flex py-10 justify-center items-center"
     >
       <div class="px-20 inner">
         <div class="grid place-items-center md:grid-cols-2 gap-8">
@@ -13,15 +13,15 @@
             </div>
             <div class="text-justify text-md text-gray-600">
               Adsrevenue is an interactive Digital Consulting Agency based in
-              mumbai providing an exclusive service in Digital Marketing also
-              Rated as one of the fastest growing affiliated network in India.
-              We are specialist in high quality analysis to drive every aspect
-              of your brands, marketing, planning, technology & creative
-              content. Adsrevenue is the most trusted performance marketing
-              partner for advertisers Beacause our ideology is to work as
-              business partners for better ROI rather than just being the
-              delivery partners.The Digital Edge! We believe in delivering
-              performance, transparently and innovatively.
+              Mumbai providing an exclusive service in Digital Marketing also
+              Rated as one of the fastest growing affiliate networks in India.
+              We believe in building robust, profita ble customer relationship
+              with our aim to deliver high performance. We are specialized in
+              high quality analysis to dr ive every aspect of your brands,
+              marketing, planning, technology & creative content. Adsrevenue is
+              the most trusted performance marketing partner for advertisers
+              because our ideology is to work as business partners for better
+              ROI ra ther than just being the delivery partners.
             </div>
             <div class="flex justify-center">
               <div class="flex -m-4">
@@ -100,26 +100,18 @@
                 <div class="grid place-items-center py-10 space-y-4">
                   <div>
                     <svg
-                      class="w-10 h-10 text-purple-900"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
+                      class="h-10 w-10 text-white"
                       xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
                     >
                       <path
-                        fill-rule="evenodd"
-                        d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00-9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z"
-                        clip-rule="evenodd"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.83z"
-                        clip-rule="evenodd"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 10a1 1 0 011 1c0 2.236-.46 4.368-1.29 6.304a1 1 0 01-1.838-.789A13.952 13.952 0 009 11a1 1 0 011-1z"
-                        clip-rule="evenodd"
-                      ></path>
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
                     </svg>
                   </div>
 
@@ -152,7 +144,9 @@
                 <div class="grid place-items-center py-10 px-6 space-y-4">
                   <div>
                     <svg
-                      class="w-10 h-10 text-indigo-500"
+                  style="color:#c95cff"
+
+                      class="w-10 h-10"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -168,9 +162,9 @@
                   <number
                     v-view.once="onceHandler"
                     animationPaused
-                    class="text-3xl"
-                    style="color: #d18ef2"
+                    class="text-3xl "
                     ref="number2"
+                  style="color:#c95cff"
                     :from="100"
                     :to="768400"
                     :format="theFormat"
@@ -178,7 +172,9 @@
                     :delay="2"
                     easing="Power1.easeOut"
                   />
-                  <div class="font-semibold">Install Given</div>
+                  <div class="font-semibold"
+                  style="color:#c95cff"
+                  >Install Given</div>
                 </div>
               </div>
             </div>
@@ -194,24 +190,23 @@
                 <div class="grid place-items-center py-10 space-y-4">
                   <div>
                     <svg
-                      class="w-10 h-10 text-green-700"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
+                      class="w-10 h-10 text-blue-500"
                       xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
                     >
                       <path
                         fill-rule="evenodd"
-                        d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+                        d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
                         clip-rule="evenodd"
-                      ></path>
+                      />
                     </svg>
                   </div>
-                  
+
                   <number
                     v-view.once="onceHandler"
                     animationPaused
-                    class="text-3xl"
-                    style="color: #47b2ff"
+                    class="text-3xl text-blue-500"
                     ref="number3"
                     :from="100"
                     :to="80706"
@@ -220,7 +215,7 @@
                     :delay="2"
                     easing="Power1.easeOut"
                   />
-                  <div class="text-black font-semibold">Leads Delivered</div>
+                  <div class="text-blue-500 font-semibold">Leads Delivered</div>
                 </div>
               </div>
             </div>
@@ -249,19 +244,20 @@
                     </svg>
                   </div>
                   <h2 class="title-font font-medium text-3xl text-white">
-                  <number
-                    v-view.once="onceHandler"
-                    animationPaused
-                    class="text-3xl text-white"
-                    ref="number4"
-                    :from="100"
-                    :class="{ scaleBig: false }"
-                    :to="180"
-                    :format="theFormat"
-                    :duration="5"
-                    :delay="2"
-                    easing="Power1.easeOut"
-                  />+</h2>
+                    <number
+                      v-view.once="onceHandler"
+                      animationPaused
+                      class="text-3xl text-white"
+                      ref="number4"
+                      :from="100"
+                      :class="{ scaleBig: false }"
+                      :to="180"
+                      :format="theFormat"
+                      :duration="5"
+                      :delay="2"
+                      easing="Power1.easeOut"
+                    />+
+                  </h2>
                   <!-- <div>100000</div> -->
                   <div class="text-lg text-white">Clients Satisfied</div>
                 </div>
@@ -574,15 +570,15 @@
             </h1>
             <p class="leading-relaxed mb-4">
               Adsrevenue is an interactive Digital Consulting Agency based in
-              mumbai providing an exclusive service in Digital Marketing also
-              Rated as one of the fastest growing affiliated network in India.
-              We are specialist in high quality analysis to drive every aspect
-              of your brands, marketing, planning, technology & creative
-              content. Adsrevenue is the most trusted performance marketing
-              partner for advertisers Beacause our ideology is to work as
-              business partners for better ROI rather than just being the
-              delivery partners.The Digital Edge! We believe in delivering
-              performance, transparently and innovatively.
+              Mumbai providing an exclusive service in Digital Marketing also
+              Rated as one of the fastest growing affiliate networks in India.
+              We believe in building robust, profita ble customer relationship
+              with our aim to deliver high performance. We are specialized in
+              high quality analysis to dr ive every aspect of your brands,
+              marketing, planning, technology & creative content. Adsrevenue is
+              the most trusted performance marketing partner for advertisers
+              because our ideology is to work as business partners for better
+              ROI ra ther than just being the delivery partners.
             </p>
           </div>
           <div class="p-0 md:w-2/2 w-full">
@@ -651,43 +647,37 @@
                   style="background: #ff8657"
                 >
                   <svg
-                      class="h-10 text-purple-900 w-12 h-12 mb-3 inline-block"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00-9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z"
-                        clip-rule="evenodd"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.83z"
-                        clip-rule="evenodd"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 10a1 1 0 011 1c0 2.236-.46 4.368-1.29 6.304a1 1 0 01-1.838-.789A13.952 13.952 0 009 11a1 1 0 011-1z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
+                    class="w-10 h-10 text-white inline-block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
                   <h2 class="title-font font-medium text-3xl text-white">
                     <number
-                    v-view.once="onceHandler"
-                    animationPaused
-                    class="text-3xl text-white"
-                    ref="number5"
-                    :from="100"
-                    :to="10000"
-                    :class="{ scaleBig: false }"
-                    :format="theFormat"
-                    :duration="5"
-                    :delay="0.5"
-                    easing="Power4.easeOut"
-                  />
+                      v-view.once="onceHandler"
+                      animationPaused
+                      class="text-3xl text-white"
+                      ref="number5"
+                      :from="100"
+                      :to="10000"
+                      :class="{ scaleBig: false }"
+                      :format="theFormat"
+                      :duration="5"
+                      :delay="0.5"
+                      easing="Power4.easeOut"
+                    />
                   </h2>
-                  <p class="leading-relaxed text-white">Impressions delivered</p>
+                  <p class="leading-relaxed text-white">
+                    Impressions delivered
+                  </p>
                 </div>
               </div>
               <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -696,31 +686,31 @@
                   style="background: #efdff7"
                 >
                   <svg
-                      class="w-10 h-10 text-indigo-500 inline-block"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
+                    class="w-10 h-10 text-indigo-500 inline-block"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
                   <h2 class="title-font font-medium text-3xl text-white">
                     <number
-                    v-view.once="onceHandler"
-                    animationPaused
-                    class="text-3xl text-white"
-                    ref="number6"
-                    :from="100"
-                    :to="768400"
-                    :class="{ scaleBig: false }"
-                    :format="theFormat"
-                    :duration="5"
-                    :delay="0.5"
-                    easing="Power4.easeOut"
-                  />
+                      v-view.once="onceHandler"
+                      animationPaused
+                      class="text-3xl text-white"
+                      ref="number6"
+                      :from="100"
+                      :to="768400"
+                      :class="{ scaleBig: false }"
+                      :format="theFormat"
+                      :duration="5"
+                      :delay="0.5"
+                      easing="Power4.easeOut"
+                    />
                   </h2>
                   <p class="leading-relaxed text-white">Install Given</p>
                 </div>
@@ -731,34 +721,33 @@
                   style="background: #c6e6fd"
                 >
                   <svg
-                      class="w-10 h-10 text-green-700 inline-block"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
+                    class="w-10 h-10 text-green-700 inline-block"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
                   <h2 class="title-font font-medium text-3xl text-white">
                     <number
-                    v-view.once="onceHandler"
-                    animationPaused
-                    class="text-3xl text-white"
-                    ref="number7"
-                    :from="100"
-                    :to="80706"
-                    :class="{ scaleBig: false }"
-                    :format="theFormat"
-                    :duration="5"
-                    :delay="0.5"
-                    easing="Power4.easeOut"
-                  />
+                      v-view.once="onceHandler"
+                      animationPaused
+                      class="text-3xl text-white"
+                      ref="number7"
+                      :from="100"
+                      :to="80706"
+                      :class="{ scaleBig: false }"
+                      :format="theFormat"
+                      :duration="5"
+                      :delay="0.5"
+                      easing="Power4.easeOut"
+                    />
                   </h2>
-                  <p class="leading-relaxed text-white">Leads Delivered
-</p>
+                  <p class="leading-relaxed text-white">Leads Delivered</p>
                 </div>
               </div>
               <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -767,34 +756,33 @@
                   style="background: #00438b"
                 >
                   <svg
-                      class="w-10 h-10 text-yellow-500 inline-block"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
+                    class="w-10 h-10 text-yellow-500 inline-block"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
                   <h2 class="title-font font-medium text-3xl text-white">
                     <number
-                    v-view.once="onceHandler"
-                    animationPaused
-                    class="text-3xl text-white"
-                    ref="number8"
-                    :from="10"
-                    :to="180"
-                    :class="{ scaleBig: false }"
-                    :format="theFormat"
-                    :duration="5"
-                    :delay="0.5"
-                    easing="Power4.easeOut"
-                  />+
+                      v-view.once="onceHandler"
+                      animationPaused
+                      class="text-3xl text-white"
+                      ref="number8"
+                      :from="10"
+                      :to="180"
+                      :class="{ scaleBig: false }"
+                      :format="theFormat"
+                      :duration="5"
+                      :delay="0.5"
+                      easing="Power4.easeOut"
+                    />+
                   </h2>
-                  <p class="leading-relaxed text-white">Clients Satisfied
-</p>
+                  <p class="leading-relaxed text-white">Clients Satisfied</p>
                 </div>
               </div>
             </div>
