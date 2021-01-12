@@ -59,9 +59,9 @@
           <div
             class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
           >
-            <div class="flex-shrink-0 flex items-center">
+            <div class="flex-shrink-0 flex items-center ">
               <img
-                class="block lg:block w-60 h-10"
+                class="block lg:block md:w-60 w-52"
                 src="/img/final-logo.png"
                 alt="Workflow"
               />
@@ -186,12 +186,14 @@
       <div
         v-show="toggleNavbar"
         style="z-index: 99999"
-        class="transition duration-1000 ease-in-out"
+        class="transition duration-600 ease-in-out"
       >
         <div class="px-2 pt-2 pb-3 space-y-1">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
           <a
+            @click="toggleNavbar = !toggleNavbar"
             href="#"
+            v-scroll-to="'#home'"
             class="text-gray-500 block px-3 py-2 rounded-md text-base font-medium"
             >Home</a
           >
@@ -211,7 +213,6 @@
           >
           <a
             @click="toggleNavbar = !toggleNavbar"
-            href="#"
             v-scroll-to="'#why-we'"
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >Why We ?</a
@@ -227,11 +228,25 @@
             >Advertiser</a
           >
           <a
-            href="#"
+            @click="toggleNavbar = !toggleNavbar"
             v-scroll-to="'#contact'"
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >Contact</a
           >
+          <route-link to="/careers">
+            <a
+              @click="toggleNavbar = !toggleNavbar"
+              class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Careers</a
+            >
+          </route-link>
+          <route-link to="/blogs">
+            <a
+              @click="toggleNavbar = !toggleNavbar"
+              class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Blogs</a
+            >
+          </route-link>
         </div>
       </div>
     </nav>

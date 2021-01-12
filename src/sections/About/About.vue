@@ -11,7 +11,7 @@
             >
               Who we are ?
             </div>
-            <div class="text-justify text-md text-gray-600">
+            <div class="text-justify text-md text-gray-600 text-justify">
               Adsrevenue is an interactive Digital Consulting Agency based in
               Mumbai providing an exclusive service in Digital Marketing also
               Rated as one of the fastest growing affiliate networks in India.
@@ -568,7 +568,7 @@
             <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">
               Who we are ?
             </h1>
-            <p class="leading-relaxed mb-4">
+            <p class="leading-relaxed mb-4 text-justify">
               Adsrevenue is an interactive Digital Consulting Agency based in
               Mumbai providing an exclusive service in Digital Marketing also
               Rated as one of the fastest growing affiliate networks in India.
