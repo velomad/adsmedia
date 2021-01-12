@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="grid xs:space-y-10 md:gap-14 grid-cols-1 md:grid-cols-3 ">
+    <div class="grid space-y-10 md:space-y-0 md:gap-14 grid-cols-1 md:grid-cols-3 ">
       <div class="col-span-2 space-y-8">
         <div class="xs:flex-col space-y-6 md:space-y-0 md:flex justify-between">
           <div class="space-y-2">
