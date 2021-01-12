@@ -200,66 +200,71 @@
         </div>
       </div>
 
-      <div class="space-y-8">
-        <div class="space-y-2">
-          <div>
-            <p class="uppercase text-sm text-gray-600 font-bold">full name</p>
+      <form @submit="applyJobForm">
+        <div class="space-y-8">
+          <div class="space-y-2">
+            <div>
+              <p class="uppercase text-sm text-gray-600 font-bold">full name</p>
+            </div>
+            <div>
+              <input
+                required
+                v-model="applyJob.name"
+                class="w-full bg-gray-100 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder=""
+              />
+            </div>
           </div>
-          <div>
-            <input
-              v-model="applyJob.name"
-              class="w-full bg-gray-100 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text"
-              placeholder=""
-            />
+          <div class="space-y-2">
+            <div>
+              <p class="uppercase text-sm text-gray-600 font-bold">Email</p>
+            </div>
+            <div>
+              <input
+                required
+                v-model="applyJob.email"
+                class="w-full bg-gray-100 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="email"
+                placeholder=""
+              />
+            </div>
           </div>
-        </div>
-        <div class="space-y-2">
-          <div>
-            <p class="uppercase text-sm text-gray-600 font-bold">Email</p>
+          <div class="space-y-2">
+            <div>
+              <p class="uppercase text-sm text-gray-600 font-bold">
+                Contact number
+              </p>
+            </div>
+            <div>
+              <input
+                required
+                v-model="applyJob.contactNumber"
+                class="w-full bg-gray-100 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="number"
+                placeholder=""
+              />
+            </div>
           </div>
-          <div>
-            <input
-              v-model="applyJob.email"
-              class="w-full bg-gray-100 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="email"
-              placeholder=""
-            />
-          </div>
-        </div>
-        <div class="space-y-2">
-          <div>
-            <p class="uppercase text-sm text-gray-600 font-bold">
-              Contact number
-            </p>
-          </div>
-          <div>
-            <input
-              v-model="applyJob.contactNumber"
-              class="w-full bg-gray-100 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="number"
-              placeholder=""
-            />
-          </div>
-        </div>
 
-        <!-- <div
+          <!-- <div
           class="p-8 border-dashed border-4 border-light-gray-500 cursor-pointer"
         >
           <div class="text-center text-gray-500 capitalize">
             upload resume
           </div>
         </div> -->
-        <div>
-          <button
-            class="p-2 w-full text-white rounded-lg focus:outline-none"
-            style="background: linear-gradient(90deg, #ff8657 0%, #ff3225 100%);"
-            @click="applyJobForm"
-          >
-            apply
-          </button>
+          <div>
+            <button
+              class="p-2 w-full text-white rounded-lg focus:outline-none"
+              style="background: linear-gradient(90deg, #ff8657 0%, #ff3225 100%);"
+              type="submit"
+            >
+              {{ appliedJobIsLoading ? "Applying..." : "Apply" }}
+            </button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </template>
@@ -282,6 +287,7 @@ export default {
         email: "",
         contactNumber: "",
       },
+      appliedJobIsLoading: false,
     };
   },
   async mounted() {
@@ -312,12 +318,19 @@ export default {
     }
   },
   methods: {
-    applyJobForm() {
+    applyJobForm(e) {
+      e.preventDefault();
+      this.appliedJobIsLoading = true;
       applyJob
         .applyJob("api/careers/applyjob", this.applyJob)
         .then((resp) => {
+          this.appliedJobIsLoading = false;
           console.log("POST=======>", resp);
-          this.applyJob = {}
+          this.applyJob = {};
+          this.$notify({
+            group: "foo",
+            title: "Applied for Job",
+          });
         })
         .catch((err) => {
           console.log(err);

@@ -8,7 +8,9 @@ import VueCarousel from 'vue-carousel';
 import InfiniteSlideBar from 'vue-infinite-slide-bar'
 import VTooltip from 'v-tooltip'
 import VueNumber from 'vue-number-animation'
- 
+import Notifications from 'vue-notification'
+
+Vue.use(Notifications)
 Vue.use(VueNumber)
 Vue.component('infinite-slide-bar', InfiniteSlideBar)
 Vue.use(VueCarousel);

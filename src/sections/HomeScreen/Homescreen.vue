@@ -21,7 +21,7 @@
               <span
                 style="font-family: Merriweather"
                 class="rainbow rainbow_text_animated text-3xl"
-                >Adsrevenue</span
+                >AdsRevenue</span
               >
             </h3>
             <p class="text-3xl text-white">DIGITAL CONSULTING AGENCY</p>
@@ -126,7 +126,7 @@
               <h1
                 class="uppercase text-5xl rainbow_text_animated_mobile font-bold leading-none tracking-wide mb-2"
               >
-                Adsrevenue
+                AdsRevenue
               </h1>
               <h2
                 class="uppercase text-1xl text-orange-500 text-secondary tracking-widest mb-6"

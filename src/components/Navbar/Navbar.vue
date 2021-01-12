@@ -134,7 +134,7 @@
                       <a class="p-2">Careers</a>
                     </li>
                   </router-link>
-                  <li
+                  <!-- <li
                     :class="[
                       $route.path === '/blogs'
                         ? 'blog-link-bg p-2 rounded-lg text-white'
@@ -144,7 +144,7 @@
                     <router-link to="/blogs">
                       <a class="p-2">Blog</a>
                     </router-link>
-                  </li>
+                  </li> -->
                 </ul>
                 <ul
                   v-else
@@ -155,11 +155,11 @@
                       <a class="p-2" v-scroll-to="'#home'" href="#">Home</a>
                     </li>
                   </router-link>
-                  <router-link to="/blogs" tag="button">
+                  <!-- <router-link to="/blogs" tag="button">
                     <li class="uppercase font-semibold">
                       <a class="p-2">Blogs</a>
                     </li>
-                  </router-link>
+                  </router-link> -->
                   <li
                     :class="[
                       $route.path === '/careers'
@@ -240,13 +240,13 @@
               >Careers</a
             >
           </route-link>
-          <route-link to="/blogs">
+          <!-- <route-link to="/blogs">
             <a
               @click="toggleNavbar = !toggleNavbar"
               class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Blogs</a
             >
-          </route-link>
+          </route-link> -->
         </div>
       </div>
     </nav>
