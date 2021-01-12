@@ -1027,8 +1027,7 @@
         <div class="mt-8">
           <button
             @click="handleContactSubmit()"
-          style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-
+            style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
             class="uppercase text-sm font-bold tracking-wide  text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
           >
             <span v-if="issubmited">SENDING...</span>
@@ -1059,7 +1058,6 @@
               >
                 <div
                   style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-                  
                   class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
                 >
                   <svg
@@ -1080,8 +1078,8 @@
                     Address
                   </h2>
                   <p class="leading-relaxed text-base text-white font-bold">
-                    Sunshine City, Moregaon Talao, Oswal Nagari, Nalasopara
-                    East, Nala Sopara, Maharashtra 401209
+                    Office No.001 Dawood Building CHS, Naya Nagar, Miraroad East
+                    401209
                   </p>
                 </div>
               </div>
@@ -1109,8 +1107,8 @@
                     Contact
                   </h2>
                   <p class="leading-relaxed text-base text-white font-bold">
-                    +91-832-919-8830 <br />
-                    jaitiwari1020@gmail.com
+                    +91 832-919-8830 <br />
+                    jay.tiwari@adsrevenue.co
                   </p>
                 </div>
               </div>
@@ -1160,7 +1158,7 @@
           marginwidth="0"
           title="map"
           scrolling="no"
-          src="https://maps.google.com/maps?q=sunshine%20commercial%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=miraroad%20naya%20nagar&t=&z=13&ie=UTF8&iwloc=&output=embed"
           style="filter: grayscale(0) contrast(1.2)"
         ></iframe>
       </div>
@@ -1183,7 +1181,7 @@ export default {
   methods: {
     handleContactSubmit() {
       this.issubmited = true;
-      let api_url = "api/user/contact";
+      let api_url = "api/contact";
       let data = {
         name: this.name,
         email: this.email,

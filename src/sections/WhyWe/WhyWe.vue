@@ -53,7 +53,7 @@
                 </div>
                 <div class="grid grid-cols-3 place-items-center space-x-4 p-2">
                   <div>
-                    <img src="@/assets/slider2.svg" alt="" width="300" />
+                    <img src="/img/newsupport.png" alt="" width="300" />
                   </div>
                   <div class="text-center text-2xl text-white col-span-2">
                     Adsrevenue has a team of creative support digital marketing
@@ -151,7 +151,7 @@
                     <img
                       class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded"
                       alt="hero"
-                      src="@/assets/slider2.svg"
+                      src="/img/newsupport.png"
                     />
                     <div class="flex flex-col text-center w-full">
                       <h1
@@ -193,7 +193,7 @@ export default {
 };
 </script>
 <style>
-.VueCarousel-dot{
+.VueCarousel-dot {
   background-color: blue;
 }
 </style>

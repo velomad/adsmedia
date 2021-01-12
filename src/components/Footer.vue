@@ -50,8 +50,8 @@
                       </svg>
                     </p>
                     <p class="ml-2 text-left font-semibold text-white">
-                      Sunshine City, Moregaon Talao, Oswal Nagari, Nalasopara
-                      East, Nala Sopara, Maharashtra 401209
+                      Office No.001 Dawood Building CHS, Naya Nagar, Miraroad
+                      East 401209
                     </p>
                   </li>
                 </ul>
@@ -105,7 +105,7 @@
                       </svg>
                     </p>
                     <p class="ml-2 font-semibold text-white">
-                      <span class=""> jaitiwari1020@gmail.com</span>
+                      <span class="">jay.tiwari@adsrevenue.co</span>
                     </p>
                   </li>
                 </ul>
@@ -337,19 +337,23 @@
         class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
       >
         <p class="text-gray-500 text-sm  text-center sm:text-left">
-          © 2021 AdsRevenue —
+          © 2021 AdsRevenue Digital Consulting Agency —
           <a
             href="https://twitter.com/knyttneve"
             rel="noopener noreferrer"
             class="text-gray-600 ml-1"
             target="_blank"
-            >@jaitiwari1020@gmail.com</a
+            >jay.tiwari@adsrevenue.co</a
           >
         </p>
         <span
           class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
         >
-          <a class="text-gray-500">
+          <a
+            class="text-gray-500"
+            href="https://www.facebook.com/AdsRevenue-105189231545783"
+            target="_blank"
+          >
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -363,7 +367,10 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-gray-500"
+          href="https://twitter.com/adsrevenue_1"
+            target="_blank"
+          >
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -377,7 +384,10 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-gray-500"
+          href="https://www.instagram.com/adsrevenue/"
+            target="_blank"
+          >
             <svg
               fill="none"
               stroke="currentColor"
@@ -393,7 +403,10 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-gray-500"
+          href="https://www.linkedin.com/company/adsrevenue/about/"
+            target="_blank"
+          >
             <svg
               fill="currentColor"
               stroke="currentColor"
