@@ -1,6 +1,8 @@
 <template>
   <div class="p-10 space-y-10">
-    <div class="p-10 bg-gray-800 space-y-6 md:space-y-0 md:flex justify-around rounded-lg items-center">
+    <div
+      class="p-10 bg-gray-800 space-y-6 md:space-y-0 md:flex justify-around rounded-lg items-center"
+    >
       <div class="text-white text-xl">
         <router-link to="/careers">
           <span class="cursor-pointer">Careers</span>
@@ -17,7 +19,9 @@
       </div>
     </div>
 
-    <div class="grid space-y-10 md:space-y-0 md:gap-14 grid-cols-1 md:grid-cols-3 ">
+    <div
+      class="grid space-y-10 md:space-y-0 md:gap-14 grid-cols-1 md:grid-cols-3 "
+    >
       <div class="col-span-2 space-y-8">
         <div class="xs:flex-col space-y-6 md:space-y-0 md:flex justify-between">
           <div class="space-y-2">
@@ -203,7 +207,7 @@
           </div>
           <div>
             <input
-              v-model="name"
+              v-model="applyJob.name"
               class="w-full bg-gray-100 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text"
               placeholder=""
@@ -216,7 +220,7 @@
           </div>
           <div>
             <input
-              v-model="email"
+              v-model="applyJob.email"
               class="w-full bg-gray-100 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="email"
               placeholder=""
@@ -231,7 +235,7 @@
           </div>
           <div>
             <input
-              v-model="number"
+              v-model="applyJob.contactNumber"
               class="w-full bg-gray-100 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="number"
               placeholder=""
@@ -239,17 +243,18 @@
           </div>
         </div>
 
-        <div
+        <!-- <div
           class="p-8 border-dashed border-4 border-light-gray-500 cursor-pointer"
         >
           <div class="text-center text-gray-500 capitalize">
             upload resume
           </div>
-        </div>
+        </div> -->
         <div>
           <button
             class="p-2 w-full text-white rounded-lg focus:outline-none"
             style="background: linear-gradient(90deg, #ff8657 0%, #ff3225 100%);"
+            @click="applyJobForm"
           >
             apply
           </button>
@@ -259,7 +264,7 @@
   </div>
 </template>
 <script>
-import { getSingleJob } from "../REST/Jobs";
+import { getSingleJob, applyJob } from "../REST/Jobs";
 export default {
   name: "SingleJob",
   data() {
@@ -272,6 +277,11 @@ export default {
       exp: "",
       education: "",
       createdAt: "",
+      applyJob: {
+        name: "",
+        email: "",
+        contactNumber: "",
+      },
     };
   },
   async mounted() {
@@ -300,6 +310,19 @@ export default {
     } catch (e) {
       console.log(e);
     }
+  },
+  methods: {
+    applyJobForm() {
+      applyJob
+        .applyJob("api/careers/applyjob", this.applyJob)
+        .then((resp) => {
+          console.log("POST=======>", resp);
+          this.applyJob = {}
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
   },
 };
 console.log();

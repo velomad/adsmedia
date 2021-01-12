@@ -1,5 +1,5 @@
 // const baseUrl = process.env.REACT_APP_API_URL;
-const baseUrl = "https://adsrevenue.co/";
+const baseUrl = "http://localhost:5000/";
 
 export const getAllJobs = {
   getAllJobs(urls) {
@@ -37,6 +37,29 @@ export const getSingleJob = {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": "*",
         },
+      });
+      return await response.json();
+    } catch (err) {
+      return err;
+    }
+  },
+};
+
+export const applyJob = {
+  applyJob(urls, data) {
+    const url = urls;
+    return this.execJob(baseUrl + url, data);
+  },
+
+  async execJob(url, data) {
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify(data),
       });
       return await response.json();
     } catch (err) {
