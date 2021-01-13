@@ -160,17 +160,17 @@
                       <a class="p-2">Blogs</a>
                     </li>
                   </router-link> -->
-                  <li
-                    :class="[
-                      $route.path === '/careers'
-                        ? 'blog-link-bg p-2 rounded-lg text-white'
-                        : '',
-                    ]"
-                  >
-                    <router-link to="/careers">
+                  <router-link to="/careers">
+                    <li
+                      :class="[
+                        $route.path === '/careers'
+                          ? 'blog-link-bg p-2 rounded-lg text-white'
+                          : '',
+                      ]"
+                    >
                       <a class="p-2"><span>Careers</span></a>
-                    </router-link>
-                  </li>
+                    </li>
+                  </router-link>
                 </ul>
               </nav>
             </div>
@@ -233,13 +233,13 @@
             class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >Contact</a
           >
-          <route-link to="/careers">
+          <router-link to="/careers">
             <a
               @click="toggleNavbar = !toggleNavbar"
               class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Careers</a
             >
-          </route-link>
+          </router-link>
           <!-- <route-link to="/blogs">
             <a
               @click="toggleNavbar = !toggleNavbar"
