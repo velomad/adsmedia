@@ -11,6 +11,9 @@ import VueNumber from 'vue-number-animation'
 import Notifications from 'vue-notification'
 import VueScrollReveal from 'vue-scroll-reveal';
 import 'animate.css';
+import SequentialEntrance from 'vue-sequential-entrance'
+import 'vue-sequential-entrance/vue-sequential-entrance.css'
+Vue.use(SequentialEntrance);
 
 Vue.use(Notifications)
 Vue.use(VueNumber)

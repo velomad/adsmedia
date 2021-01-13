@@ -1,11 +1,11 @@
 <template>
-  <section class="bg-gray-900 body-font" id="BusinessDeserves">
+  <section class="bg-gray-900 body-font" id="BusinessDeserves" v-view.once="reRenderUI">
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
       <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
         <section class="text-gray-600 body-font overflow-hidden">
           <div class="container space-y-4 px-5 py-10 md:py-24 lg:py-24 mx-auto">
             <div>
-              <h1 class="text-3xl  title-font text-white tracking-widest">
+              <h1 class="text-3xl title-font text-white tracking-widest">
                 Creative Digital Marketing
               </h1>
               <h2 class="text-xl title-font text-gray-500 tracking-widest">
@@ -30,128 +30,139 @@
         </section>
       </div>
       <div
-        v-scroll-reveal="{ delay: 200 }"
+       :key="rerenderUI + 1"
         class="hidden md:block lg:block lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:mt-28 lg:mt-28"
       >
-        <div class="flex relative pb-16 first">
-          <div
-            class="h-full w-10 absolute inset-0 flex items-center justify-center"
-          >
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div
-            style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-            class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+        <sequential-entrance delay="600" fromTop>
+          <div class="flex relative pb-16 first">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
             >
-              <path
-                fill-rule="evenodd"
-                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </div>
-          <div class="flex-grow pl-4">
-            <h2
-              class="font-medium mt-2 title-font text-sm text-gray-200 mb-0 tracking-wider"
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              style="
+                background: linear-gradient(90deg, #ff8657 0%, #ff3225 120%);
+              "
+              class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
             >
-              Connect with qualified Industry Experts.
-            </h2>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2
+                class="font-medium mt-2 title-font text-sm text-gray-200 mb-0 tracking-wider"
+              >
+                Connect with qualified Industry Experts.
+              </h2>
+            </div>
           </div>
-        </div>
-        <div class="flex relative pb-16" v-view.once="onceHandler">
-          <div
-            class="h-full w-10 absolute inset-0 flex items-center justify-center"
-          >
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div
-            style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-            class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+          <div class="flex relative pb-16" v-view.once="onceHandler">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
             >
-              <path
-                fill-rule="evenodd"
-                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </div>
-          <div class="flex-grow pl-4">
-            <h2
-              class="font-medium mt-2 title-font text-sm text-gray-200 mb-1 tracking-wider"
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              style="
+                background: linear-gradient(90deg, #ff8657 0%, #ff3225 120%);
+              "
+              class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
             >
-              Save Time & Earn 30% more.
-            </h2>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2
+                class="font-medium mt-2 title-font text-sm text-gray-200 mb-1 tracking-wider"
+              >
+                Save Time & Earn 30% more.
+              </h2>
+            </div>
           </div>
-        </div>
-        <div class="flex relative pb-16">
-          <div
-            class="h-full w-10 absolute inset-0 flex items-center justify-center"
-          >
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div
-            style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-            class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+
+          <div class="flex relative pb-16">
+            <div
+              class="h-full w-10 absolute inset-0 flex items-center justify-center"
             >
-              <path
-                fill-rule="evenodd"
-                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </div>
-          <div class="flex-grow pl-4">
-            <h2
-              class="font-medium mt-2 title-font text-sm text-gray-200 mb-1 tracking-wider"
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              style="
+                background: linear-gradient(90deg, #ff8657 0%, #ff3225 120%);
+              "
+              class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
             >
-              100% Timely Reports and Payments.
-            </h2>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2
+                class="font-medium mt-2 title-font text-sm text-gray-200 mb-1 tracking-wider"
+              >
+                100% Timely Reports and Payments.
+              </h2>
+            </div>
           </div>
-        </div>
-        <div class="flex relative">
-          <div
-            style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-            class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+          <div class="flex relative">
+            <div
+              style="
+                background: linear-gradient(90deg, #ff8657 0%, #ff3225 120%);
+              "
+              class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
             >
-              <path
-                fill-rule="evenodd"
-                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2
+                class="font-medium mt-2 title-font text-sm text-gray-200 mb-1 tracking-wider"
+              >
+                Responsive, Professional Service.
+              </h2>
+            </div>
           </div>
-          <div class="flex-grow pl-4">
-            <h2
-              class="font-medium mt-2 title-font text-sm text-gray-200 mb-1 tracking-wider"
-            >
-              Responsive, Professional Service.
-            </h2>
-          </div>
-        </div>
+        </sequential-entrance>
       </div>
     </div>
 
@@ -167,7 +178,9 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
+                style="
+                  background: linear-gradient(90deg, #ff8657 0%, #ff3225 120%);
+                "
                 class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
@@ -198,7 +211,9 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
+                style="
+                  background: linear-gradient(90deg, #ff8657 0%, #ff3225 120%);
+                "
                 class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
@@ -229,8 +244,10 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-                class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
+                style="
+                  background: linear-gradient(90deg, #ff8657 0%, #ff3225 120%);
+                "
+                class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   class="w-6 h-6"
@@ -260,8 +277,10 @@
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div> -->
               <div
-                style="background: linear-gradient(90deg,#ff8657 0%,#ff3225 120%);"
-                class="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10"
+                style="
+                  background: linear-gradient(90deg, #ff8657 0%, #ff3225 120%);
+                "
+                class="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   class="w-6 h-6"
@@ -294,9 +313,15 @@
 export default {
   name: "Agency",
   data() {
-    return {};
+    return {
+      rerenderUI : 0
+    };
   },
   methods: {
+    reRenderUI(){
+      console.log('Rerender ++');
+      this.rerenderUI +=1; 
+    },
     onceHandler(e) {
       console.log("calling agency...", e.target);
       var doc = document.documentElement;
