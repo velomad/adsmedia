@@ -5,13 +5,13 @@
         <section class="text-gray-600 body-font overflow-hidden">
           <div class="container space-y-4 px-5 py-10 md:py-24 lg:py-24 mx-auto">
             <div>
-            <h1 class="text-3xl  title-font text-white tracking-widest">
-              Creative Digital Marketing 
-            </h1>
-            <h2 class="text-xl title-font text-gray-500 tracking-widest">
-              to Fuel Your Company’s Revenue
-            </h2>
-</div>
+              <h1 class="text-3xl  title-font text-white tracking-widest">
+                Creative Digital Marketing
+              </h1>
+              <h2 class="text-xl title-font text-gray-500 tracking-widest">
+                to Fuel Your Company’s Revenue
+              </h2>
+            </div>
             <p class="leading-relaxed mb-4 text-white">
               Every account is assigned to a committed account Manager. Each of
               our affiliate managers is highly skilled in the af filiate
@@ -30,6 +30,7 @@
         </section>
       </div>
       <div
+        v-scroll-reveal="{ delay: 200 }"
         class="hidden md:block lg:block lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:mt-28 lg:mt-28"
       >
         <div class="flex relative pb-16 first">
@@ -90,7 +91,7 @@
             <h2
               class="font-medium mt-2 title-font text-sm text-gray-200 mb-1 tracking-wider"
             >
-             Save Time & Earn 30% more.
+              Save Time & Earn 30% more.
             </h2>
           </div>
         </div>

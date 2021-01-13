@@ -11,7 +11,12 @@
       </p>
     </div>
     <div class="space-y-6 md:grid grid-cols-3 gap-10 py-10 px-4">
-      <div v-for="(item, index) in test" :key="index" class="mt-6">
+      <div
+        v-for="(item, index) in test"
+        :key="index"
+        class="mt-6"
+        v-scroll-reveal="{ delay: 150 }"
+      >
         <Card
           :heading="item.heading"
           :content="item.content"
@@ -72,3 +77,8 @@ export default {
   },
 };
 </script>
+<style>
+body{
+  overflow-x: hidden;
+}
+</style>

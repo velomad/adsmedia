@@ -9,6 +9,8 @@ import InfiniteSlideBar from 'vue-infinite-slide-bar'
 import VTooltip from 'v-tooltip'
 import VueNumber from 'vue-number-animation'
 import Notifications from 'vue-notification'
+import VueScrollReveal from 'vue-scroll-reveal';
+import 'animate.css';
 
 Vue.use(Notifications)
 Vue.use(VueNumber)
@@ -21,6 +23,14 @@ Vue.use(VueScrollTo, {
     duration:800
 });
 Vue.use(VTooltip)
+
+Vue.use(VueScrollReveal, {
+    class: 'v-scroll-reveal', // A CSS class applied to elements with the v-scroll-reveal directive; useful for animation overrides.
+    duration: 600,
+    scale: 1.2,
+    distance: '5px',
+    mobile: true
+  });
 
 
 new Vue({ el: "#app", router, render: (h) => h(App) });

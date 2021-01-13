@@ -7,11 +7,13 @@
         <div class="space-y-24">
           <div class="text-white text-center font-semibold mt-4 text-4xl">
             Working Process <br />
-            <p class="text-sm font-medium text-white mt-2">Interactive Digital Consulting Agency.</p>
+            <p class="text-sm font-medium text-white mt-2">
+              Interactive Digital Consulting Agency.
+            </p>
           </div>
           <div></div>
           <div class="flex space-x-32">
-            <div class="space-y-4">
+            <div class="space-y-4" v-scroll-reveal.reset="{ delay: 150 }">
               <div
                 class="w-36 h-36 rounded-full wrapper ring-1 ring-gray-100 flex justify-center items-center"
               >
@@ -30,7 +32,7 @@
                 Meetings
               </div>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-4" v-scroll-reveal.reset="{ delay: 250 }">
               <div
                 class="w-36 h-36 rounded-full ring-1 wrapper ring-gray-100 flex justify-center items-center"
               >
@@ -50,7 +52,7 @@
                 plannings
               </div>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-4" v-scroll-reveal.reset="{ delay: 350 }">
               <div
                 class="w-36 h-36 wrapper rounded-full ring-1 ring-gray-100 flex justify-center items-center"
               >
@@ -71,7 +73,7 @@
                 executions
               </div>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-4" v-scroll-reveal.reset="{ delay: 450 }">
               <div
                 class="w-36 wrapper h-36 rounded-full ring-1 ring-gray-100 flex justify-center items-center"
               >
@@ -241,7 +243,7 @@ export default {
 }
 
 .wrapper .tooltip {
-  background:  linear-gradient(90deg,#ff8657 0%,#ff3225 140%);
+  background: linear-gradient(90deg, #ff8657 0%, #ff3225 140%);
   bottom: 100%;
   border-radius: 6px;
   color: #fff;
