@@ -15,7 +15,6 @@
         v-for="(item, index) in test"
         :key="index"
         class="mt-6"
-        v-scroll-reveal.reset="{ delay: 150 }"
       >
         <Card
           :heading="item.heading"

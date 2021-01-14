@@ -183,10 +183,10 @@
 
     Menu open: "block", Menu closed: "hidden"
   -->
-    <transition
+    <!-- <transition
       enter-active-class="animate__animated animate__fadeInLeft animate__faster"
       leave-active-class="animate__animated animate__fadeOutLeft animate__faster"
-    >
+    > -->
       <div v-show="toggleNavbar" style="z-index: 99999" class="animate">
         <div class="px-2 pt-2 pb-3 space-y-1 animate">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
@@ -265,7 +265,7 @@
           </route-link> -->
         </div>
       </div>
-      </transition>
+      <!-- </transition> -->
     </nav>
     <div class="progress-container">
       <div class="progress-bar" id="headerBar"></div>
