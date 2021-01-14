@@ -12,7 +12,12 @@
           <img src="/img/footer logo.png" alt="" class="w-60 h-10" />
           <span class="ml-3 text-xl text-white"></span>
         </a>
-        <p class="mt-2 text-white text-sm font-semibold ">
+        <p
+          class="mt-2 text-sm font-semibold "
+          style="background: linear-gradient(90deg, #ff8657 0%, #ff3225 100%);  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;"
+        >
           DIGITAL CONSULTING AGENCY
         </p>
       </div>
@@ -367,8 +372,9 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500"
-          href="https://twitter.com/adsrevenue_1"
+          <a
+            class="ml-3 text-gray-500"
+            href="https://twitter.com/adsrevenue_1"
             target="_blank"
           >
             <svg
@@ -384,8 +390,9 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500"
-          href="https://www.instagram.com/adsrevenue/"
+          <a
+            class="ml-3 text-gray-500"
+            href="https://www.instagram.com/adsrevenue/"
             target="_blank"
           >
             <svg
@@ -403,8 +410,9 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500"
-          href="https://www.linkedin.com/company/adsrevenue/about/"
+          <a
+            class="ml-3 text-gray-500"
+            href="https://www.linkedin.com/company/adsrevenue/about/"
             target="_blank"
           >
             <svg
