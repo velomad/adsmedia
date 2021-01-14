@@ -113,10 +113,11 @@
             Interactive Digital Consulting Agency.
           </p>
         </div>
-        <div class="flex flex-wrap -m-4">
+        <div class="flex flex-wrap -m-4 space-y-4">
           <div class="p-4 lg:w-1/2 w-full">
             <div
-              class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              class="h-full space-y-4 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              v-scroll-reveal="{ delay: 150 }"
             >
               <div
                 class="w-36 h-36 rounded-full wrapper ring-1 ring-gray-100 flex justify-center items-center"
@@ -139,7 +140,8 @@
           </div>
           <div class="p-4 lg:w-1/2 w-full">
             <div
-              class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              class="h-full space-y-4 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              v-scroll-reveal="{ delay: 250 }"
             >
               <div
                 class="w-36 h-36 rounded-full ring-1 wrapper ring-gray-100 flex justify-center items-center"
@@ -163,7 +165,8 @@
           </div>
           <div class="p-4 lg:w-1/2 w-full">
             <div
-              class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              class="h-full space-y-4 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              v-scroll-reveal="{ delay: 350 }"
             >
               <div
                 class="w-36 h-36 wrapper rounded-full ring-1 ring-gray-100 flex justify-center items-center"
@@ -188,7 +191,8 @@
           </div>
           <div class="p-4 lg:w-1/2 w-full">
             <div
-              class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              class="h-full space-y-4 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              v-scroll-reveal="{ delay: 450 }"
             >
               <div
                 class="w-36 wrapper h-36 rounded-full ring-1 ring-gray-100 flex justify-center items-center"
