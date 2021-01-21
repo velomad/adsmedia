@@ -48,7 +48,7 @@
               </div>
             </div>
             <div class="flex space-x-4 flex-row w-full">
-              <a href="https://adsmidea.offer18.com/m/login" target="_blank">
+              <a href="https://adsrevenue.offer18.com/m/login" target="_blank">
                 <button
                   class="px-3 mt-5 items-center shadow-md bg-white space-x-2 py-2 justify-center flex w-32 rounded-lg hover:bg-gray-500 hover:text-white hover:bg-opacity-50 parent-login-btn"
                 >

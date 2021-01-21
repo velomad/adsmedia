@@ -114,10 +114,20 @@
                     <a class="p-2" v-scroll-to="'#why-we'" href="#">Why We ?</a>
                   </li>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-2 text-red-500 underline font-bold" href="#">Affiliate</a>
+                    <a
+                      class="p-2 text-red-500 font-bold"
+                      href="https://adsrevenue.offer18.com/m/signup_self_aff"
+                      target="_blank"
+                      >Affiliate</a
+                    >
                   </li>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-2 text-red-500 underline font-bold" href="#">Advertiser</a>
+                    <a
+                      class="p-2 text-red-500 font-bold"
+                      href="https://adsrevenue.offer18.com/m/signup_self_adv"
+                      target="_blank"
+                      >Advertiser</a
+                    >
                   </li>
                   <li v-if="$route.path !== '/blogs'">
                     <a class="p-2" v-scroll-to="'#contact'" href="#">Contact</a>
@@ -183,7 +193,7 @@
 
     Menu open: "block", Menu closed: "hidden"
   -->
-    <!-- <transition
+      <!-- <transition
       enter-active-class="animate__animated animate__fadeInLeft animate__faster"
       leave-active-class="animate__animated animate__fadeOutLeft animate__faster"
     > -->
