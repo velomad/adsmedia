@@ -242,12 +242,14 @@
               >Why We ?</a
             >
             <a
-              href="#"
+              href="https://adsrevenue.offer18.com/m/signup_self_aff"
+              target="_blank"
               class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Affiliate</a
             >
             <a
-              href="#"
+              href="https://adsrevenue.offer18.com/m/signup_self_adv"
+              target="_blank"
               class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Advertiser</a
             >
