@@ -344,7 +344,7 @@
         <p class="text-gray-500 text-sm  text-center sm:text-left">
           © 2021 AdsRevenue Digital Consulting Agency —
           <a
-            href="https://twitter.com/knyttneve"
+            href="mailto:jaitiwari1020@gmail.com"
             rel="noopener noreferrer"
             class="text-gray-600 ml-1"
             target="_blank"
