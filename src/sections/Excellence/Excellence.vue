@@ -34,6 +34,7 @@
                     ? 'bg-' + item.color + '-600 h-4 rounded-md'
                     : 'bg-' + item.color + '-500 h-4 rounded-md',
                 ]"
+                style="background: linear-gradient(90deg, #ff8657 0%, #ff3225 80%);"
                 :ref="item.name"
               ></div>
             </div>

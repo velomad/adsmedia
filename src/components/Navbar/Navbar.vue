@@ -114,10 +114,20 @@
                     <a class="p-2" v-scroll-to="'#why-we'" href="#">Why We ?</a>
                   </li>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-2" href="#">Affiliate</a>
+                    <a
+                      class="p-2 text-red-500 font-bold"
+                      href="https://adsrevenue.offer18.com/m/signup_self_aff"
+                      target="_blank"
+                      >Affiliate</a
+                    >
                   </li>
                   <li v-if="$route.path !== '/blogs'">
-                    <a class="p-2" href="#">Advertiser</a>
+                    <a
+                      class="p-2 text-red-500 font-bold"
+                      href="https://adsrevenue.offer18.com/m/signup_self_adv"
+                      target="_blank"
+                      >Advertiser</a
+                    >
                   </li>
                   <li v-if="$route.path !== '/blogs'">
                     <a class="p-2" v-scroll-to="'#contact'" href="#">Contact</a>
@@ -160,17 +170,17 @@
                       <a class="p-2">Blogs</a>
                     </li>
                   </router-link> -->
-                  <li
-                    :class="[
-                      $route.path === '/careers'
-                        ? 'blog-link-bg p-2 rounded-lg text-white'
-                        : '',
-                    ]"
-                  >
-                    <router-link to="/careers">
+                  <router-link to="/careers">
+                    <li
+                      :class="[
+                        $route.path === '/careers'
+                          ? 'blog-link-bg p-2 rounded-lg text-white'
+                          : '',
+                      ]"
+                    >
                       <a class="p-2"><span>Careers</span></a>
-                    </router-link>
-                  </li>
+                    </li>
+                  </router-link>
                 </ul>
               </nav>
             </div>
@@ -183,63 +193,81 @@
 
     Menu open: "block", Menu closed: "hidden"
   -->
-      <div
-        v-show="toggleNavbar"
-        style="z-index: 99999"
-        class="transition duration-600 ease-in-out"
-      >
-        <div class="px-2 pt-2 pb-3 space-y-1">
+      <!-- <transition
+      enter-active-class="animate__animated animate__fadeInLeft animate__faster"
+      leave-active-class="animate__animated animate__fadeOutLeft animate__faster"
+    > -->
+      <div v-show="toggleNavbar" style="z-index: 99999" class="animate">
+        <div class="px-2 pt-2 pb-3 space-y-1 animate">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a
-            @click="toggleNavbar = !toggleNavbar"
-            href="#"
-            v-scroll-to="'#home'"
-            class="text-gray-500 block px-3 py-2 rounded-md text-base font-medium"
-            >Home</a
-          >
-          <a
-            @click="toggleNavbar = !toggleNavbar"
-            href="#"
-            v-scroll-to="'#about-section'"
-            class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >About</a
-          >
-          <a
-            @click="toggleNavbar = !toggleNavbar"
-            href="#"
-            v-scroll-to="'#services'"
-            class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Services</a
-          >
-          <a
-            @click="toggleNavbar = !toggleNavbar"
-            v-scroll-to="'#why-we'"
-            class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Why We ?</a
-          >
-          <a
-            href="#"
-            class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Affiliate</a
-          >
-          <a
-            href="#"
-            class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Advertiser</a
-          >
-          <a
-            @click="toggleNavbar = !toggleNavbar"
-            v-scroll-to="'#contact'"
-            class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Contact</a
-          >
-          <route-link to="/careers">
+
+          <div v-if="$route.path === '/careers'">
+            <router-link to="/">
+              <a
+                @click="toggleNavbar = !toggleNavbar"
+                class="text-gray-500 block px-3 py-2 rounded-md text-base font-medium"
+                >Home</a
+              >
+            </router-link>
+          </div>
+
+          <div v-else>
+            <a
+              @click="toggleNavbar = !toggleNavbar"
+              v-scroll-to="'#home'"
+              class="text-gray-500 block px-3 py-2 rounded-md text-base font-medium"
+              >Home</a
+            >
+          </div>
+
+          <div v-if="$route.path === '/'">
+            <a
+              @click="toggleNavbar = !toggleNavbar"
+              href="#"
+              v-scroll-to="'#about-section'"
+              class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >About</a
+            >
+            <a
+              @click="toggleNavbar = !toggleNavbar"
+              href="#"
+              v-scroll-to="'#services'"
+              class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Services</a
+            >
+            <a
+              @click="toggleNavbar = !toggleNavbar"
+              v-scroll-to="'#why-we'"
+              class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Why We ?</a
+            >
+            <a
+              href="https://adsrevenue.offer18.com/m/signup_self_aff"
+              target="_blank"
+              class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Affiliate</a
+            >
+            <a
+              href="https://adsrevenue.offer18.com/m/signup_self_adv"
+              target="_blank"
+              class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Advertiser</a
+            >
+            <a
+              @click="toggleNavbar = !toggleNavbar"
+              v-scroll-to="'#contact'"
+              class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Contact</a
+            >
+          </div>
+
+          <router-link to="/careers">
             <a
               @click="toggleNavbar = !toggleNavbar"
               class="border-t text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Careers</a
             >
-          </route-link>
+          </router-link>
           <!-- <route-link to="/blogs">
             <a
               @click="toggleNavbar = !toggleNavbar"
@@ -249,6 +277,7 @@
           </route-link> -->
         </div>
       </div>
+      <!-- </transition> -->
     </nav>
     <div class="progress-container">
       <div class="progress-bar" id="headerBar"></div>
