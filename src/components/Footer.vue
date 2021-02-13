@@ -404,7 +404,7 @@
             </svg>
           </a>
           <a class="ml-3 text-gray-500"
-          href="https://www.linkedin.com/company/adsrevenue/about/"
+          href="mailto:jaitiwari1020@gmail.com"
             target="_blank"
           >
             <svg
